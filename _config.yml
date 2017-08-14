@@ -78,6 +78,6 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: https://github.com/ajesses/ajesses.github.io.git
+  repository: https://github.com/ajesses/ajesses.github.io
   branch: master
   plugins: -hexo-generator-feed
