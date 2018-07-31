@@ -94,18 +94,18 @@
 
 
 
-<meta name="description" content="安装依赖12yum -y install gcc gcc-c++yum -y install wget 安装步骤1.1wget http://download.redis.io/releases/redis-3.2.9.tar.gz 2.1tar xzf redis-3.2.9.tar.gz 3.1cd redis-redis-3.2.9 4.1make 远程连接1. 修改配置(安装目录下)">
+<meta name="description" content="安装依赖12yum -y install gcc gcc-c++yum -y install wget 安装步骤1.1wget http://download.redis.io/releases/redis-3.2.9.tar.gz 2.1tar xzf redis-3.2.9.tar.gz 3.1cd redis-redis-3.2.9 4.1make 远程连接 修改配置(安装目录下)  1vi">
 <meta name="keywords" content="linux redis">
 <meta property="og:type" content="article">
 <meta property="og:title" content="linux安装redis">
 <meta property="og:url" content="http://yoursite.com/2018/07/31/linux安装redis/index.html">
 <meta property="og:site_name" content="wxqblog">
-<meta property="og:description" content="安装依赖12yum -y install gcc gcc-c++yum -y install wget 安装步骤1.1wget http://download.redis.io/releases/redis-3.2.9.tar.gz 2.1tar xzf redis-3.2.9.tar.gz 3.1cd redis-redis-3.2.9 4.1make 远程连接1. 修改配置(安装目录下)">
+<meta property="og:description" content="安装依赖12yum -y install gcc gcc-c++yum -y install wget 安装步骤1.1wget http://download.redis.io/releases/redis-3.2.9.tar.gz 2.1tar xzf redis-3.2.9.tar.gz 3.1cd redis-redis-3.2.9 4.1make 远程连接 修改配置(安装目录下)  1vi">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-07-31T09:55:16.826Z">
+<meta property="og:updated_time" content="2018-07-31T11:50:31.910Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="linux安装redis">
-<meta name="twitter:description" content="安装依赖12yum -y install gcc gcc-c++yum -y install wget 安装步骤1.1wget http://download.redis.io/releases/redis-3.2.9.tar.gz 2.1tar xzf redis-3.2.9.tar.gz 3.1cd redis-redis-3.2.9 4.1make 远程连接1. 修改配置(安装目录下)">
+<meta name="twitter:description" content="安装依赖12yum -y install gcc gcc-c++yum -y install wget 安装步骤1.1wget http://download.redis.io/releases/redis-3.2.9.tar.gz 2.1tar xzf redis-3.2.9.tar.gz 3.1cd redis-redis-3.2.9 4.1make 远程连接 修改配置(安装目录下)  1vi">
 
 
 
@@ -339,14 +339,14 @@
 <p>2.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">tar xzf redis-3.2.9.tar.gz</div></pre></td></tr></table></figure></p>
 <p>3.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cd redis-redis-3.2.9</div></pre></td></tr></table></figure></p>
 <p>4.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">make</div></pre></td></tr></table></figure></p>
-<h4 id="远程连接"><a href="#远程连接" class="headerlink" title="远程连接"></a>远程连接</h4><pre><code>1. 修改配置(安装目录下)
-    <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vi redis.conf</div></pre></td></tr></table></figure>
-
- a. 把bind 127.0.0.1 ::1这一行注释掉
- b. protected-mode 要设置成no
- c. 启动的时候，需要指定redis.conf 文件
-2. 关闭防火墙firewall
-</code></pre><h4 id="启动redis"><a href="#启动redis" class="headerlink" title="启动redis"></a>启动redis</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">src/redis-server redis.conf</div></pre></td></tr></table></figure>
+<h4 id="远程连接"><a href="#远程连接" class="headerlink" title="远程连接"></a>远程连接</h4><ol>
+<li><p>修改配置(安装目录下)</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vi redis.conf</div></pre></td></tr></table></figure>
+<p>  a. 把bind 127.0.0.1 ::1这一行注释掉<br>  b. protected-mode 要设置成no<br>  c. 启动的时候，需要指定redis.conf 文件</p>
+</li>
+<li>关闭防火墙firewall</li>
+</ol>
+<h4 id="启动redis"><a href="#启动redis" class="headerlink" title="启动redis"></a>启动redis</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">src/redis-server redis.conf</div></pre></td></tr></table></figure>
 <h4 id="redis查看版本"><a href="#redis查看版本" class="headerlink" title="redis查看版本"></a>redis查看版本</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">./redis-cli -h 127.0.0.1 info | grep &apos;redis_version&apos;</div></pre></td></tr></table></figure>
 <h4 id="出现问题"><a href="#出现问题" class="headerlink" title="出现问题"></a>出现问题</h4><h5 id="关闭防火墙"><a href="#关闭防火墙" class="headerlink" title="关闭防火墙"></a>关闭防火墙</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">service firewalld stop      关闭firewall</div><div class="line">systemctl disable firewalld.service    禁止firewall开机启动</div></pre></td></tr></table></figure>
       
