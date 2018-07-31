@@ -94,18 +94,18 @@
 
 
 
-<meta name="description" content="创建目录：mkdir-p：递归创建文件夹 切换目录：cdcd ~与cd：进入家目录cd -：进入上次目录cd ..：进入上一级目录cd .：进入当前目录 删除文件：rmrmdir：不常用rm -r：会询问是否删除rm -rf：强制删除 剪切文件和改名：mv 复制命令：cp-r：复制目录-p：连带文件属性复制-d：若源文件是链接文件，则复制链接属性-a：相当于-pdr pwd：print worki">
+<meta name="description" content="创建目录：mkdir -p：递归创建文件夹  切换目录：cd cd ~与cd：进入家目录 cd -：进入上次目录 cd ..：进入上一级目录 cd .：进入当前目录  删除文件：rm rmdir：不常用 rm -r：会询问是否删除 rm -rf：强制删除  剪切文件和改名：mv复制命令：cp -r：复制目录 -p：连带文件属性复制 -d：若源文件是链接文件，则复制链接属性 -a：相当于-pdr">
 <meta name="keywords" content="linux">
 <meta property="og:type" content="article">
 <meta property="og:title" content="linux常用命令">
 <meta property="og:url" content="http://yoursite.com/2018/07/30/linux常用命令/index.html">
 <meta property="og:site_name" content="wxqblog">
-<meta property="og:description" content="创建目录：mkdir-p：递归创建文件夹 切换目录：cdcd ~与cd：进入家目录cd -：进入上次目录cd ..：进入上一级目录cd .：进入当前目录 删除文件：rmrmdir：不常用rm -r：会询问是否删除rm -rf：强制删除 剪切文件和改名：mv 复制命令：cp-r：复制目录-p：连带文件属性复制-d：若源文件是链接文件，则复制链接属性-a：相当于-pdr pwd：print worki">
+<meta property="og:description" content="创建目录：mkdir -p：递归创建文件夹  切换目录：cd cd ~与cd：进入家目录 cd -：进入上次目录 cd ..：进入上一级目录 cd .：进入当前目录  删除文件：rm rmdir：不常用 rm -r：会询问是否删除 rm -rf：强制删除  剪切文件和改名：mv复制命令：cp -r：复制目录 -p：连带文件属性复制 -d：若源文件是链接文件，则复制链接属性 -a：相当于-pdr">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-07-30T10:13:24.593Z">
+<meta property="og:updated_time" content="2018-07-31T02:12:28.066Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="linux常用命令">
-<meta name="twitter:description" content="创建目录：mkdir-p：递归创建文件夹 切换目录：cdcd ~与cd：进入家目录cd -：进入上次目录cd ..：进入上一级目录cd .：进入当前目录 删除文件：rmrmdir：不常用rm -r：会询问是否删除rm -rf：强制删除 剪切文件和改名：mv 复制命令：cp-r：复制目录-p：连带文件属性复制-d：若源文件是链接文件，则复制链接属性-a：相当于-pdr pwd：print worki">
+<meta name="twitter:description" content="创建目录：mkdir -p：递归创建文件夹  切换目录：cd cd ~与cd：进入家目录 cd -：进入上次目录 cd ..：进入上一级目录 cd .：进入当前目录  删除文件：rm rmdir：不常用 rm -r：会询问是否删除 rm -rf：强制删除  剪切文件和改名：mv复制命令：cp -r：复制目录 -p：连带文件属性复制 -d：若源文件是链接文件，则复制链接属性 -a：相当于-pdr">
 
 
 
@@ -334,17 +334,85 @@
       
 
       
-        <p>创建目录：mkdir<br>-p：递归创建文件夹</p>
-<p>切换目录：cd<br>cd ~与cd：进入家目录<br>cd -：进入上次目录<br>cd ..：进入上一级目录<br>cd .：进入当前目录</p>
-<p>删除文件：rm<br>rmdir：不常用<br>rm -r：会询问是否删除<br>rm -rf：强制删除</p>
-<p>剪切文件和改名：mv</p>
-<p>复制命令：cp<br>-r：复制目录<br>-p：连带文件属性复制<br>-d：若源文件是链接文件，则复制链接属性<br>-a：相当于-pdr</p>
-<p>pwd：print working directory显示当前路径</p>
-<p>查询目录中的内容：ls<br>-a：显示所有文件<br>-l：显示文件详细信息，可以用 ll 表示<br>-d：查看目录属性，目录本身<br>-h：人性化显示文件大小<br>-i：显示inode</p>
-<p>链接命令：ln<br>-a：创建软链接（一定要写绝对路径）<br>注：硬链接其实是同一个文件</p>
-<p>-rw-r–r–：<br>-：代表文件<br>d：代表目录<br>l：代表软链接文件<br>rw-                 r–                r–<br>u所有者        g所属组        o其他人</p>
-<p>三种权限：<br>r：读<br>w：写<br>x：执行</p>
-<p>常用目录中：<br>/：根目录<br>/bin、/sbin：命令保存目录<br>/usr：系统软件资源目录<br>/usr/bin：普通用户系统命令<br>/usr/sbin：超级用户系统命令<br>/boot：启动目录<br>/dev：硬件目录<br>/etc：系统默认配置文件<br>/home：普通用户<br>/root：超级用户<br>/lib：函数库<br>/media、/mnt、/misc：空目录（用于挂外接设备等）<br>/sys、/proc：不能操作，保存内存数据<br>/tmp：临时目录<br>/var：系统相关文档</p>
+        <h4 id="创建目录：mkdir"><a href="#创建目录：mkdir" class="headerlink" title="创建目录：mkdir"></a>创建目录：mkdir</h4><ul>
+<li>-p：递归创建文件夹</li>
+</ul>
+<h4 id="切换目录：cd"><a href="#切换目录：cd" class="headerlink" title="切换目录：cd"></a>切换目录：cd</h4><ul>
+<li>cd ~与cd：进入家目录</li>
+<li>cd -：进入上次目录</li>
+<li>cd ..：进入上一级目录</li>
+<li>cd .：进入当前目录</li>
+</ul>
+<h4 id="删除文件：rm"><a href="#删除文件：rm" class="headerlink" title="删除文件：rm"></a>删除文件：rm</h4><ul>
+<li>rmdir：不常用</li>
+<li>rm -r：会询问是否删除</li>
+<li>rm -rf：强制删除</li>
+</ul>
+<h4 id="剪切文件和改名：mv"><a href="#剪切文件和改名：mv" class="headerlink" title="剪切文件和改名：mv"></a>剪切文件和改名：mv</h4><h4 id="复制命令：cp"><a href="#复制命令：cp" class="headerlink" title="复制命令：cp"></a>复制命令：cp</h4><ul>
+<li>-r：复制目录</li>
+<li>-p：连带文件属性复制</li>
+<li>-d：若源文件是链接文件，则复制链接属性</li>
+<li>-a：相当于-pdr</li>
+</ul>
+<h4 id="显示当前路径：pwd"><a href="#显示当前路径：pwd" class="headerlink" title="显示当前路径：pwd"></a>显示当前路径：pwd</h4><ul>
+<li>print working directory</li>
+</ul>
+<h4 id="查询目录中的内容：ls"><a href="#查询目录中的内容：ls" class="headerlink" title="查询目录中的内容：ls"></a>查询目录中的内容：ls</h4><ul>
+<li>-a：显示所有文件</li>
+<li>-l：显示文件详细信息，可以用 ll 表示</li>
+<li>-d：查看目录属性，目录本身</li>
+<li>-h：人性化显示文件大小</li>
+<li>-i：显示inode</li>
+</ul>
+<h4 id="链接命令：ln"><a href="#链接命令：ln" class="headerlink" title="链接命令：ln"></a>链接命令：ln</h4><ul>
+<li>-a：创建软链接（一定要写绝对路径）</li>
+<li style="list-style: none"><input type="checkbox" checked> 注：硬链接其实是同一个文件</li>
+</ul>
+<h4 id="rw-r–r–："><a href="#rw-r–r–：" class="headerlink" title="-rw-r–r–："></a>-rw-r–r–：</h4><ul>
+<li>-：代表文件</li>
+<li>d：代表目录</li>
+<li>l：代表软链接文件</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>rw-</th>
+<th style="text-align:right">r–</th>
+<th style="text-align:center">r–</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>u所有者</td>
+<td style="text-align:right">g所属组</td>
+<td style="text-align:center">o其他人</td>
+</tr>
+</tbody>
+</table>
+<h4 id="三种权限："><a href="#三种权限：" class="headerlink" title="三种权限："></a>三种权限：</h4><blockquote>
+<ul>
+<li>r：读</li>
+<li>w：写</li>
+<li>x：执行</li>
+</ul>
+</blockquote>
+<h4 id="常用目录中："><a href="#常用目录中：" class="headerlink" title="常用目录中："></a>常用目录中：</h4><ul>
+<li>/：根目录</li>
+<li>/bin、/sbin：命令保存目录</li>
+<li>/usr：系统软件资源目录</li>
+<li>/usr/bin：普通用户系统命令</li>
+<li>/usr/sbin：超级用户系统命令</li>
+<li>/boot：启动目录</li>
+<li>/dev：硬件目录</li>
+<li>/etc：系统默认配置文件</li>
+<li>/home：普通用户</li>
+<li>/root：超级用户</li>
+<li>/lib：函数库</li>
+<li>/media、/mnt、/misc：空目录（用于挂外接设备等）</li>
+<li>/sys、/proc：不能操作，保存内存数据</li>
+<li>/tmp：临时目录</li>
+<li>/var：系统相关文档</li>
+</ul>
 
       
     </div>
@@ -435,8 +503,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/cartoon.jpg"
@@ -489,6 +566,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#创建目录：mkdir"><span class="nav-number">1.</span> <span class="nav-text">创建目录：mkdir</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#切换目录：cd"><span class="nav-number">2.</span> <span class="nav-text">切换目录：cd</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#删除文件：rm"><span class="nav-number">3.</span> <span class="nav-text">删除文件：rm</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#剪切文件和改名：mv"><span class="nav-number">4.</span> <span class="nav-text">剪切文件和改名：mv</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#复制命令：cp"><span class="nav-number">5.</span> <span class="nav-text">复制命令：cp</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#显示当前路径：pwd"><span class="nav-number">6.</span> <span class="nav-text">显示当前路径：pwd</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#查询目录中的内容：ls"><span class="nav-number">7.</span> <span class="nav-text">查询目录中的内容：ls</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#链接命令：ln"><span class="nav-number">8.</span> <span class="nav-text">链接命令：ln</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#rw-r–r–："><span class="nav-number">9.</span> <span class="nav-text">-rw-r–r–：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#三种权限："><span class="nav-number">10.</span> <span class="nav-text">三种权限：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#常用目录中："><span class="nav-number">11.</span> <span class="nav-text">常用目录中：</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
