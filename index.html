@@ -468,17 +468,54 @@
       
         
           
-            <p>创建目录：mkdir<br>-p：递归创建文件夹</p>
-<p>切换目录：cd<br>cd ~与cd：进入家目录<br>cd -：进入上次目录<br>cd ..：进入上一级目录<br>cd .：进入当前目录</p>
-<p>删除文件：rm<br>rmdir：不常用<br>rm -r：会询问是否删除<br>rm -rf：强制删除</p>
-<p>剪切文件和改名：mv</p>
-<p>复制命令：cp<br>-r：复制目录<br>-p：连带文件属性复制<br>-d：若源文件是链接文件，则复制链接属性<br>-a：相当于-pdr</p>
+            <h4 id="创建目录：mkdir"><a href="#创建目录：mkdir" class="headerlink" title="创建目录：mkdir"></a>创建目录：mkdir</h4><p>-p：递归创建文件夹</p>
+<h4 id="切换目录：cd"><a href="#切换目录：cd" class="headerlink" title="切换目录：cd"></a>切换目录：cd</h4><p>cd ~与cd：进入家目录<br>cd -：进入上次目录<br>cd ..：进入上一级目录<br>cd .：进入当前目录</p>
+<h4 id="删除文件：rm"><a href="#删除文件：rm" class="headerlink" title="删除文件：rm"></a>删除文件：rm</h4><p>rmdir：不常用<br>rm -r：会询问是否删除<br>rm -rf：强制删除</p>
+<h4 id="剪切文件和改名：mv"><a href="#剪切文件和改名：mv" class="headerlink" title="剪切文件和改名：mv"></a>剪切文件和改名：mv</h4><h4 id="复制命令：cp"><a href="#复制命令：cp" class="headerlink" title="复制命令：cp"></a>复制命令：cp</h4><p>-r：复制目录<br>-p：连带文件属性复制<br>-d：若源文件是链接文件，则复制链接属性<br>-a：相当于-pdr</p>
 <p>pwd：print working directory显示当前路径</p>
-<p>查询目录中的内容：ls<br>-a：显示所有文件<br>-l：显示文件详细信息，可以用 ll 表示<br>-d：查看目录属性，目录本身<br>-h：人性化显示文件大小<br>-i：显示inode</p>
-<p>链接命令：ln<br>-a：创建软链接（一定要写绝对路径）<br>注：硬链接其实是同一个文件</p>
-<p>-rw-r–r–：<br>-：代表文件<br>d：代表目录<br>l：代表软链接文件<br>rw-                 r–                r–<br>u所有者        g所属组        o其他人</p>
-<p>三种权限：<br>r：读<br>w：写<br>x：执行</p>
-<p>常用目录中：<br>/：根目录<br>/bin、/sbin：命令保存目录<br>/usr：系统软件资源目录<br>/usr/bin：普通用户系统命令<br>/usr/sbin：超级用户系统命令<br>/boot：启动目录<br>/dev：硬件目录<br>/etc：系统默认配置文件<br>/home：普通用户<br>/root：超级用户<br>/lib：函数库<br>/media、/mnt、/misc：空目录（用于挂外接设备等）<br>/sys、/proc：不能操作，保存内存数据<br>/tmp：临时目录<br>/var：系统相关文档</p>
+<h4 id="查询目录中的内容：ls"><a href="#查询目录中的内容：ls" class="headerlink" title="查询目录中的内容：ls"></a>查询目录中的内容：ls</h4><p>-a：显示所有文件<br>-l：显示文件详细信息，可以用 ll 表示<br>-d：查看目录属性，目录本身<br>-h：人性化显示文件大小<br>-i：显示inode</p>
+<h4 id="链接命令：ln"><a href="#链接命令：ln" class="headerlink" title="链接命令：ln"></a>链接命令：ln</h4><p>-a：创建软链接（一定要写绝对路径）<br>注：硬链接其实是同一个文件</p>
+<p>-rw-r–r–：<br>-：代表文件<br>d：代表目录<br>l：代表软链接文件</p>
+<table>
+<thead>
+<tr>
+<th>rw-</th>
+<th style="text-align:right">r–</th>
+<th style="text-align:center">r–</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>u所有者</td>
+<td style="text-align:right">g所属组</td>
+<td style="text-align:center">o其他人</td>
+</tr>
+</tbody>
+</table>
+<h4 id="三种权限："><a href="#三种权限：" class="headerlink" title="三种权限："></a>三种权限：</h4><blockquote>
+<ul>
+<li>r：读</li>
+<li>w：写</li>
+<li>x：执行</li>
+</ul>
+</blockquote>
+<h4 id="常用目录中："><a href="#常用目录中：" class="headerlink" title="常用目录中："></a>常用目录中：</h4><ul>
+<li>/：根目录</li>
+<li>/bin、/sbin：命令保存目录</li>
+<li>/usr：系统软件资源目录</li>
+<li>/usr/bin：普通用户系统命令</li>
+<li>/usr/sbin：超级用户系统命令</li>
+<li>/boot：启动目录</li>
+<li>/dev：硬件目录</li>
+<li>/etc：系统默认配置文件</li>
+<li>/home：普通用户</li>
+<li>/root：超级用户</li>
+<li>/lib：函数库</li>
+<li>/media、/mnt、/misc：空目录（用于挂外接设备等）</li>
+<li>/sys、/proc：不能操作，保存内存数据</li>
+<li>/tmp：临时目录</li>
+<li>/var：系统相关文档</li>
+</ul>
 
           
         
