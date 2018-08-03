@@ -94,18 +94,18 @@
 
 
 
-<meta name="description" content="四项确认 可联网 yum可使用 iptables关闭 iptables -L：查看 iptables -F：关闭 iptables -t nat -Liptables -t nat -F  getenforce关闭 getenforce：查看 setenforce 0：切换状态   安装必要依赖1yum -y install gcc gcc-c++ autoconf pcre pcre-devel">
+<meta name="description" content="四项确认 可联网 yum可使用 iptables关闭 iptables -L：查看 iptables -F：关闭 iptables -t nat -Liptables -t nat -F  注意：     centos从7开始默认用的是firewalld，这个是基于iptables的，虽然有iptables的核心，但是iptables的服务是没安装的。所以你只要停止firewalld服务即可sta">
 <meta name="keywords" content="linux,nginx">
 <meta property="og:type" content="article">
 <meta property="og:title" content="nginx">
 <meta property="og:url" content="http://yoursite.com/2018/07/30/nginx/index.html">
 <meta property="og:site_name" content="wxqblog">
-<meta property="og:description" content="四项确认 可联网 yum可使用 iptables关闭 iptables -L：查看 iptables -F：关闭 iptables -t nat -Liptables -t nat -F  getenforce关闭 getenforce：查看 setenforce 0：切换状态   安装必要依赖1yum -y install gcc gcc-c++ autoconf pcre pcre-devel">
+<meta property="og:description" content="四项确认 可联网 yum可使用 iptables关闭 iptables -L：查看 iptables -F：关闭 iptables -t nat -Liptables -t nat -F  注意：     centos从7开始默认用的是firewalld，这个是基于iptables的，虽然有iptables的核心，但是iptables的服务是没安装的。所以你只要停止firewalld服务即可sta">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-03T01:37:08.227Z">
+<meta property="og:updated_time" content="2018-08-03T08:18:08.251Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="nginx">
-<meta name="twitter:description" content="四项确认 可联网 yum可使用 iptables关闭 iptables -L：查看 iptables -F：关闭 iptables -t nat -Liptables -t nat -F  getenforce关闭 getenforce：查看 setenforce 0：切换状态   安装必要依赖1yum -y install gcc gcc-c++ autoconf pcre pcre-devel">
+<meta name="twitter:description" content="四项确认 可联网 yum可使用 iptables关闭 iptables -L：查看 iptables -F：关闭 iptables -t nat -Liptables -t nat -F  注意：     centos从7开始默认用的是firewalld，这个是基于iptables的，虽然有iptables的核心，但是iptables的服务是没安装的。所以你只要停止firewalld服务即可sta">
 
 
 
@@ -359,10 +359,12 @@
         <h3 id="四项确认"><a href="#四项确认" class="headerlink" title="四项确认"></a>四项确认</h3><ol>
 <li>可联网</li>
 <li><strong>yum</strong>可使用</li>
-<li><p><strong>iptables</strong>关闭<br> <strong>iptables -L：</strong>查看<br> <strong>iptables -F：</strong>关闭<br> <strong>iptables -t nat -L</strong><br><strong>iptables -t nat -F</strong></p>
-</li>
-<li><p><strong>getenforce</strong>关闭<br> <strong>getenforce：</strong>查看<br> <strong>setenforce 0：</strong>切换状态</p>
-</li>
+<li><strong>iptables</strong>关闭<br> <strong>iptables -L：</strong>查看<br> <strong>iptables -F：</strong>关闭<br> <strong>iptables -t nat -L</strong><br><strong>iptables -t nat -F</strong></li>
+</ol>
+<p><strong>注意：</strong></p>
+<p></p><p style="color: #fl0;"><br>    centos从7开始默认用的是firewalld，这个是基于iptables的，虽然有iptables的核心，但是iptables的服务是没安装的。所以你只要停止firewalld服务即可<br></p><br><figure class="highlight plain"><figcaption><span>status firewalld.service       查看service状态</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">systemctl stop firewalld.service        关闭此服务</div><div class="line">systemctl disable firewalld.service     移除此服务</div></pre></td></tr></table></figure><p></p>
+<ol>
+<li><strong>getenforce</strong>关闭<br> <strong>getenforce：</strong>查看<br> <strong>setenforce 0：</strong>切换状态</li>
 </ol>
 <h3 id="安装必要依赖"><a href="#安装必要依赖" class="headerlink" title="安装必要依赖"></a>安装必要依赖</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yum -y install gcc gcc-c++ autoconf pcre pcre-devel make automake</div></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yum -y install wget httpd-tools vim</div></pre></td></tr></table></figure>
