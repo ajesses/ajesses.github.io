@@ -94,19 +94,19 @@
 
 
 
-<meta name="description" content="生成ssh1234cd ..\.ssh\         windows上的.ssh一般在用户目录下ssh-keygen -t rsa -C &amp;quot;邮箱名&amp;quot;生成2个：github_rsa和gitee_rsa(默认为id_rsa)">
+<meta name="description" content="生成ssh1234$ cd ..\.ssh\         windows上的.ssh一般在用户目录下$ ssh-keygen -t rsa -C &amp;quot;邮箱名&amp;quot;生成2个：github_rsa和gitee_rsa(默认为id_rsa) 这里，我已经生成过了，提示会覆盖一般会要求设置密码（可以为空） 新建config文件12$ touch config        (在.ssh文">
 <meta name="keywords" content="Git,SSH">
 <meta property="og:type" content="article">
 <meta property="og:title" content="一台同时连接github和码云">
 <meta property="og:url" content="http://yoursite.com/2018/08/14/一台同时连接github和码云/index.html">
 <meta property="og:site_name" content="wxqblog">
-<meta property="og:description" content="生成ssh1234cd ..\.ssh\         windows上的.ssh一般在用户目录下ssh-keygen -t rsa -C &amp;quot;邮箱名&amp;quot;生成2个：github_rsa和gitee_rsa(默认为id_rsa)">
+<meta property="og:description" content="生成ssh1234$ cd ..\.ssh\         windows上的.ssh一般在用户目录下$ ssh-keygen -t rsa -C &amp;quot;邮箱名&amp;quot;生成2个：github_rsa和gitee_rsa(默认为id_rsa) 这里，我已经生成过了，提示会覆盖一般会要求设置密码（可以为空） 新建config文件12$ touch config        (在.ssh文">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/images/ssh/ssh-create.png">
-<meta property="og:updated_time" content="2018-08-15T07:17:46.705Z">
+<meta property="og:updated_time" content="2018-08-15T07:50:22.145Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="一台同时连接github和码云">
-<meta name="twitter:description" content="生成ssh1234cd ..\.ssh\         windows上的.ssh一般在用户目录下ssh-keygen -t rsa -C &amp;quot;邮箱名&amp;quot;生成2个：github_rsa和gitee_rsa(默认为id_rsa)">
+<meta name="twitter:description" content="生成ssh1234$ cd ..\.ssh\         windows上的.ssh一般在用户目录下$ ssh-keygen -t rsa -C &amp;quot;邮箱名&amp;quot;生成2个：github_rsa和gitee_rsa(默认为id_rsa) 这里，我已经生成过了，提示会覆盖一般会要求设置密码（可以为空） 新建config文件12$ touch config        (在.ssh文">
 <meta name="twitter:image" content="http://yoursite.com/images/ssh/ssh-create.png">
 
 
@@ -374,9 +374,13 @@
       
 
       
-        <h4 id="生成ssh"><a href="#生成ssh" class="headerlink" title="生成ssh"></a>生成ssh</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">cd ..\.ssh\         windows上的.ssh一般在用户目录下</div><div class="line">ssh-keygen -t rsa -C &quot;邮箱名&quot;</div><div class="line"></div><div class="line">生成2个：github_rsa和gitee_rsa(默认为id_rsa)</div></pre></td></tr></table></figure>
-<p><img src="/images/ssh/ssh-create.png" alt="ssh生成演示"></p>
-
+        <h4 id="生成ssh"><a href="#生成ssh" class="headerlink" title="生成ssh"></a>生成ssh</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ cd ..\.ssh\         windows上的.ssh一般在用户目录下</div><div class="line">$ ssh-keygen -t rsa -C &quot;邮箱名&quot;</div><div class="line"></div><div class="line">生成2个：github_rsa和gitee_rsa(默认为id_rsa)</div></pre></td></tr></table></figure>
+<p><img src="/images/ssh/ssh-create.png" alt="ssh生成演示"><br>这里，我已经生成过了，提示会覆盖<br>一般会要求设置密码（可以为空）</p>
+<h4 id="新建config文件"><a href="#新建config文件" class="headerlink" title="新建config文件"></a>新建config文件</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ touch config        (在.ssh文件夹里)</div><div class="line">$ vim config</div></pre></td></tr></table></figure>
+<p>添加下列代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">Host github.com</div><div class="line">HostName github.com</div><div class="line">IdentityFile ~/.ssh/github_rsa</div><div class="line">  </div><div class="line">Host gitee.com</div><div class="line">HostName gitee.com</div><div class="line">IdentityFile ~/.ssh/gitee_rsa</div></pre></td></tr></table></figure></p>
+<h4 id="把两个SSH-key的密钥加入ssh-的-agent中去"><a href="#把两个SSH-key的密钥加入ssh-的-agent中去" class="headerlink" title="把两个SSH key的密钥加入ssh 的 agent中去"></a>把两个SSH key的密钥加入ssh 的 agent中去</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ ssh-add -D</div><div class="line">$ ssh-add github_rsa</div><div class="line">$ ssh-add gitee_rsa</div></pre></td></tr></table></figure>
+<p>若执行 <strong>ssh-add -D</strong> 是出现这个错误:<strong>Could not open a connection to your authentication agent</strong>，则先执行如下命令即可：<strong>ssh-agent bash</strong></p>
+<h4 id="测试连接"><a href="#测试连接" class="headerlink" title="测试连接"></a>测试连接</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ ssh -T git@github.com</div><div class="line">$ ssh -T git@gitee.com</div></pre></td></tr></table></figure>
       
     </div>
     
@@ -577,7 +581,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#生成ssh"><span class="nav-number">1.</span> <span class="nav-text">生成ssh</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#生成ssh"><span class="nav-number">1.</span> <span class="nav-text">生成ssh</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#新建config文件"><span class="nav-number">2.</span> <span class="nav-text">新建config文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#把两个SSH-key的密钥加入ssh-的-agent中去"><span class="nav-number">3.</span> <span class="nav-text">把两个SSH key的密钥加入ssh 的 agent中去</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#测试连接"><span class="nav-number">4.</span> <span class="nav-text">测试连接</span></a></li></ol></div>
             
 
           </div>
