@@ -103,7 +103,7 @@
 <meta property="og:description" content="生成ssh1234$ cd ..\.ssh\         windows上的.ssh一般在用户目录下$ ssh-keygen -t rsa -C &amp;quot;邮箱名&amp;quot;生成2个：github_rsa和gitee_rsa(默认为id_rsa) 这里，我已经生成过了，提示会覆盖一般会要求设置密码（可以为空） 新建config文件12$ touch config        (在.ssh文">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/images/ssh/ssh-create.png">
-<meta property="og:updated_time" content="2018-08-23T05:55:57.335Z">
+<meta property="og:updated_time" content="2018-08-23T05:58:43.040Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="一台同时连接github和码云">
 <meta name="twitter:description" content="生成ssh1234$ cd ..\.ssh\         windows上的.ssh一般在用户目录下$ ssh-keygen -t rsa -C &amp;quot;邮箱名&amp;quot;生成2个：github_rsa和gitee_rsa(默认为id_rsa) 这里，我已经生成过了，提示会覆盖一般会要求设置密码（可以为空） 新建config文件12$ touch config        (在.ssh文">
@@ -380,7 +380,7 @@
 <p>添加下列代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">Host github.com</div><div class="line">HostName github.com</div><div class="line">IdentityFile ~/.ssh/github_rsa</div><div class="line">  </div><div class="line">Host gitee.com</div><div class="line">HostName gitee.com</div><div class="line">IdentityFile ~/.ssh/gitee_rsa</div></pre></td></tr></table></figure></p>
 <h4 id="把两个SSH-key的密钥加入ssh-的-agent中去"><a href="#把两个SSH-key的密钥加入ssh-的-agent中去" class="headerlink" title="把两个SSH key的密钥加入ssh 的 agent中去"></a>把两个SSH key的密钥加入ssh 的 agent中去</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ ssh-add -D</div><div class="line">$ ssh-add github_rsa</div><div class="line">$ ssh-add gitee_rsa</div></pre></td></tr></table></figure>
 <p>若执行 <strong>ssh-add -D</strong> 是出现这个错误:<strong>Could not open a connection to your authentication agent</strong>，则先执行如下命令即可：<strong>ssh-agent bash</strong></p>
-<p>若执行 <strong>git push origin master</strong> 出现这个错误 <strong>Permission denied(publickey).</strong>，则执行 <strong>ssh-add ~/.ssh/your_publickey</strong>；若还出现 <strong>Could not open a connection to your authentication agent.</strong>，则执行 <strong>eval <code>ssh-agent  -s</code></strong>，然后在执行 <strong>ssh-add</strong></p>
+<p>若执行 <strong>git push origin master</strong> 出现这个错误 <strong>Permission denied(publickey).</strong>，则执行 <strong>ssh-add ~/.ssh/your_publickey</strong>；若还出现 <strong>Could not open a connection to your authentication agent.</strong>，则执行 (eval <code>ssh-agent  -s</code>)，然后在执行 <strong>ssh-add</strong></p>
 <h4 id="测试连接"><a href="#测试连接" class="headerlink" title="测试连接"></a>测试连接</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ ssh -T git@github.com</div><div class="line">$ ssh -T git@gitee.com</div></pre></td></tr></table></figure>
       
     </div>
