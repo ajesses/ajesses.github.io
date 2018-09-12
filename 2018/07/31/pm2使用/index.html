@@ -102,7 +102,7 @@
 <meta property="og:site_name" content="wxqblog">
 <meta property="og:description" content="安装1npm install pm2 -g web查看1npm install pm2-web -g pm2使用1pm2 start [filename].js    运行一个js文件 1pm2 start npm --watch --name [aliasname] -- run start    运行node项目(npm run dev) 1pm2 list    查看已启用项目 123pm2">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-12T06:07:15.177Z">
+<meta property="og:updated_time" content="2018-09-12T07:39:18.348Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="pm2使用">
 <meta name="twitter:description" content="安装1npm install pm2 -g web查看1npm install pm2-web -g pm2使用1pm2 start [filename].js    运行一个js文件 1pm2 start npm --watch --name [aliasname] -- run start    运行node项目(npm run dev) 1pm2 list    查看已启用项目 123pm2">
@@ -372,6 +372,8 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pm2 logs    显示所有进程日志</div></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pm2 monit   监视每个node进程的CPU和内存的使用情况</div></pre></td></tr></table></figure>
 <h4 id="pm2-logs日志存放位置（linux-centos）"><a href="#pm2-logs日志存放位置（linux-centos）" class="headerlink" title="pm2 logs日志存放位置（linux-centos）"></a>pm2 logs日志存放位置（linux-centos）</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cd /root/.pm2/logs/</div></pre></td></tr></table></figure>
+<p><strong>注意：若pm2启动express程序一直重启，可能是–watch的问题</strong></p>
+
       
     </div>
     
