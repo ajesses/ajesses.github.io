@@ -94,19 +94,19 @@
 
 
 
-<meta name="description" content="如何让电脑不能上网但又不影响局域网的连接呢?修改配置1vim /etc/sysconfig/network-scripts/ifcfg-enp0s25 把 GATEWAY=192.168.0.1和 DNS的配置删除 1vim /etc/resolv.conf 把nameserver的配置删除 查看1netstat -r">
+<meta name="description" content="如何让电脑不能上网但又不影响局域网的连接呢?修改配置1vim /etc/sysconfig/network-scripts/ifcfg-enp0s25 把 GATEWAY=192.168.0.1和 DNS的配置删除 1vim /etc/resolv.conf 把nameserver的配置删除 查看1netstat -r 重启网卡1service network restart">
 <meta name="keywords" content="Linux">
 <meta property="og:type" content="article">
 <meta property="og:title" content="linux设置禁用外网，只连局域网">
 <meta property="og:url" content="http://yoursite.com/2018/11/02/linux设置禁用外网，只连局域网/index.html">
 <meta property="og:site_name" content="wxqblog">
-<meta property="og:description" content="如何让电脑不能上网但又不影响局域网的连接呢?修改配置1vim /etc/sysconfig/network-scripts/ifcfg-enp0s25 把 GATEWAY=192.168.0.1和 DNS的配置删除 1vim /etc/resolv.conf 把nameserver的配置删除 查看1netstat -r">
+<meta property="og:description" content="如何让电脑不能上网但又不影响局域网的连接呢?修改配置1vim /etc/sysconfig/network-scripts/ifcfg-enp0s25 把 GATEWAY=192.168.0.1和 DNS的配置删除 1vim /etc/resolv.conf 把nameserver的配置删除 查看1netstat -r 重启网卡1service network restart">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/images/network/network.png">
-<meta property="og:updated_time" content="2018-11-02T07:10:58.556Z">
+<meta property="og:updated_time" content="2018-11-02T07:16:04.009Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="linux设置禁用外网，只连局域网">
-<meta name="twitter:description" content="如何让电脑不能上网但又不影响局域网的连接呢?修改配置1vim /etc/sysconfig/network-scripts/ifcfg-enp0s25 把 GATEWAY=192.168.0.1和 DNS的配置删除 1vim /etc/resolv.conf 把nameserver的配置删除 查看1netstat -r">
+<meta name="twitter:description" content="如何让电脑不能上网但又不影响局域网的连接呢?修改配置1vim /etc/sysconfig/network-scripts/ifcfg-enp0s25 把 GATEWAY=192.168.0.1和 DNS的配置删除 1vim /etc/resolv.conf 把nameserver的配置删除 查看1netstat -r 重启网卡1service network restart">
 <meta name="twitter:image" content="http://yoursite.com/images/network/network.png">
 
 
@@ -368,7 +368,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vim /etc/resolv.conf</div></pre></td></tr></table></figure>
 <p>把nameserver的配置删除</p>
 <h4 id="查看"><a href="#查看" class="headerlink" title="查看"></a>查看</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">netstat -r</div></pre></td></tr></table></figure>
-
+<h4 id="重启网卡"><a href="#重启网卡" class="headerlink" title="重启网卡"></a>重启网卡</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">service network restart</div></pre></td></tr></table></figure>
       
     </div>
     
@@ -567,7 +567,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#如何让电脑不能上网但又不影响局域网的连接呢"><span class="nav-number">1.</span> <span class="nav-text">如何让电脑不能上网但又不影响局域网的连接呢?</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#修改配置"><span class="nav-number">1.1.</span> <span class="nav-text">修改配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#查看"><span class="nav-number">1.2.</span> <span class="nav-text">查看</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#如何让电脑不能上网但又不影响局域网的连接呢"><span class="nav-number">1.</span> <span class="nav-text">如何让电脑不能上网但又不影响局域网的连接呢?</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#修改配置"><span class="nav-number">1.1.</span> <span class="nav-text">修改配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#查看"><span class="nav-number">1.2.</span> <span class="nav-text">查看</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#重启网卡"><span class="nav-number">1.3.</span> <span class="nav-text">重启网卡</span></a></li></ol></li></ol></div>
             
 
           </div>
