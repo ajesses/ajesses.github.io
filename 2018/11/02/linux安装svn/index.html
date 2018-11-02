@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="代码小屋, JesseWang" />
+  <meta name="keywords" content="Linux,svn," />
 
 
 
@@ -94,17 +94,18 @@
 
 
 
-<meta name="description" content="Eat to live, but do not live to eat!">
-<meta property="og:type" content="website">
-<meta property="og:title" content="第二篇">
-<meta property="og:url" content="http://yoursite.com/第二篇/index.html">
+<meta name="description" content="安装 检查安装 1rpm -qa subversion  安装 1yum install httpd httpd-devel subversion mod_dav_svn mod_auth_mysql  验证安装 1234cd /etc/httpd/modulesls | grep svnmod_authz_svn.somod_dav_svn.so  查看版本 1svnserve --versio">
+<meta name="keywords" content="Linux,svn">
+<meta property="og:type" content="article">
+<meta property="og:title" content="linux安装svn">
+<meta property="og:url" content="http://yoursite.com/2018/11/02/linux安装svn/index.html">
 <meta property="og:site_name" content="wxqblog">
-<meta property="og:description" content="Eat to live, but do not live to eat!">
+<meta property="og:description" content="安装 检查安装 1rpm -qa subversion  安装 1yum install httpd httpd-devel subversion mod_dav_svn mod_auth_mysql  验证安装 1234cd /etc/httpd/modulesls | grep svnmod_authz_svn.somod_dav_svn.so  查看版本 1svnserve --versio">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-08-14T09:06:27.942Z">
+<meta property="og:updated_time" content="2018-11-02T06:47:21.879Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="第二篇">
-<meta name="twitter:description" content="Eat to live, but do not live to eat!">
+<meta name="twitter:title" content="linux安装svn">
+<meta name="twitter:description" content="安装 检查安装 1rpm -qa subversion  安装 1yum install httpd httpd-devel subversion mod_dav_svn mod_auth_mysql  验证安装 1234cd /etc/httpd/modulesls | grep svnmod_authz_svn.somod_dav_svn.so  查看版本 1svnserve --versio">
 
 
 
@@ -133,13 +134,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/第二篇/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/11/02/linux安装svn/"/>
 
 
 
 
 
-  <title>第二篇 | wxqblog</title>
+  <title>linux安装svn | wxqblog</title>
   
 
 
@@ -254,33 +255,193 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/02/linux安装svn/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jesse">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/cartoon.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="wxqblog">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">第二篇</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
+          <h1 class="post-title" itemprop="name headline">linux安装svn</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-02T14:17:15+08:00">
+                2018-11-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-      </div>
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><ul>
+<li><p>检查安装</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">rpm -qa subversion</div></pre></td></tr></table></figure>
+</li>
+<li><p>安装</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yum install httpd httpd-devel subversion mod_dav_svn mod_auth_mysql</div></pre></td></tr></table></figure>
+</li>
+<li><p>验证安装</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">cd /etc/httpd/modules</div><div class="line">ls | grep svn</div><div class="line">mod_authz_svn.so</div><div class="line">mod_dav_svn.so</div></pre></td></tr></table></figure>
+</li>
+<li><p>查看版本</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">svnserve --version</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="代码库创建"><a href="#代码库创建" class="headerlink" title="代码库创建"></a>代码库创建</h4><ul>
+<li>待写</li>
+</ul>
+<h4 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">svnserve -d -r /opt/svn/repositories</div></pre></td></tr></table></figure>
+<h4 id="查看进程"><a href="#查看进程" class="headerlink" title="查看进程"></a>查看进程</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">ps -ef|grep svn|grep -v grep</div><div class="line"></div><div class="line">netstat -ln |grep 3690</div></pre></td></tr></table></figure>
+<p><strong>注意：linux重启后，svn需要重启才能用</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">kill -9 [进程号]</div><div class="line"></div><div class="line">svnserve -d -r [安装目录]</div></pre></td></tr></table></figure></p>
+<p><strong>(到/usr/bin/目录下执行svnserve -d -r /home/svn/进行启动)</strong></p>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Linux/" rel="tag"># Linux</a>
+          
+            <a href="/tags/svn/" rel="tag"># svn</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/10/19/window-cmd常用命令/" rel="next" title="window cmd常用命令">
+                <i class="fa fa-chevron-left"></i> window cmd常用命令
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -313,8 +474,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/cartoon.jpg"
@@ -403,6 +573,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装"><span class="nav-number">1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#代码库创建"><span class="nav-number">2.</span> <span class="nav-text">代码库创建</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#启动"><span class="nav-number">3.</span> <span class="nav-text">启动</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#查看进程"><span class="nav-number">4.</span> <span class="nav-text">查看进程</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -539,10 +725,10 @@
   
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
 
-  
+
 
   
 
