@@ -94,19 +94,19 @@
 
 
 
-<meta name="description" content="修改配置1vim /etc/sysconfig/network-scripts/ifcfg-enp0s25 把 GATEWAY=192.168.0.1和 DNS的配置删除 1vim /etc/resolv.conf 把nameserver的配置删除 查看1netstat -r">
+<meta name="description" content="如何让电脑不能上网但又不影响局域网的连接呢?修改配置1vim /etc/sysconfig/network-scripts/ifcfg-enp0s25 把 GATEWAY=192.168.0.1和 DNS的配置删除 1vim /etc/resolv.conf 把nameserver的配置删除 查看1netstat -r">
 <meta name="keywords" content="Linux">
 <meta property="og:type" content="article">
 <meta property="og:title" content="linux设置禁用外网，只连局域网">
 <meta property="og:url" content="http://yoursite.com/2018/11/02/linux设置禁用外网，只连局域网/index.html">
 <meta property="og:site_name" content="wxqblog">
-<meta property="og:description" content="修改配置1vim /etc/sysconfig/network-scripts/ifcfg-enp0s25 把 GATEWAY=192.168.0.1和 DNS的配置删除 1vim /etc/resolv.conf 把nameserver的配置删除 查看1netstat -r">
+<meta property="og:description" content="如何让电脑不能上网但又不影响局域网的连接呢?修改配置1vim /etc/sysconfig/network-scripts/ifcfg-enp0s25 把 GATEWAY=192.168.0.1和 DNS的配置删除 1vim /etc/resolv.conf 把nameserver的配置删除 查看1netstat -r">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/images/network/network.png">
-<meta property="og:updated_time" content="2018-11-02T07:09:09.304Z">
+<meta property="og:updated_time" content="2018-11-02T07:10:58.556Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="linux设置禁用外网，只连局域网">
-<meta name="twitter:description" content="修改配置1vim /etc/sysconfig/network-scripts/ifcfg-enp0s25 把 GATEWAY=192.168.0.1和 DNS的配置删除 1vim /etc/resolv.conf 把nameserver的配置删除 查看1netstat -r">
+<meta name="twitter:description" content="如何让电脑不能上网但又不影响局域网的连接呢?修改配置1vim /etc/sysconfig/network-scripts/ifcfg-enp0s25 把 GATEWAY=192.168.0.1和 DNS的配置删除 1vim /etc/resolv.conf 把nameserver的配置删除 查看1netstat -r">
 <meta name="twitter:image" content="http://yoursite.com/images/network/network.png">
 
 
@@ -363,7 +363,7 @@
       
 
       
-        <h4 id="修改配置"><a href="#修改配置" class="headerlink" title="修改配置"></a>修改配置</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vim /etc/sysconfig/network-scripts/ifcfg-enp0s25</div></pre></td></tr></table></figure>
+        <h3 id="如何让电脑不能上网但又不影响局域网的连接呢"><a href="#如何让电脑不能上网但又不影响局域网的连接呢" class="headerlink" title="如何让电脑不能上网但又不影响局域网的连接呢?"></a>如何让电脑不能上网但又不影响局域网的连接呢?</h3><h4 id="修改配置"><a href="#修改配置" class="headerlink" title="修改配置"></a>修改配置</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vim /etc/sysconfig/network-scripts/ifcfg-enp0s25</div></pre></td></tr></table></figure>
 <p><img src="/images/network/network.png" alt="network配置"><br>把 <strong>GATEWAY=192.168.0.1</strong>和 <strong>DNS</strong>的配置删除</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vim /etc/resolv.conf</div></pre></td></tr></table></figure>
 <p>把nameserver的配置删除</p>
@@ -567,7 +567,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#修改配置"><span class="nav-number">1.</span> <span class="nav-text">修改配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#查看"><span class="nav-number">2.</span> <span class="nav-text">查看</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#如何让电脑不能上网但又不影响局域网的连接呢"><span class="nav-number">1.</span> <span class="nav-text">如何让电脑不能上网但又不影响局域网的连接呢?</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#修改配置"><span class="nav-number">1.1.</span> <span class="nav-text">修改配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#查看"><span class="nav-number">1.2.</span> <span class="nav-text">查看</span></a></li></ol></li></ol></div>
             
 
           </div>
