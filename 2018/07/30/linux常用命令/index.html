@@ -102,7 +102,7 @@
 <meta property="og:site_name" content="wxqblog">
 <meta property="og:description" content="常用文件命令linux重启 shutdown halt  id：查看登录用户信息改密 passwd  创建目录：mkdir -p：递归创建文件夹  切换目录：cd cd ~与 cd：进入家目录 cd -：进入上次目录 cd ..：进入上一级目录 cd .：进入当前目录  删除文件：rm rmdir：不常用 rm -r：会询问是否删除 rm -rf：强制删除  剪切文件和改名：mv复制命令：cp -">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-10T10:27:53.858Z">
+<meta property="og:updated_time" content="2018-12-18T12:40:24.169Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="linux常用命令">
 <meta name="twitter:description" content="常用文件命令linux重启 shutdown halt  id：查看登录用户信息改密 passwd  创建目录：mkdir -p：递归创建文件夹  切换目录：cd cd ~与 cd：进入家目录 cd -：进入上次目录 cd ..：进入上一级目录 cd .：进入当前目录  删除文件：rm rmdir：不常用 rm -r：会询问是否删除 rm -rf：强制删除  剪切文件和改名：mv复制命令：cp -">
@@ -459,10 +459,10 @@
 <h4 id="查看网段和路由"><a href="#查看网段和路由" class="headerlink" title="查看网段和路由"></a>查看网段和路由</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> netstat -rn  或者  netstat -r -anv  或者 route</div></pre></td></tr></table></figure>
 <h4 id="查看端口占用"><a href="#查看端口占用" class="headerlink" title="查看端口占用"></a>查看端口占用</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> netstat -luntp|grep 443</div></pre></td></tr></table></figure>
 <h4 id="查看linux外网IP"><a href="#查看linux外网IP" class="headerlink" title="查看linux外网IP"></a>查看linux外网IP</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> curl icanhazip.com</div><div class="line"><span class="meta">$</span> curl ifconfig.me</div><div class="line"><span class="meta">$</span> curl curlmyip.com</div><div class="line"><span class="meta">$</span> curl ip.appspot.com</div><div class="line"><span class="meta">$</span> curl ipinfo.io/ip</div><div class="line"><span class="meta">$</span> curl ipecho.net/plain</div><div class="line"><span class="meta">$</span> curl www.trackip.net/i</div></pre></td></tr></table></figure>
-<h4 id="查看当前用户名"><a href="#查看当前用户名" class="headerlink" title="查看当前用户名"></a>查看当前用户名</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> users</div><div class="line"><span class="meta">$</span> whoami</div><div class="line"><span class="meta">$</span> id -un</div><div class="line"><span class="meta">$</span> printenv USER</div></pre></td></tr></table></figure>
+<h4 id="查看当前用户名"><a href="#查看当前用户名" class="headerlink" title="查看当前用户名"></a>查看当前用户名</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> users</div><div class="line"><span class="meta">$</span> whoami</div><div class="line"><span class="meta">$</span> id -un</div><div class="line"><span class="meta">$</span> printenv USER</div><div class="line">&lt;!-- 增加用户 --&gt;</div><div class="line"><span class="meta">$</span> useradd [用户名]</div><div class="line"><span class="meta">$</span> passwd [用户名]</div></pre></td></tr></table></figure>
 <h4 id="查看环境变量"><a href="#查看环境变量" class="headerlink" title="查看环境变量"></a>查看环境变量</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> env</div><div class="line"><span class="meta">$</span> printenv [环境名]   // 可以打印出env的参数</div></pre></td></tr></table></figure>
 <h4 id="配置静态IP"><a href="#配置静态IP" class="headerlink" title="配置静态IP"></a>配置静态IP</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> cd /etc/sysconfig/network-scripts/</div><div class="line">vim [配置文件名]</div></pre></td></tr></table></figure>
-<h4 id="系统安装时centos默认的发行版本信息"><a href="#系统安装时centos默认的发行版本信息" class="headerlink" title="系统安装时centos默认的发行版本信息"></a>系统安装时centos默认的发行版本信息</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> uname -a</div><div class="line"></div><div class="line"><span class="meta">$</span> cat /proc/version</div><div class="line"></div><div class="line"><span class="meta">$</span> cat /etc/redhat-release</div></pre></td></tr></table></figure>
+<h4 id="系统安装时centos默认的发行版本信息"><a href="#系统安装时centos默认的发行版本信息" class="headerlink" title="系统安装时centos默认的发行版本信息"></a>系统安装时centos默认的发行版本信息</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> uname -a</div><div class="line"></div><div class="line"><span class="meta">$</span> cat /proc/version</div><div class="line"></div><div class="line"><span class="meta">$</span> cat /etc/redhat-release</div><div class="line"></div><div class="line">&lt;!-- 查看当前内核版本 --&gt;</div><div class="line"><span class="meta">$</span> uname -r</div><div class="line"></div><div class="line"><span class="meta">$</span> uname -s</div><div class="line"><span class="meta">$</span> uname -m</div></pre></td></tr></table></figure>
 <h4 id="查看包是否安装"><a href="#查看包是否安装" class="headerlink" title="查看包是否安装"></a>查看包是否安装</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> rpm -qa|grep [包名]</div></pre></td></tr></table></figure>
       
     </div>
@@ -582,7 +582,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">17</span>
+                <span class="site-state-item-count">18</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -593,7 +593,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-count">11</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -604,7 +604,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-count">14</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
