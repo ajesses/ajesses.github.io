@@ -94,22 +94,22 @@
 
 
 
-<meta name="description" content="安装 http://www.runoob.com/docker/centos-docker-install.html  常用命令 运行：docker run [image]  查看镜像： 12$ docker images$ docker images -a  当前正在运行的容器: docker ps  停止容器：docker stop [containerId]   例子:12# -p: 端口映">
+<meta name="description" content="安装http://www.runoob.com/docker/centos-docker-install.html 常用命令运行：docker run [image] 查看镜像：12$ docker images$ docker images -a 当前正在运行的容器: docker ps 停止容器：docker stop [containerId] 例子:12# -p: 端口映射; -d: 直接">
 <meta name="keywords" content="Docker">
 <meta property="og:type" content="article">
 <meta property="og:title" content="docker使用">
 <meta property="og:url" content="http://yoursite.com/2018/12/18/docker使用/index.html">
 <meta property="og:site_name" content="wxqblog">
-<meta property="og:description" content="安装 http://www.runoob.com/docker/centos-docker-install.html  常用命令 运行：docker run [image]  查看镜像： 12$ docker images$ docker images -a  当前正在运行的容器: docker ps  停止容器：docker stop [containerId]   例子:12# -p: 端口映">
+<meta property="og:description" content="安装http://www.runoob.com/docker/centos-docker-install.html 常用命令运行：docker run [image] 查看镜像：12$ docker images$ docker images -a 当前正在运行的容器: docker ps 停止容器：docker stop [containerId] 例子:12# -p: 端口映射; -d: 直接">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/images/docker/docker_01.png">
 <meta property="og:image" content="http://yoursite.com/images/docker/docker_02.png">
 <meta property="og:image" content="http://yoursite.com/images/docker/dockerfile_01.png">
 <meta property="og:image" content="http://yoursite.com/images/docker/dockerfile_02.png">
-<meta property="og:updated_time" content="2018-12-19T03:37:40.804Z">
+<meta property="og:updated_time" content="2018-12-20T08:56:49.388Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="docker使用">
-<meta name="twitter:description" content="安装 http://www.runoob.com/docker/centos-docker-install.html  常用命令 运行：docker run [image]  查看镜像： 12$ docker images$ docker images -a  当前正在运行的容器: docker ps  停止容器：docker stop [containerId]   例子:12# -p: 端口映">
+<meta name="twitter:description" content="安装http://www.runoob.com/docker/centos-docker-install.html 常用命令运行：docker run [image] 查看镜像：12$ docker images$ docker images -a 当前正在运行的容器: docker ps 停止容器：docker stop [containerId] 例子:12# -p: 端口映射; -d: 直接">
 <meta name="twitter:image" content="http://yoursite.com/images/docker/docker_01.png">
 
 
@@ -366,38 +366,21 @@
       
 
       
-        <h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><blockquote>
-<p><a href="http://www.runoob.com/docker/centos-docker-install.html" target="_blank" rel="external">http://www.runoob.com/docker/centos-docker-install.html</a></p>
-</blockquote>
-<h4 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h4><ol>
-<li><p>运行：<strong>docker run [image]</strong></p>
-</li>
-<li><p>查看镜像：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> docker images</div><div class="line"><span class="meta">$</span> docker images -a</div></pre></td></tr></table></figure>
-</li>
-<li><p>当前正在运行的容器: <strong>docker ps</strong></p>
-</li>
-<li><p>停止容器：<strong>docker stop [containerId]</strong></p>
-</li>
-</ol>
+        <h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p><a href="http://www.runoob.com/docker/centos-docker-install.html" target="_blank" rel="external">http://www.runoob.com/docker/centos-docker-install.html</a></p>
+<h4 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h4><p>运行：<strong>docker run [image]</strong></p>
+<p>查看镜像：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> docker images</div><div class="line"><span class="meta">$</span> docker images -a</div></pre></td></tr></table></figure></p>
+<p>当前正在运行的容器: <strong>docker ps</strong></p>
+<p>停止容器：<strong>docker stop [containerId]</strong></p>
 <p>例子:<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> -p: 端口映射; -d: 直接返回，container作为守护进程运行</div><div class="line"><span class="meta">$</span> docker run -p [映射端口号]:80 -d nginx</div></pre></td></tr></table></figure></p>
-<ol>
-<li><p>复制文件：<strong>docker cp [文件名] [containerId]://[path路径]</strong></p>
-</li>
-<li><p>移除image：<strong>docker rmi [imageId]</strong></p>
-</li>
-<li><p>容器历史记录：<strong>docker ps -a</strong></p>
-</li>
-<li><p>移除容器历史记录：<strong>docker rm [containerId]</strong></p>
-</li>
-<li><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 使用您的 Docker 凭证登录此 CLI 会话</div><div class="line"><span class="meta">$</span> docker login</div><div class="line"><span class="meta">#</span> 标记 &lt;image&gt; 以上传到镜像库</div><div class="line"><span class="meta">$</span> docker tag &lt;image&gt; username/repository:tag</div><div class="line"><span class="meta">#</span> 将已标记的镜像上传到镜像库</div><div class="line"><span class="meta">$</span> docker push username/repository:tag</div><div class="line"><span class="meta">#</span> 运行镜像库中的镜像</div><div class="line"><span class="meta">$</span> docker run username/repository:tag</div></pre></td></tr></table></figure>
-</li>
-</ol>
+<p>复制文件：<strong>docker cp [文件名] [containerId]://[path路径]</strong></p>
+<p>移除image：<strong>docker rmi [imageId]</strong></p>
+<p>容器历史记录：<strong>docker ps -a</strong></p>
+<p>移除容器历史记录：<strong>docker rm [containerId]</strong></p>
+<p>docker登录<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 使用您的 Docker 凭证登录此 CLI 会话</div><div class="line"><span class="meta">$</span> docker login</div><div class="line"><span class="meta">#</span> 标记 &lt;image&gt; 以上传到镜像库</div><div class="line"><span class="meta">$</span> docker tag &lt;image&gt; username/repository:tag</div><div class="line"><span class="meta">#</span> 将已标记的镜像上传到镜像库</div><div class="line"><span class="meta">$</span> docker push username/repository:tag</div><div class="line"><span class="meta">#</span> 运行镜像库中的镜像</div><div class="line"><span class="meta">$</span> docker run username/repository:tag</div></pre></td></tr></table></figure></p>
 <p><img src="/images/docker/docker_01.png" alt="docker命令1"><br><img src="/images/docker/docker_02.png" alt="docker命令2"></p>
-<h4 id="Dockerfile"><a href="#Dockerfile" class="headerlink" title="Dockerfile"></a>Dockerfile</h4><p><img src="/images/docker/dockerfile_01.png" alt="dockerfile1"><br><img src="/images/docker/dockerfile_02.png" alt="dockerfile2"></p>
-<h4 id="docker-compose安装"><a href="#docker-compose安装" class="headerlink" title="docker-compose安装"></a>docker-compose安装</h4><blockquote>
-<p><a href="https://docs.docker.com/compose/install/#install-compose" target="_blank" rel="external">https://docs.docker.com/compose/install/#install-compose</a></p>
-</blockquote>
+<p>Dockerfile使用</p>
+<p><img src="/images/docker/dockerfile_01.png" alt="dockerfile1"><br><img src="/images/docker/dockerfile_02.png" alt="dockerfile2"></p>
+<h4 id="docker-compose安装"><a href="#docker-compose安装" class="headerlink" title="docker-compose安装"></a>docker-compose安装</h4><p><a href="https://docs.docker.com/compose/install/#install-compose" target="_blank" rel="external">https://docs.docker.com/compose/install/#install-compose</a></p>
 <p>例如：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> sudo curl -L "https://github.com/docker/compose/releases/download/1.23.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose</div><div class="line"></div><div class="line"><span class="meta">$</span> sudo chmod +x /usr/local/bin/docker-compose</div><div class="line"></div><div class="line"><span class="meta">$</span> docker-compose --version</div></pre></td></tr></table></figure></p>
 
       
@@ -518,7 +501,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">19</span>
+                <span class="site-state-item-count">20</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -602,7 +585,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装"><span class="nav-number">1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#常用命令"><span class="nav-number">2.</span> <span class="nav-text">常用命令</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Dockerfile"><span class="nav-number">3.</span> <span class="nav-text">Dockerfile</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#docker-compose安装"><span class="nav-number">4.</span> <span class="nav-text">docker-compose安装</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装"><span class="nav-number">1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#常用命令"><span class="nav-number">2.</span> <span class="nav-text">常用命令</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#docker-compose安装"><span class="nav-number">3.</span> <span class="nav-text">docker-compose安装</span></a></li></ol></div>
             
 
           </div>

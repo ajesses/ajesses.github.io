@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Node,Express," />
+  <meta name="keywords" content="Docker," />
 
 
 
@@ -94,18 +94,18 @@
 
 
 
-<meta name="description" content="安装12345npm install --save-dev babel-clinpm install --save-dev babel-preset-es2015 babel-preset-stage-2npm install --save-dev babel-preset-env">
-<meta name="keywords" content="Node,Express">
+<meta name="description" content="定义一项服务仅运行一个镜像，但它会编制镜像的运行方式 - 它应使用的端口、容器的多少个从节点应运行才能使服务的容量满足其需求等。扩展服务将更改运行该软件的容器实例数，并将多个计算资源分配给进程中的服务。 Docker 平台定义、运行和扩展服务 – 只需编写一个 docker-compose.yml 文件即可 docker-compose.yml123456789101112131415161718">
+<meta name="keywords" content="Docker">
 <meta property="og:type" content="article">
-<meta property="og:title" content="express中使用es6">
-<meta property="og:url" content="http://yoursite.com/2018/08/10/express中使用es6/index.html">
+<meta property="og:title" content="docker服务">
+<meta property="og:url" content="http://yoursite.com/2018/12/20/docker服务/index.html">
 <meta property="og:site_name" content="wxqblog">
-<meta property="og:description" content="安装12345npm install --save-dev babel-clinpm install --save-dev babel-preset-es2015 babel-preset-stage-2npm install --save-dev babel-preset-env">
+<meta property="og:description" content="定义一项服务仅运行一个镜像，但它会编制镜像的运行方式 - 它应使用的端口、容器的多少个从节点应运行才能使服务的容量满足其需求等。扩展服务将更改运行该软件的容器实例数，并将多个计算资源分配给进程中的服务。 Docker 平台定义、运行和扩展服务 – 只需编写一个 docker-compose.yml 文件即可 docker-compose.yml123456789101112131415161718">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-14T08:08:20.986Z">
+<meta property="og:updated_time" content="2018-12-20T08:59:54.231Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="express中使用es6">
-<meta name="twitter:description" content="安装12345npm install --save-dev babel-clinpm install --save-dev babel-preset-es2015 babel-preset-stage-2npm install --save-dev babel-preset-env">
+<meta name="twitter:title" content="docker服务">
+<meta name="twitter:description" content="定义一项服务仅运行一个镜像，但它会编制镜像的运行方式 - 它应使用的端口、容器的多少个从节点应运行才能使服务的容量满足其需求等。扩展服务将更改运行该软件的容器实例数，并将多个计算资源分配给进程中的服务。 Docker 平台定义、运行和扩展服务 – 只需编写一个 docker-compose.yml 文件即可 docker-compose.yml123456789101112131415161718">
 
 
 
@@ -134,13 +134,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/08/10/express中使用es6/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/12/20/docker服务/"/>
 
 
 
 
 
-  <title>express中使用es6 | wxqblog</title>
+  <title>docker服务 | wxqblog</title>
   
 
 
@@ -267,7 +267,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/10/express中使用es6/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/20/docker服务/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Jesse">
@@ -284,7 +284,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">express中使用es6</h1>
+          <h1 class="post-title" itemprop="name headline">docker服务</h1>
         
 
         <div class="post-meta">
@@ -296,8 +296,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-10T16:13:41+08:00">
-                2018-08-10
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-20T16:41:12+08:00">
+                2018-12-20
               </time>
             
 
@@ -319,19 +319,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Node/" itemprop="url" rel="index">
-                    <span itemprop="name">Node</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Node/Express/" itemprop="url" rel="index">
-                    <span itemprop="name">Express</span>
+                  <a href="/categories/Docker/" itemprop="url" rel="index">
+                    <span itemprop="name">Docker</span>
                   </a>
                 </span>
 
@@ -372,7 +361,39 @@
       
 
       
-        <h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">npm install --save-dev babel-cli</div><div class="line"></div><div class="line">npm install --save-dev babel-preset-es2015 babel-preset-stage-2</div><div class="line"></div><div class="line">npm install --save-dev babel-preset-env</div></pre></td></tr></table></figure>
+        <h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4><p>一项服务仅运行一个镜像，但它会编制镜像的运行方式 - 它应使用的端口、容器的多少个从节点应运行才能使服务的容量满足其需求等。扩展服务将更改运行该软件的容器实例数，并将多个计算资源分配给进程中的服务。<br> Docker 平台定义、运行和扩展服务 – 只需编写一个 <code>docker-compose.yml</code> 文件即可</p>
+<h4 id="docker-compose-yml"><a href="#docker-compose-yml" class="headerlink" title="docker-compose.yml"></a>docker-compose.yml</h4><figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="attr">version:</span> <span class="string">'3'</span></div><div class="line"></div><div class="line"><span class="attr">services:</span></div><div class="line"><span class="attr">  web:</span></div><div class="line">    <span class="comment"># 将 username/repo:tag 替换为您的名称和镜像详细信息</span></div><div class="line"><span class="attr">    image:</span> <span class="string">username/repo:tag</span></div><div class="line"><span class="attr">    deploy:</span></div><div class="line"><span class="attr">      replicas:</span> <span class="number">5</span></div><div class="line"><span class="attr">      resources:</span></div><div class="line"><span class="attr">        limits:</span></div><div class="line"><span class="attr">          cpus:</span> <span class="string">"0.1"</span></div><div class="line"><span class="attr">          memory:</span> <span class="number">50</span><span class="string">M</span></div><div class="line"><span class="attr">      restart_policy:</span></div><div class="line"><span class="attr">        condition:</span> <span class="string">on-failure</span></div><div class="line"><span class="attr">    ports:</span></div><div class="line"><span class="bullet">      -</span> <span class="string">"80:80"</span></div><div class="line"><span class="attr">    networks:</span></div><div class="line"><span class="bullet">      -</span> <span class="string">webnet</span></div><div class="line"><span class="attr">networks:</span></div><div class="line"><span class="attr">  webnet:</span></div></pre></td></tr></table></figure>
+<p>此 <code>docker-compose.yml</code> 文件会告诉 Docker 执行以下操作：</p>
+<ul>
+<li><p>从镜像库中拉取我们上传的镜像。</p>
+</li>
+<li><p>将该镜像的五个实例作为服务 web 运行，并将每个实例限制为最多使用 10% 的 CPU（在所有核心中）以及 50MB RAM。</p>
+</li>
+<li><p>如果某个容器发生故障，立即重启容器。</p>
+</li>
+<li><p>将主机上的端口 80 映射到 web 的端口 80。</p>
+</li>
+<li><p>指示 web 容器通过负载均衡的网络 webnet 共享端口 80。（在内部，容器自身将在临时端口发布到 web 的端口 80。）</p>
+</li>
+<li><p>使用默认设置定义 webnet 网络（此为负载均衡的 overlay 网络）。</p>
+</li>
+</ul>
+<h4 id="运行新的负载均衡的应用"><a href="#运行新的负载均衡的应用" class="headerlink" title="运行新的负载均衡的应用"></a>运行新的负载均衡的应用</h4><p>需要先运行<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> docker swarm init</div></pre></td></tr></table></figure></p>
+<blockquote>
+<p>如果未运行 <code>docker swarm init</code>，您将收到错误消息: 此节点不是 swarm 管理节点</p>
+</blockquote>
+<p>再运行</p>
+<blockquote>
+<p>您必须为应用指定一个名称。在此处该名称设置为 <strong>getstartedlab</strong><br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> docker stack deploy -c docker-compose.yml getstartedlab</div></pre></td></tr></table></figure></p>
+</blockquote>
+<p>查看您刚才启动的五个容器的列表<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> docker stack ps getstartedlab</div></pre></td></tr></table></figure></p>
+<p>在浏览器中转至该 URL 并多次点击“刷新”</p>
+<blockquote>
+<p>将看到容器 ID 更改，从而说明负载均衡；借助每项请求，将以循环方式选择五个从节点之一做出响应</p>
+</blockquote>
+<p>相关命令<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 列出此 $ Docker 主机上所有正在运行的应用</div><div class="line"><span class="meta">$</span> docker stack ls</div><div class="line"><span class="meta">#</span> 运行指定的 Compose 文件           </div><div class="line"><span class="meta">$</span> docker stack deploy -c &lt;composefile&gt; &lt;appname&gt;</div><div class="line"><span class="meta">#</span> 列出与应用关联的服务</div><div class="line"><span class="meta">$</span> docker stack services &lt;appname&gt;</div><div class="line"><span class="meta">#</span> 列出与应用关联的正在运行的容器</div><div class="line"><span class="meta">$</span> docker stack ps &lt;appname&gt;</div><div class="line"><span class="meta">#</span> 清除应用</div><div class="line"><span class="meta">$</span> docker stack rm &lt;appname&gt;</div></pre></td></tr></table></figure></p>
+<p>摘自[dockerz中文网]<strong><a href="https://docs.docker-cn.com/get-started/part3" target="_blank" rel="external">https://docs.docker-cn.com/get-started/part3</a></strong></p>
+
       
     </div>
     
@@ -389,9 +410,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Node/" rel="tag"># Node</a>
-          
-            <a href="/tags/Express/" rel="tag"># Express</a>
+            <a href="/tags/Docker/" rel="tag"># Docker</a>
           
         </div>
       
@@ -404,8 +423,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/07/31/pm2使用/" rel="next" title="pm2使用">
-                <i class="fa fa-chevron-left"></i> pm2使用
+              <a href="/2018/12/19/git连接github使用/" rel="next" title="git连接github使用">
+                <i class="fa fa-chevron-left"></i> git连接github使用
               </a>
             
           </div>
@@ -413,10 +432,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/08/13/linux搭建git私有仓库/" rel="prev" title="linux搭建git私有仓库">
-                linux搭建git私有仓库 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -577,7 +592,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装"><span class="nav-number">1.</span> <span class="nav-text">安装</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#定义"><span class="nav-number">1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#docker-compose-yml"><span class="nav-number">2.</span> <span class="nav-text">docker-compose.yml</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#运行新的负载均衡的应用"><span class="nav-number">3.</span> <span class="nav-text">运行新的负载均衡的应用</span></a></li></ol></div>
             
 
           </div>
