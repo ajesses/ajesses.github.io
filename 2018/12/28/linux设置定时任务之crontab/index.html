@@ -102,7 +102,7 @@
 <meta property="og:site_name" content="wxqblog">
 <meta property="og:description" content="安装1234# 查看是否安装$ rpm -qa crontab$ yum -y install crontabs 启动12345678$ ps -ef | grep cron$ service crond start # 启动服务 $ service crond stop # 关闭服务 $ service crond restart # 重启服务 $ service crond reload #">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-28T06:57:22.270Z">
+<meta property="og:updated_time" content="2018-12-28T08:24:35.285Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="linux设置定时任务之crontab">
 <meta name="twitter:description" content="安装1234# 查看是否安装$ rpm -qa crontab$ yum -y install crontabs 启动12345678$ ps -ef | grep cron$ service crond start # 启动服务 $ service crond stop # 关闭服务 $ service crond restart # 重启服务 $ service crond reload #">
@@ -368,6 +368,9 @@
 <li>若未找到<code>ntsysv</code>,则安装<code>yum -y install setuptool ntsysv</code></li>
 </ul>
 <h4 id="添加调度任务"><a href="#添加调度任务" class="headerlink" title="添加调度任务"></a>添加调度任务</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 编辑文件</div><div class="line"><span class="meta">$</span> vim /etc/crontab</div><div class="line"></div><div class="line"><span class="meta">#</span> 列出当前的所有调度任务 </div><div class="line"><span class="meta">$</span> crontab -l</div><div class="line"></div><div class="line"><span class="meta">#</span> 删除所有任务调度工作 </div><div class="line"><span class="meta">$</span> crontab -r</div></pre></td></tr></table></figure>
+<blockquote>
+<p>注：你可以在<code>/var/spool/mail/root</code>中查看相应信息</p>
+</blockquote>
 <p>格式描述：<strong>minute hour day month dayofweek command</strong></p>
 <ul>
 <li><p><strong>minute</strong>：从0到59的整数</p>
@@ -407,9 +410,15 @@
 <li><p><strong>cron.deny</strong>：文件就是用于控制不让哪些用户使用Crontab的功能</p>
 </li>
 </ul>
-<h4 id="crontab-ui-可视化界面"><a href="#crontab-ui-可视化界面" class="headerlink" title="crontab-ui 可视化界面"></a>crontab-ui 可视化界面</h4><h4 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h4><ul>
+<h4 id="crontab-ui-可视化界面"><a href="#crontab-ui-可视化界面" class="headerlink" title="crontab-ui 可视化界面"></a>crontab-ui 可视化界面</h4><ul>
+<li>安装<code>npm install -g crontab-ui</code></li>
+<li>启动<code>crontab-ui</code></li>
+<li>指定端口启动，远程访问<code>HOST=0.0.0.0 PORT=9000 crontab-ui</code></li>
+</ul>
+<h4 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h4><ul>
 <li>参考1：<a href="https://www.linuxidc.com/Linux/2018-11/155189.html" target="_blank" rel="external">https://www.linuxidc.com/Linux/2018-11/155189.html</a></li>
 <li>参考2：<a href="https://blog.csdn.net/qq_39131177/article/details/79051711" target="_blank" rel="external">https://blog.csdn.net/qq_39131177/article/details/79051711</a></li>
+<li>参考3：<a href="https://zhuanlan.zhihu.com/p/45998227" target="_blank" rel="external">https://zhuanlan.zhihu.com/p/45998227</a></li>
 </ul>
 
       
