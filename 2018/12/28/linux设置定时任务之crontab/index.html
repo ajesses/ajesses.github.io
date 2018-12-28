@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Linux,redis," />
+  <meta name="keywords" content="Linux," />
 
 
 
@@ -94,18 +94,18 @@
 
 
 
-<meta name="description" content="安装依赖12yum -y install gcc gcc-c++yum -y install wget 安装步骤1.1wget http://download.redis.io/releases/redis-3.2.9.tar.gz 2.1tar xzf redis-3.2.9.tar.gz 3.1cd redis-redis-3.2.9 4.1make 远程连接 修改配置(安装目录下)  1vi">
-<meta name="keywords" content="Linux,redis">
+<meta name="description" content="安装1234# 查看是否安装$ rpm -qa crontab$ yum -y install crontabs 启动12345678$ ps -ef | grep cron$ service crond start # 启动服务 $ service crond stop # 关闭服务 $ service crond restart # 重启服务 $ service crond reload #">
+<meta name="keywords" content="Linux">
 <meta property="og:type" content="article">
-<meta property="og:title" content="linux安装redis">
-<meta property="og:url" content="http://yoursite.com/2018/07/31/linux安装redis/index.html">
+<meta property="og:title" content="linux设置定时任务之crontab">
+<meta property="og:url" content="http://yoursite.com/2018/12/28/linux设置定时任务之crontab/index.html">
 <meta property="og:site_name" content="wxqblog">
-<meta property="og:description" content="安装依赖12yum -y install gcc gcc-c++yum -y install wget 安装步骤1.1wget http://download.redis.io/releases/redis-3.2.9.tar.gz 2.1tar xzf redis-3.2.9.tar.gz 3.1cd redis-redis-3.2.9 4.1make 远程连接 修改配置(安装目录下)  1vi">
+<meta property="og:description" content="安装1234# 查看是否安装$ rpm -qa crontab$ yum -y install crontabs 启动12345678$ ps -ef | grep cron$ service crond start # 启动服务 $ service crond stop # 关闭服务 $ service crond restart # 重启服务 $ service crond reload #">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-27T05:18:54.665Z">
+<meta property="og:updated_time" content="2018-12-28T06:57:22.270Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="linux安装redis">
-<meta name="twitter:description" content="安装依赖12yum -y install gcc gcc-c++yum -y install wget 安装步骤1.1wget http://download.redis.io/releases/redis-3.2.9.tar.gz 2.1tar xzf redis-3.2.9.tar.gz 3.1cd redis-redis-3.2.9 4.1make 远程连接 修改配置(安装目录下)  1vi">
+<meta name="twitter:title" content="linux设置定时任务之crontab">
+<meta name="twitter:description" content="安装1234# 查看是否安装$ rpm -qa crontab$ yum -y install crontabs 启动12345678$ ps -ef | grep cron$ service crond start # 启动服务 $ service crond stop # 关闭服务 $ service crond restart # 重启服务 $ service crond reload #">
 
 
 
@@ -134,13 +134,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/07/31/linux安装redis/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/12/28/linux设置定时任务之crontab/"/>
 
 
 
 
 
-  <title>linux安装redis | wxqblog</title>
+  <title>linux设置定时任务之crontab | wxqblog</title>
   
 
 
@@ -267,7 +267,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/31/linux安装redis/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/28/linux设置定时任务之crontab/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Jesse">
@@ -284,7 +284,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">linux安装redis</h1>
+          <h1 class="post-title" itemprop="name headline">linux设置定时任务之crontab</h1>
         
 
         <div class="post-meta">
@@ -296,8 +296,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-31T15:33:57+08:00">
-                2018-07-31
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-28T14:10:40+08:00">
+                2018-12-28
               </time>
             
 
@@ -361,22 +361,57 @@
       
 
       
-        <h4 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">yum -y install gcc gcc-c++</div><div class="line">yum -y install wget</div></pre></td></tr></table></figure>
-<h4 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h4><p>1.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget http://download.redis.io/releases/redis-3.2.9.tar.gz</div></pre></td></tr></table></figure></p>
-<p>2.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">tar xzf redis-3.2.9.tar.gz</div></pre></td></tr></table></figure></p>
-<p>3.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cd redis-redis-3.2.9</div></pre></td></tr></table></figure></p>
-<p>4.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">make</div></pre></td></tr></table></figure></p>
-<h4 id="远程连接"><a href="#远程连接" class="headerlink" title="远程连接"></a>远程连接</h4><ol>
-<li><p>修改配置(安装目录下)</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vi redis.conf</div></pre></td></tr></table></figure>
-<p>  a. 把bind 127.0.0.1 ::1这一行注释掉<br>  b. protected-mode 要设置成no<br>  c. 启动的时候，需要指定redis.conf 文件</p>
+        <h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 查看是否安装</div><div class="line"><span class="meta">$</span> rpm -qa crontab</div><div class="line"></div><div class="line"><span class="meta">$</span> yum -y install crontabs</div></pre></td></tr></table></figure>
+<h4 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> ps -ef | grep cron</div><div class="line"></div><div class="line"><span class="meta">$</span> service crond start # 启动服务 </div><div class="line"><span class="meta">$</span> service crond stop # 关闭服务 </div><div class="line"><span class="meta">$</span> service crond restart # 重启服务 </div><div class="line"><span class="meta">$</span> service crond reload # 重新载入配置</div><div class="line"></div><div class="line"><span class="meta">$</span> service crond status # 查看服务状态</div></pre></td></tr></table></figure>
+<p>查看crontab服务是否已设置为开机启动，执行命令：<code>ntsysv</code><br>或者执行<code>chkconfig –level 35 crond on</code></p>
+<ul>
+<li>若未找到<code>ntsysv</code>,则安装<code>yum -y install setuptool ntsysv</code></li>
+</ul>
+<h4 id="添加调度任务"><a href="#添加调度任务" class="headerlink" title="添加调度任务"></a>添加调度任务</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 编辑文件</div><div class="line"><span class="meta">$</span> vim /etc/crontab</div><div class="line"></div><div class="line"><span class="meta">#</span> 列出当前的所有调度任务 </div><div class="line"><span class="meta">$</span> crontab -l</div><div class="line"></div><div class="line"><span class="meta">#</span> 删除所有任务调度工作 </div><div class="line"><span class="meta">$</span> crontab -r</div></pre></td></tr></table></figure>
+<p>格式描述：<strong>minute hour day month dayofweek command</strong></p>
+<ul>
+<li><p><strong>minute</strong>：从0到59的整数</p>
 </li>
-<li>关闭防火墙firewall</li>
-</ol>
-<h4 id="启动redis"><a href="#启动redis" class="headerlink" title="启动redis"></a>启动redis</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">src/redis-server redis.conf</div></pre></td></tr></table></figure>
-<h4 id="redis后台启动"><a href="#redis后台启动" class="headerlink" title="redis后台启动"></a>redis后台启动</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">进入redis目录</div><div class="line">vim redis.conf</div><div class="line">找到daemonize no</div><div class="line">改为daemonize yes</div><div class="line">重启</div></pre></td></tr></table></figure>
-<h4 id="redis查看版本"><a href="#redis查看版本" class="headerlink" title="redis查看版本"></a>redis查看版本</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">./redis-cli -h 127.0.0.1 info | grep &apos;redis_version&apos;</div></pre></td></tr></table></figure>
-<h4 id="出现问题"><a href="#出现问题" class="headerlink" title="出现问题"></a>出现问题</h4><h5 id="关闭防火墙"><a href="#关闭防火墙" class="headerlink" title="关闭防火墙"></a>关闭防火墙</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">service firewalld stop      关闭firewall</div><div class="line">systemctl disable firewalld.service    禁止firewall开机启动</div></pre></td></tr></table></figure>
+<li><p><strong>hour</strong>：从0到23的整数</p>
+</li>
+<li><p><strong>day</strong>：从1到31的整数 (必须是指定月份的有效日期)</p>
+</li>
+<li><p><strong>month</strong>：从1到12的整数 (或如Jan或Feb简写的月份)</p>
+</li>
+<li><p><strong>dayofweek</strong>：从0到7的整数，0或7用来描述周日 (或用Sun或Mon简写来表示)</p>
+</li>
+<li><p><strong>command</strong>：需要执行的命令(可用<code>as ls /proc &gt;&gt; /tmp/proc</code>或 执行自定义脚本的命令)</p>
+</li>
+<li><p>整数间的连字号<code>(-)</code>表示整数列，例如<strong>1-4</strong>意思是整数<strong>1,2,3,4</strong></p>
+</li>
+<li><p>指定数值由逗号分开。如：<strong>3,4,6,8</strong>表示这四个指定整数。</p>
+</li>
+<li><p>符号<code>/</code>指定步进设置。<code>/&lt;interger&gt;</code>表示步进值。如<strong>0-59/2</strong>定义每两分钟执行一次。步进值也可用星号表示。如<strong>/3</strong>用来运行每三个月份运行指定任务</p>
+</li>
+<li><p>以<code>#</code>开头的为注释行,不会被执行</p>
+</li>
+</ul>
+<h4 id="配置目录"><a href="#配置目录" class="headerlink" title="配置目录"></a>配置目录</h4><ul>
+<li><p><strong>cron.daily</strong>：是每天执行一次的job</p>
+</li>
+<li><p><strong>cron.weekly</strong>：是每个星期执行一次的job</p>
+</li>
+<li><p><strong>cron.monthly</strong>：是每月执行一次的job</p>
+</li>
+<li><p><strong>cron.hourly</strong>：是每个小时执行一次的job</p>
+</li>
+<li><p><strong>cron.d</strong>：是系统自动定期需要做的任务</p>
+</li>
+<li><p><strong>crontab</strong>：是设定定时任务执行文件</p>
+</li>
+<li><p><strong>cron.deny</strong>：文件就是用于控制不让哪些用户使用Crontab的功能</p>
+</li>
+</ul>
+<h4 id="crontab-ui-可视化界面"><a href="#crontab-ui-可视化界面" class="headerlink" title="crontab-ui 可视化界面"></a>crontab-ui 可视化界面</h4><h4 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h4><ul>
+<li>参考1：<a href="https://www.linuxidc.com/Linux/2018-11/155189.html" target="_blank" rel="external">https://www.linuxidc.com/Linux/2018-11/155189.html</a></li>
+<li>参考2：<a href="https://blog.csdn.net/qq_39131177/article/details/79051711" target="_blank" rel="external">https://blog.csdn.net/qq_39131177/article/details/79051711</a></li>
+</ul>
+
       
     </div>
     
@@ -395,8 +430,6 @@
           
             <a href="/tags/Linux/" rel="tag"># Linux</a>
           
-            <a href="/tags/redis/" rel="tag"># redis</a>
-          
         </div>
       
 
@@ -408,8 +441,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/07/31/linux常用依赖包/" rel="next" title="linux常用依赖包">
-                <i class="fa fa-chevron-left"></i> linux常用依赖包
+              <a href="/2018/12/26/window中让电脑上网但是不影响局域网的连接/" rel="next" title="window中让电脑上网但是不影响局域网的连接">
+                <i class="fa fa-chevron-left"></i> window中让电脑上网但是不影响局域网的连接
               </a>
             
           </div>
@@ -417,10 +450,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/07/31/pm2使用/" rel="prev" title="pm2使用">
-                pm2使用 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -581,7 +610,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装依赖"><span class="nav-number">1.</span> <span class="nav-text">安装依赖</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装步骤"><span class="nav-number">2.</span> <span class="nav-text">安装步骤</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#远程连接"><span class="nav-number">3.</span> <span class="nav-text">远程连接</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#启动redis"><span class="nav-number">4.</span> <span class="nav-text">启动redis</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#redis后台启动"><span class="nav-number">5.</span> <span class="nav-text">redis后台启动</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#redis查看版本"><span class="nav-number">6.</span> <span class="nav-text">redis查看版本</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#出现问题"><span class="nav-number">7.</span> <span class="nav-text">出现问题</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#关闭防火墙"><span class="nav-number">7.1.</span> <span class="nav-text">关闭防火墙</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装"><span class="nav-number">1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#启动"><span class="nav-number">2.</span> <span class="nav-text">启动</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#添加调度任务"><span class="nav-number">3.</span> <span class="nav-text">添加调度任务</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置目录"><span class="nav-number">4.</span> <span class="nav-text">配置目录</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#crontab-ui-可视化界面"><span class="nav-number">5.</span> <span class="nav-text">crontab-ui 可视化界面</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#参考"><span class="nav-number">6.</span> <span class="nav-text">参考</span></a></li></ol></div>
             
 
           </div>
