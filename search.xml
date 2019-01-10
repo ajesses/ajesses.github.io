@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[linux设置定时任务之crontab]]></title>
+    <url>%2F2018%2F12%2F28%2Flinux%E8%AE%BE%E7%BD%AE%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1%E4%B9%8Bcrontab%2F</url>
+    <content type="text"><![CDATA[安装1234# 查看是否安装$ rpm -qa crontab$ yum -y install crontabs 启动12345678$ ps -ef | grep cron$ service crond start # 启动服务 $ service crond stop # 关闭服务 $ service crond restart # 重启服务 $ service crond reload # 重新载入配置$ service crond status # 查看服务状态 查看crontab服务是否已设置为开机启动，执行命令：ntsysv或者执行chkconfig –level 35 crond on 若未找到ntsysv,则安装yum -y install setuptool ntsysv 添加调度任务12345678# 编辑文件$ vim /etc/crontab# 列出当前的所有调度任务 $ crontab -l# 删除所有任务调度工作 $ crontab -r 注：你可以在/var/spool/mail/root中查看相应信息 格式描述：minute hour day month dayofweek command minute：从0到59的整数 hour：从0到23的整数 day：从1到31的整数 (必须是指定月份的有效日期) month：从1到12的整数 (或如Jan或Feb简写的月份) dayofweek：从0到7的整数，0或7用来描述周日 (或用Sun或Mon简写来表示) command：需要执行的命令(可用as ls /proc &gt;&gt; /tmp/proc或 执行自定义脚本的命令) 整数间的连字号(-)表示整数列，例如1-4意思是整数1,2,3,4 指定数值由逗号分开。如：3,4,6,8表示这四个指定整数。 符号/指定步进设置。/&lt;interger&gt;表示步进值。如0-59/2定义每两分钟执行一次。步进值也可用星号表示。如/3用来运行每三个月份运行指定任务 以#开头的为注释行,不会被执行 配置目录 cron.daily：是每天执行一次的job cron.weekly：是每个星期执行一次的job cron.monthly：是每月执行一次的job cron.hourly：是每个小时执行一次的job cron.d：是系统自动定期需要做的任务 crontab：是设定定时任务执行文件 cron.deny：文件就是用于控制不让哪些用户使用Crontab的功能 crontab-ui 可视化界面 安装npm install -g crontab-ui 启动crontab-ui 指定端口启动，远程访问HOST=0.0.0.0 PORT=9000 crontab-ui 参考 参考1：https://www.linuxidc.com/Linux/2018-11/155189.html 参考2：https://blog.csdn.net/qq_39131177/article/details/79051711 参考3：https://zhuanlan.zhihu.com/p/45998227]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[window中让电脑上网但是不影响局域网的连接]]></title>
+    <url>%2F2018%2F12%2F26%2Fwindow%E4%B8%AD%E8%AE%A9%E7%94%B5%E8%84%91%E4%B8%8A%E7%BD%91%E4%BD%86%E6%98%AF%E4%B8%8D%E5%BD%B1%E5%93%8D%E5%B1%80%E5%9F%9F%E7%BD%91%E7%9A%84%E8%BF%9E%E6%8E%A5%2F</url>
+    <content type="text"><![CDATA[如何让电脑不能上网但又不影响局域网的连接呢（window）?修改配置本地连接属性 -&gt; 属性 -&gt; 删除 DNS服务器的俩个配置]]></content>
+      <categories>
+        <category>Window</category>
+      </categories>
+      <tags>
+        <tag>Window</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[docker常用工具]]></title>
+    <url>%2F2018%2F12%2F20%2Fdocker%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%2F</url>
+    <content type="text"><![CDATA[docker-compose安装https://docs.docker.com/compose/install/#install-compose 安装例如：12345$ sudo curl -L "https://github.com/docker/compose/releases/download/1.23.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose$ sudo chmod +x /usr/local/bin/docker-compose$ docker-compose --version docker machinehttps://docs.docker-cn.com/machine/install-machine/#installing-machine-directly 安装123$ curl -L https://github.com/docker/machine/releases/download/v0.12.1/docker-machine-`uname -s`-`uname -m` &gt;/tmp/docker-machine &amp;&amp;chmod +x /tmp/docker-machine &amp;&amp;sudo cp /tmp/docker-machine /usr/local/bin/docker-machine 查看版本12$ docker-machine versiondocker-machine version 0.12.1, build c8b17e8 创建运行docker-machine,添加驱动--driver virtualbox，如果是第一次创建，则加上参数default，否则添加name123456# 查看$ docker-machine ls# 创建$ docker-machine create --driver virtualbox default$ docker-machine env default]]></content>
+      <categories>
+        <category>Docker</category>
+      </categories>
+      <tags>
+        <tag>Docker</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[docker服务]]></title>
+    <url>%2F2018%2F12%2F20%2Fdocker%E6%9C%8D%E5%8A%A1%2F</url>
+    <content type="text"><![CDATA[定义一项服务仅运行一个镜像，但它会编制镜像的运行方式 - 它应使用的端口、容器的多少个从节点应运行才能使服务的容量满足其需求等。扩展服务将更改运行该软件的容器实例数，并将多个计算资源分配给进程中的服务。 Docker 平台定义、运行和扩展服务 – 只需编写一个 docker-compose.yml 文件即可 docker-compose.yml1234567891011121314151617181920version: '3'services: web: # 将 username/repo:tag 替换为您的名称和镜像详细信息 image: username/repo:tag deploy: replicas: 5 resources: limits: cpus: "0.1" memory: 50M restart_policy: condition: on-failure ports: - "80:80" networks: - webnetnetworks: webnet: 此 docker-compose.yml 文件会告诉 Docker 执行以下操作： 从镜像库中拉取我们上传的镜像。 将该镜像的五个实例作为服务 web 运行，并将每个实例限制为最多使用 10% 的 CPU（在所有核心中）以及 50MB RAM。 如果某个容器发生故障，立即重启容器。 将主机上的端口 80 映射到 web 的端口 80。 指示 web 容器通过负载均衡的网络 webnet 共享端口 80。（在内部，容器自身将在临时端口发布到 web 的端口 80。） 使用默认设置定义 webnet 网络（此为负载均衡的 overlay 网络）。 运行新的负载均衡的应用需要先运行1$ docker swarm init 如果未运行 docker swarm init，您将收到错误消息: 此节点不是 swarm 管理节点 再运行 您必须为应用指定一个名称。在此处该名称设置为 getstartedlab1$ docker stack deploy -c docker-compose.yml getstartedlab 查看您刚才启动的五个容器的列表1$ docker stack ps getstartedlab 在浏览器中转至该 URL 并多次点击“刷新” 将看到容器 ID 更改，从而说明负载均衡；借助每项请求，将以循环方式选择五个从节点之一做出响应 相关命令12345678910# 列出此 $ Docker 主机上所有正在运行的应用$ docker stack ls# 运行指定的 Compose 文件 $ docker stack deploy -c &lt;composefile&gt; &lt;appname&gt;# 列出与应用关联的服务$ docker stack services &lt;appname&gt;# 列出与应用关联的正在运行的容器$ docker stack ps &lt;appname&gt;# 清除应用$ docker stack rm &lt;appname&gt; 摘自[docker中文网]https://docs.docker-cn.com/get-started/part3]]></content>
+      <categories>
+        <category>Docker</category>
+      </categories>
+      <tags>
+        <tag>Docker</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[git连接github使用]]></title>
+    <url>%2F2018%2F12%2F19%2Fgit%E8%BF%9E%E6%8E%A5github%E4%BD%BF%E7%94%A8%2F</url>
+    <content type="text"><![CDATA[注意出现1$ git: 'credential-cache' is not a git command. See 'git --help'. 解决./git/config里面添加 12345[user] name = username email = username@gmail.com[credential] helper = cache 执行1234$ git config --global user.name "username"$ git config --global user.email "username@gmail.com"$ git config --global credential.helper wincred]]></content>
+      <categories>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[docker使用]]></title>
+    <url>%2F2018%2F12%2F18%2Fdocker%E4%BD%BF%E7%94%A8%2F</url>
+    <content type="text"><![CDATA[安装http://www.runoob.com/docker/centos-docker-install.html 常用命令运行：docker run [image] 查看镜像：12$ docker images$ docker images -a 当前正在运行的容器: docker ps 停止容器：docker stop [containerId] 例子:12# -p: 端口映射; -d: 直接返回，container作为守护进程运行$ docker run -p [映射端口号]:80 -d nginx 从正在运行的 Docker 容器里面，将文件拷贝到本机，当前目录：docker cp [文件名] [containerId]://[path路径] . 移除image：docker rmi [imageId] 容器历史记录：docker ps -a 查看日志：docker container logs 移除容器历史记录：docker rm [containerId] 进入容器：docker container exec -it [containerID] /bin/bash docker登录12345678# 使用您的 Docker 凭证登录此 CLI 会话$ docker login# 标记 &lt;image&gt; 以上传到镜像库$ docker tag &lt;image&gt; username/repository:tag# 将已标记的镜像上传到镜像库$ docker push username/repository:tag# 运行镜像库中的镜像$ docker run username/repository:tag Dockerfile使用]]></content>
+      <categories>
+        <category>Docker</category>
+      </categories>
+      <tags>
+        <tag>Docker</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[window安装Telnet工具]]></title>
+    <url>%2F2018%2F11%2F15%2Fwindow%E5%AE%89%E8%A3%85Telnet%E5%B7%A5%E5%85%B7%2F</url>
+    <content type="text"><![CDATA[安装打开控制面板 &gt;&gt; 程序与功能 &gt;&gt; 打开或关闭Windows功能 &gt;&gt; 找到Telnet服务器和Telnet客户端 &gt;&gt; 选上并确定 测试1telnet [ip号] [端口号]]]></content>
+      <categories>
+        <category>Window</category>
+      </categories>
+      <tags>
+        <tag>Window</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[linux设置禁用外网，只连局域网]]></title>
+    <url>%2F2018%2F11%2F02%2Flinux%E8%AE%BE%E7%BD%AE%E7%A6%81%E7%94%A8%E5%A4%96%E7%BD%91%EF%BC%8C%E5%8F%AA%E8%BF%9E%E5%B1%80%E5%9F%9F%E7%BD%91%2F</url>
+    <content type="text"><![CDATA[如何让电脑不能上网但又不影响局域网的连接呢（linux）?修改配置1vim /etc/sysconfig/network-scripts/ifcfg-enp0s25 把 GATEWAY=192.168.0.1和 DNS的配置删除 1vim /etc/resolv.conf 把nameserver的配置删除 查看1netstat -r 重启网卡1service network restart]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[linux安装svn]]></title>
+    <url>%2F2018%2F11%2F02%2Flinux%E5%AE%89%E8%A3%85svn%2F</url>
+    <content type="text"><![CDATA[安装 检查安装 1rpm -qa subversion 安装 1yum install httpd httpd-devel subversion mod_dav_svn mod_auth_mysql 验证安装 1234cd /etc/httpd/modulesls | grep svnmod_authz_svn.somod_dav_svn.so 查看版本 1svnserve --version 代码库创建 待写 启动1svnserve -d -r /opt/svn/repositories 查看进程123ps -ef|grep svn|grep -v grepnetstat -ln |grep 3690 注意：linux重启后，svn需要重启才能用123kill -9 [进程号]svnserve -d -r [安装目录] (到/usr/bin/目录下执行svnserve -d -r /home/svn/进行启动)]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>svn</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[window cmd常用命令]]></title>
+    <url>%2F2018%2F10%2F19%2Fwindow-cmd%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%2F</url>
+    <content type="text"><![CDATA[文件操作12345mkdir [文件夹名] 创建文件夹type nul &gt; [文件名] 创建空文件echo [内容] &gt; [文件名] 创建非空文件]]></content>
+      <categories>
+        <category>Window</category>
+      </categories>
+      <tags>
+        <tag>Window</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[vscode常用插件集合]]></title>
+    <url>%2F2018%2F09%2F16%2Fvscode%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6%E9%9B%86%E5%90%88%2F</url>
+    <content type="text"><![CDATA[Change-case 切换命名方式 shift + ctrl + P 和 输入 command 选择 Document this 自动注释 ctrl + alt + D 和 ctrl + alt + D 俩次 minify 压缩html、css、js shift + ctrl + P 和 输入 minify 选择 Regex Previewer 正则验证 写正则测试 vscode-faker 生成数据 shift + ctrl + P 和 输入 faker 选择 vscode-fileheader 插入作者、时间等信息 ctrl + alt + i vscode-random 生成随机数据 shift + ctrl + P 和 输入 random 选择]]></content>
+      <categories>
+        <category>Vscode</category>
+      </categories>
+      <tags>
+        <tag>Vscode</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>%2F2018%2F09%2F05%2FcentOS7%E4%B8%8B%E5%AE%89%E8%A3%85KVM%E8%99%9A%E6%8B%9F%E6%9C%BA%2F</url>
+    <content type="text"><![CDATA[title: centOS7下安装KVM虚拟机date: 2018-09-05 14:54:47categories: Git Linuxtags: Git Linux 待]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[一台同时连接github和码云]]></title>
+    <url>%2F2018%2F08%2F14%2F%E4%B8%80%E5%8F%B0%E5%90%8C%E6%97%B6%E8%BF%9E%E6%8E%A5github%E5%92%8C%E7%A0%81%E4%BA%91%2F</url>
+    <content type="text"><![CDATA[生成ssh1234$ cd ..\.ssh\ windows上的.ssh一般在用户目录下$ ssh-keygen -t rsa -C &quot;邮箱名&quot;生成2个：github_rsa和gitee_rsa(默认为id_rsa) 这里，我已经生成过了，提示会覆盖一般会要求设置密码（可以为空） 新建config文件12$ touch config (在.ssh文件夹里)$ vim config 添加下列代码：1234567Host github.comHostName github.comIdentityFile ~/.ssh/github_rsa Host gitee.comHostName gitee.comIdentityFile ~/.ssh/gitee_rsa 把两个SSH key的密钥加入ssh 的 agent中去123$ ssh-add -D$ ssh-add github_rsa$ ssh-add gitee_rsa 若执行 ssh-add -D 是出现这个错误:Could not open a connection to your authentication agent，则先执行如下命令即可：ssh-agent bash 若执行 git push origin master 出现这个错误 Permission denied(publickey).，则执行 ssh-add ~/.ssh/your_publickey；若还出现 Could not open a connection to your authentication agent.，则执行 (eval ssh-agent -s)，然后在执行 ssh-add 测试连接12$ ssh -T git@github.com$ ssh -T git@gitee.com]]></content>
+      <categories>
+        <category>Git</category>
+        <category>SSH</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+        <tag>SSH</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[hexo设置favicon]]></title>
+    <url>%2F2018%2F08%2F14%2Fhexo%E8%AE%BE%E7%BD%AEfavicon%2F</url>
+    <content type="text"><![CDATA[制作favicon.ico点击制作 http://www.faviconico.org/favicon 放入favicon.ico1放在主题文件下的source/images里 修改主题的配置文件12_config.yml里的favicon写成相对路径/images/favicon.ico]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[linux搭建git私有仓库]]></title>
+    <url>%2F2018%2F08%2F13%2Flinux%E6%90%AD%E5%BB%BAgit%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93%2F</url>
+    <content type="text"><![CDATA[查看ssh版本1ssh -V 请确保您切换到了root账户1su root 安装git123yum -y install gitgit --version 查看git安装成功cd /home &amp;&amp; ls -al 查看git安装成功 添加git账户和设置密码12adduser gitpasswd git 修改密码 设置ssh访问12345678910su git 切换git账户cd /home/gitmkdir .ssh 创建.ssh配置cd /home/git/.ssh 进入刚创建的.ssh目录touch authorized_keys 创建authorized_keys文件chmod 700 /home/git/.ssh/ 设置权限(必须)chmod 600 /home/git/.ssh/authorized_keys 创建客户端的ssh私钥和公钥 检查是否已创建(.ssh文件) 12345Windows系统上目录：C:\Users\用户名Linux系统上目录：/home/用户名Mac系统上目录：/Users/用户名此文件：id_rsa.pub即私钥 没有就创建 1ssh-keygen -t rsa 默认回车 拷贝私钥到git的服务器 上传 123cd /home/git/.sshrzls -al 查看上传成功 上传的文件内容拷贝到authorized_keys 1cat id_rsa.pub &gt;&gt; authorized_keys 客户端检查12ssh git@设置的linux的ip地址第一次连接有警告，输入yes继续即可。如果可以连接上，那么ssh配置已经成功 进行测试服务端创建git仓库123456789su gitcd /home/git 在用户主目录下创建 [文件名].git仓库mkdir [文件名].git &amp;&amp; cd [文件名].gitgit init --bare 初始化git仓库输出内容，提示成功 客户端连接12345678910111213git init添加内容git add .git commit -m &quot;first commit&quot;！把当前仓库跟远程仓库添加映射git remote add origin git@[linux IP]:[文件名].git！把当前仓库push到远程仓库git push -u origin master 安全设置(禁止客户端shell登录)12345su gitmkdir /home/git/git-shell-commands (必须)su rootvim /etc/passwd 找到这句：可以通过 vim的正则搜索,命名模式下:/git:x1234注释git:x:1000:1000::/home/git:/bin/bash修改为git:x:1000:1000::/home/git:/bin/git-shell]]></content>
+      <categories>
+        <category>Git</category>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[express中使用es6]]></title>
+    <url>%2F2018%2F08%2F10%2Fexpress%E4%B8%AD%E4%BD%BF%E7%94%A8es6%2F</url>
+    <content type="text"><![CDATA[安装12345npm install --save-dev babel-clinpm install --save-dev babel-preset-es2015 babel-preset-stage-2npm install --save-dev babel-preset-env]]></content>
+      <categories>
+        <category>Node</category>
+        <category>Express</category>
+      </categories>
+      <tags>
+        <tag>Node</tag>
+        <tag>Express</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[pm2使用]]></title>
+    <url>%2F2018%2F07%2F31%2Fpm2%E4%BD%BF%E7%94%A8%2F</url>
+    <content type="text"><![CDATA[安装1npm install pm2 -g web查看1npm install pm2-web -g pm2使用1pm2 start [filename].js 运行一个js文件 1pm2 start npm --watch --name [aliasname] -- run start 运行node项目(npm run dev) 1pm2 list 查看已启用项目 123pm2 restart [Name] 重启pm2 restart all 重启所有进程pm2 reload all 0秒停机重载进程 [用于 NETWORKED 进程] 12pm2 stop [Name] 停止pm2 stop all 停止所有进程 12pm2 delete [Name] 杀死项目pm2 delete all 杀死全部进程 1pm2 logs 显示所有进程日志 1pm2 monit 监视每个node进程的CPU和内存的使用情况 pm2 logs日志存放位置（linux-centos）1cd /root/.pm2/logs/ 注意：若pm2启动express程序一直重启，可能是–watch的问题]]></content>
+      <categories>
+        <category>Node</category>
+      </categories>
+      <tags>
+        <tag>Node</tag>
+        <tag>Pm2</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[linux安装redis]]></title>
+    <url>%2F2018%2F07%2F31%2Flinux%E5%AE%89%E8%A3%85redis%2F</url>
+    <content type="text"><![CDATA[安装依赖12yum -y install gcc gcc-c++yum -y install wget 安装步骤1.1wget http://download.redis.io/releases/redis-3.2.9.tar.gz 2.1tar xzf redis-3.2.9.tar.gz 3.1cd redis-redis-3.2.9 4.1make 远程连接 修改配置(安装目录下) 1vi redis.conf a. 把bind 127.0.0.1 ::1这一行注释掉 b. protected-mode 要设置成no c. 启动的时候，需要指定redis.conf 文件 关闭防火墙firewall 启动redis1src/redis-server redis.conf redis后台启动12345进入redis目录vim redis.conf找到daemonize no改为daemonize yes重启 redis查看版本1./redis-cli -h 127.0.0.1 info | grep &apos;redis_version&apos; 出现问题关闭防火墙12service firewalld stop 关闭firewallsystemctl disable firewalld.service 禁止firewall开机启动]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>redis</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[linux常用依赖包]]></title>
+    <url>%2F2018%2F07%2F31%2Flinux%E5%B8%B8%E7%94%A8%E4%BE%9D%E8%B5%96%E5%8C%85%2F</url>
+    <content type="text"><![CDATA[linux查看某命令在哪个依赖包中1$ yum search [命令名] 查看端口使用12$ netstat -lunpt 查看$ yum -y install net-tools 安装 上传文件123$ rz -be 本地上传文件到服务器$ sz [filename] 发送文件到本地$ yum -y install lrzsz wget1$ yum -y install wget 解压命令12$ unzip [filename].zip$ yum -y install zip unzip 权限1$ chmod -R 777 [filename] vim编辑器1$ yum -y install vim ab测试工具1$ yum -y install httpd-tools DNS 服务器软件1$ yum -y install bind nslookup是常用来查询本机域名解析情况的命令1$ yum -y install bind-utils]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[linux安装nvm管理nodejs版本]]></title>
+    <url>%2F2018%2F07%2F31%2Flinux%E5%AE%89%E8%A3%85nvm%E7%AE%A1%E7%90%86nodejs%E7%89%88%E6%9C%AC%2F</url>
+    <content type="text"><![CDATA[curl方式1curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash 问题远程连接需，重启xshell依旧提示找不到nvm命令，那么请使用source命令1source ~/.bashrc 查看可安装node版本1nvm ls-remote 安装node版本1nvm install v8.9.4 切换node版本1nvm use v8.9.4 查看已安装node版本1nvm list]]></content>
+      <categories>
+        <category>Linux</category>
+        <category>Node</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>nvm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[linux常用命令]]></title>
+    <url>%2F2018%2F07%2F30%2Flinux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%2F</url>
+    <content type="text"><![CDATA[常用文件命令linux重启 shutdown halt id：查看登录用户信息改密 passwd 创建目录：mkdir -p：递归创建文件夹 切换目录：cd cd ~与 cd：进入家目录 cd -：进入上次目录 cd ..：进入上一级目录 cd .：进入当前目录 删除文件：rm rmdir：不常用 rm -r：会询问是否删除 rm -rf：强制删除 剪切文件和改名：mv复制命令：cp -r：复制目录 -p：连带文件属性复制 -d：若源文件是链接文件，则复制链接属性 -a：相当于 -pdr 显示当前路径：pwd print working directory 查询目录中的内容：ls -a：显示所有文件 -l：显示文件详细信息，可以用 ll 表示 -d：查看目录属性，目录本身 -h：人性化显示文件大小 -i：显示inode 链接命令：ln -a：创建软链接（一定要写绝对路径）注：硬链接其实是同一个文件 -rw-r–r–： -：代表文件 d：代表目录 l：代表软链接文件 rw- r– r– u所有者 g所属组 o其他人 三种权限： r：读 w：写 x：执行 常用目录中： /：根目录 /bin、/sbin：命令保存目录 /usr：系统软件资源目录 /usr/bin：普通用户系统命令 /usr/sbin：超级用户系统命令 /boot：启动目录 /dev：硬件目录 /etc：系统默认配置文件 /home：普通用户 /root：超级用户 /lib：函数库 /media、/mnt、/misc：空目录（用于挂外接设备等） /sys、/proc：不能操作，保存内存数据 /tmp：临时目录 /var：系统相关文档 常用系统命令查看linux的CPU1$ cat /proc/cpuinfo | grep 'model name' |uniq 查看CPU使用情况12$ top -bn 1 -i -c$ top 检查安装有没成功 例子1$ rpm -qa lrzsz 查看ip1$ ip a 查看启动1$ ps -aux |grep nginx 查看文件容量和占用1$ df -h /opt 查看hostname1$ uname -a 切换用户1$ su root 帮助命令12$ man -f [命令名]$ man [级别] [命令名] 查看网段和路由1$ netstat -rn 或者 netstat -r -anv 或者 route 查看端口占用1$ netstat -luntp|grep 443 查看linux外网IP1234567$ curl icanhazip.com$ curl ifconfig.me$ curl curlmyip.com$ curl ip.appspot.com$ curl ipinfo.io/ip$ curl ipecho.net/plain$ curl www.trackip.net/i 查看当前用户名1234567$ users$ whoami$ id -un$ printenv USER&lt;!-- 增加用户 --&gt;$ useradd [用户名]$ passwd [用户名] 查看环境变量12$ env$ printenv [环境名] // 可以打印出env的参数 配置静态IP12$ cd /etc/sysconfig/network-scripts/vim [配置文件名] 系统安装时centos默认的发行版本信息1234567891011$ uname -a$ cat /proc/version$ cat /etc/redhat-release&lt;!-- 查看当前内核版本 --&gt;$ uname -r$ uname -s$ uname -m 查看包是否安装1$ rpm -qa|grep [包名]]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[nginx]]></title>
+    <url>%2F2018%2F07%2F30%2Fnginx%2F</url>
+    <content type="text"><![CDATA[四项确认 可联网 yum可使用 iptables关闭 iptables -L：查看 iptables -F：关闭 iptables -t nat -Liptables -t nat -F 注意：centos从7开始默认用的是firewalld，这个是基于iptables的，虽然有iptables的核心**但是iptables的服务是没安装的。所以你只要停止firewalld服务即可**123systemctl status firewalld.service 查看service状态 systemctl stop firewalld.service 关闭此服务 systemctl disable firewalld.service 移除此服务 getenforce关闭 getenforce：查看 setenforce 0：切换状态 安装必要依赖1yum -y install gcc gcc-c++ autoconf pcre pcre-devel make automake 1yum -y install wget httpd-tools vim 初始化目录(在/opt目录下)1mkdir app backup download logs work app：存放代码应用 backup：存放备份文件 download：相关下载文件 logs：日志文件 work：工作文件 安装nginx创建文件1vi /etc/yum.repos.d/nginx.repo 添加12345[nginx]name=nginx repobaseurl=http://nginx.org/packages/centos/7/$basearch/gpgcheck=0enabled=1 列出版本号1yum list |grep nginx 安装1yum -y install nginx 查看1nginx -v 1nginx -V nginx测试配置文件123/usr/sbin/nginx -tnginx -t -c /etc/nginx/nginx.conf 查看进程1ps aux|grep nginx 启动 / 停止 nginx12345cd /usr/sbin/./nginx./nginx -s stop./nginx -s quit./nginx -s reload nginx重启1/usr/sbin/nginx -s reload nginx重载配置文件1nginx -s reload -c /etc/nginx/nginx.conf nginx初始化静态文件目录1/usr/share/nginx/html https配置 openssl证书生成(个人-自签名)12345openssl genrsa -idea -out jesse.key 1024openssl req -new -key jesse.key -out jesse.csropenssl x509 -req -days 3650 -in jesse.csr -signkey jesse.key -out jesse.crt]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>Nginx</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[写在前面的话]]></title>
+    <url>%2F2017%2F08%2F14%2F%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2%E7%9A%84%E8%AF%9D%2F</url>
+    <content type="text"><![CDATA[我们其实都是，光阴中喘息奔跑的人儿，却终究追不过时光，渐渐老去，消失在那片阴影之中…… 萧鼎诛仙]]></content>
+  </entry>
+</search>
