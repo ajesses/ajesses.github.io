@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>wxqblog</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-12-28T08:24:35.285Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Jesse</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>linux设置定时任务之crontab</title>
+    <link href="http://yoursite.com/2018/12/28/linux%E8%AE%BE%E7%BD%AE%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1%E4%B9%8Bcrontab/"/>
+    <id>http://yoursite.com/2018/12/28/linux设置定时任务之crontab/</id>
+    <published>2018-12-28T06:10:40.000Z</published>
+    <updated>2018-12-28T08:24:35.285Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h4&gt;&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div
+        
+      
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://yoursite.com/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>window中让电脑上网但是不影响局域网的连接</title>
+    <link href="http://yoursite.com/2018/12/26/window%E4%B8%AD%E8%AE%A9%E7%94%B5%E8%84%91%E4%B8%8A%E7%BD%91%E4%BD%86%E6%98%AF%E4%B8%8D%E5%BD%B1%E5%93%8D%E5%B1%80%E5%9F%9F%E7%BD%91%E7%9A%84%E8%BF%9E%E6%8E%A5/"/>
+    <id>http://yoursite.com/2018/12/26/window中让电脑上网但是不影响局域网的连接/</id>
+    <published>2018-12-26T03:14:10.000Z</published>
+    <updated>2018-12-26T03:20:24.463Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;如何让电脑不能上网但又不影响局域网的连接呢（window）&quot;&gt;&lt;a href=&quot;#如何让电脑不能上网但又不影响局域网的连接呢（window）&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Window" scheme="http://yoursite.com/categories/Window/"/>
+    
+    
+      <category term="Window" scheme="http://yoursite.com/tags/Window/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>docker常用工具</title>
+    <link href="http://yoursite.com/2018/12/20/docker%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/"/>
+    <id>http://yoursite.com/2018/12/20/docker常用工具/</id>
+    <published>2018-12-20T11:22:45.000Z</published>
+    <updated>2018-12-20T11:47:54.509Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;docker-compose安装&quot;&gt;&lt;a href=&quot;#docker-compose安装&quot; class=&quot;headerlink&quot; title=&quot;docker-compose安装&quot;&gt;&lt;/a&gt;docker-compose安装&lt;/h4&gt;&lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="Docker" scheme="http://yoursite.com/categories/Docker/"/>
+    
+    
+      <category term="Docker" scheme="http://yoursite.com/tags/Docker/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>docker服务</title>
+    <link href="http://yoursite.com/2018/12/20/docker%E6%9C%8D%E5%8A%A1/"/>
+    <id>http://yoursite.com/2018/12/20/docker服务/</id>
+    <published>2018-12-20T08:41:12.000Z</published>
+    <updated>2018-12-20T11:19:12.019Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;headerlink&quot; title=&quot;定义&quot;&gt;&lt;/a&gt;定义&lt;/h4&gt;&lt;p&gt;一项服务仅运行一个镜像，但它会编制镜像的运行方式 -
+        
+      
+    
+    </summary>
+    
+      <category term="Docker" scheme="http://yoursite.com/categories/Docker/"/>
+    
+    
+      <category term="Docker" scheme="http://yoursite.com/tags/Docker/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>git连接github使用</title>
+    <link href="http://yoursite.com/2018/12/19/git%E8%BF%9E%E6%8E%A5github%E4%BD%BF%E7%94%A8/"/>
+    <id>http://yoursite.com/2018/12/19/git连接github使用/</id>
+    <published>2018-12-19T03:26:32.000Z</published>
+    <updated>2018-12-19T03:31:25.731Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;注意&quot;&gt;&lt;a href=&quot;#注意&quot; class=&quot;headerlink&quot; title=&quot;注意&quot;&gt;&lt;/a&gt;注意&lt;/h4&gt;&lt;p&gt;出现&lt;br&gt;&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+        
+      
+    
+    </summary>
+    
+      <category term="Git" scheme="http://yoursite.com/categories/Git/"/>
+    
+    
+      <category term="Git" scheme="http://yoursite.com/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>docker使用</title>
+    <link href="http://yoursite.com/2018/12/18/docker%E4%BD%BF%E7%94%A8/"/>
+    <id>http://yoursite.com/2018/12/18/docker使用/</id>
+    <published>2018-12-18T11:18:58.000Z</published>
+    <updated>2018-12-20T12:05:21.469Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h4&gt;&lt;p&gt;&lt;a href=&quot;http://www.runoob.com/docker/centos-docker-install.html&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Docker" scheme="http://yoursite.com/categories/Docker/"/>
+    
+    
+      <category term="Docker" scheme="http://yoursite.com/tags/Docker/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>window安装Telnet工具</title>
+    <link href="http://yoursite.com/2018/11/15/window%E5%AE%89%E8%A3%85Telnet%E5%B7%A5%E5%85%B7/"/>
+    <id>http://yoursite.com/2018/11/15/window安装Telnet工具/</id>
+    <published>2018-11-15T07:27:36.000Z</published>
+    <updated>2018-11-15T07:57:47.351Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;打开控制面板&lt;/strong&gt; &amp;gt;&amp;gt; &lt;strong&gt;程序与功能&lt;/strong&gt; &amp;gt;&amp;gt;
+        
+      
+    
+    </summary>
+    
+      <category term="Window" scheme="http://yoursite.com/categories/Window/"/>
+    
+    
+      <category term="Window" scheme="http://yoursite.com/tags/Window/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>linux设置禁用外网，只连局域网</title>
+    <link href="http://yoursite.com/2018/11/02/linux%E8%AE%BE%E7%BD%AE%E7%A6%81%E7%94%A8%E5%A4%96%E7%BD%91%EF%BC%8C%E5%8F%AA%E8%BF%9E%E5%B1%80%E5%9F%9F%E7%BD%91/"/>
+    <id>http://yoursite.com/2018/11/02/linux设置禁用外网，只连局域网/</id>
+    <published>2018-11-02T06:51:47.000Z</published>
+    <updated>2018-12-26T03:16:56.125Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;如何让电脑不能上网但又不影响局域网的连接呢（linux）&quot;&gt;&lt;a href=&quot;#如何让电脑不能上网但又不影响局域网的连接呢（linux）&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://yoursite.com/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>linux安装svn</title>
+    <link href="http://yoursite.com/2018/11/02/linux%E5%AE%89%E8%A3%85svn/"/>
+    <id>http://yoursite.com/2018/11/02/linux安装svn/</id>
+    <published>2018-11-02T06:17:15.000Z</published>
+    <updated>2018-11-02T07:09:17.713Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;检查安装&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+        
+      
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://yoursite.com/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
+    
+      <category term="svn" scheme="http://yoursite.com/tags/svn/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>window cmd常用命令</title>
+    <link href="http://yoursite.com/2018/10/19/window-cmd%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <id>http://yoursite.com/2018/10/19/window-cmd常用命令/</id>
+    <published>2018-10-19T03:25:10.000Z</published>
+    <updated>2018-10-19T03:34:59.652Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;文件操作&quot;&gt;&lt;a href=&quot;#文件操作&quot; class=&quot;headerlink&quot; title=&quot;文件操作&quot;&gt;&lt;/a&gt;文件操作&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+        
+      
+    
+    </summary>
+    
+      <category term="Window" scheme="http://yoursite.com/categories/Window/"/>
+    
+    
+      <category term="Window" scheme="http://yoursite.com/tags/Window/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vscode常用插件集合</title>
+    <link href="http://yoursite.com/2018/09/16/vscode%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6%E9%9B%86%E5%90%88/"/>
+    <id>http://yoursite.com/2018/09/16/vscode常用插件集合/</id>
+    <published>2018-09-16T07:04:40.000Z</published>
+    <updated>2018-09-16T07:22:51.274Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;Change-case&quot;&gt;&lt;a href=&quot;#Change-case&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Vscode" scheme="http://yoursite.com/categories/Vscode/"/>
+    
+    
+      <category term="Vscode" scheme="http://yoursite.com/tags/Vscode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://yoursite.com/2018/09/05/centOS7%E4%B8%8B%E5%AE%89%E8%A3%85KVM%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
+    <id>http://yoursite.com/2018/09/05/centOS7下安装KVM虚拟机/</id>
+    <published>2018-09-05T06:54:47.674Z</published>
+    <updated>2018-09-05T08:06:34.835Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;hr&gt;
+&lt;p&gt;title: centOS7下安装KVM虚拟机&lt;br&gt;date: 2018-09-05
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>一台同时连接github和码云</title>
+    <link href="http://yoursite.com/2018/08/14/%E4%B8%80%E5%8F%B0%E5%90%8C%E6%97%B6%E8%BF%9E%E6%8E%A5github%E5%92%8C%E7%A0%81%E4%BA%91/"/>
+    <id>http://yoursite.com/2018/08/14/一台同时连接github和码云/</id>
+    <published>2018-08-14T07:54:56.000Z</published>
+    <updated>2018-08-23T05:58:43.040Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;生成ssh&quot;&gt;&lt;a href=&quot;#生成ssh&quot; class=&quot;headerlink&quot; title=&quot;生成ssh&quot;&gt;&lt;/a&gt;生成ssh&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+        
+      
+    
+    </summary>
+    
+      <category term="Git" scheme="http://yoursite.com/categories/Git/"/>
+    
+      <category term="SSH" scheme="http://yoursite.com/categories/Git/SSH/"/>
+    
+    
+      <category term="Git" scheme="http://yoursite.com/tags/Git/"/>
+    
+      <category term="SSH" scheme="http://yoursite.com/tags/SSH/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo设置favicon</title>
+    <link href="http://yoursite.com/2018/08/14/hexo%E8%AE%BE%E7%BD%AEfavicon/"/>
+    <id>http://yoursite.com/2018/08/14/hexo设置favicon/</id>
+    <published>2018-08-14T03:32:10.000Z</published>
+    <updated>2018-08-14T03:43:07.687Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;制作favicon-ico&quot;&gt;&lt;a href=&quot;#制作favicon-ico&quot; class=&quot;headerlink&quot; title=&quot;制作favicon.ico&quot;&gt;&lt;/a&gt;制作favicon.ico&lt;/h4&gt;&lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>linux搭建git私有仓库</title>
+    <link href="http://yoursite.com/2018/08/13/linux%E6%90%AD%E5%BB%BAgit%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93/"/>
+    <id>http://yoursite.com/2018/08/13/linux搭建git私有仓库/</id>
+    <published>2018-08-13T03:28:05.000Z</published>
+    <updated>2018-08-14T08:08:24.307Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;查看ssh版本&quot;&gt;&lt;a href=&quot;#查看ssh版本&quot; class=&quot;headerlink&quot; title=&quot;查看ssh版本&quot;&gt;&lt;/a&gt;查看ssh版本&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+        
+      
+    
+    </summary>
+    
+      <category term="Git" scheme="http://yoursite.com/categories/Git/"/>
+    
+      <category term="Linux" scheme="http://yoursite.com/categories/Git/Linux/"/>
+    
+    
+      <category term="Git" scheme="http://yoursite.com/tags/Git/"/>
+    
+      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>express中使用es6</title>
+    <link href="http://yoursite.com/2018/08/10/express%E4%B8%AD%E4%BD%BF%E7%94%A8es6/"/>
+    <id>http://yoursite.com/2018/08/10/express中使用es6/</id>
+    <published>2018-08-10T08:13:41.000Z</published>
+    <updated>2018-08-14T08:08:20.986Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div
+        
+      
+    
+    </summary>
+    
+      <category term="Node" scheme="http://yoursite.com/categories/Node/"/>
+    
+      <category term="Express" scheme="http://yoursite.com/categories/Node/Express/"/>
+    
+    
+      <category term="Node" scheme="http://yoursite.com/tags/Node/"/>
+    
+      <category term="Express" scheme="http://yoursite.com/tags/Express/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>pm2使用</title>
+    <link href="http://yoursite.com/2018/07/31/pm2%E4%BD%BF%E7%94%A8/"/>
+    <id>http://yoursite.com/2018/07/31/pm2使用/</id>
+    <published>2018-07-31T11:11:39.000Z</published>
+    <updated>2019-01-14T02:38:32.869Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div
+        
+      
+    
+    </summary>
+    
+      <category term="Node" scheme="http://yoursite.com/categories/Node/"/>
+    
+    
+      <category term="Node" scheme="http://yoursite.com/tags/Node/"/>
+    
+      <category term="Pm2" scheme="http://yoursite.com/tags/Pm2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>linux安装redis</title>
+    <link href="http://yoursite.com/2018/07/31/linux%E5%AE%89%E8%A3%85redis/"/>
+    <id>http://yoursite.com/2018/07/31/linux安装redis/</id>
+    <published>2018-07-31T07:33:57.000Z</published>
+    <updated>2018-08-27T05:18:54.665Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;安装依赖&quot;&gt;&lt;a href=&quot;#安装依赖&quot; class=&quot;headerlink&quot; title=&quot;安装依赖&quot;&gt;&lt;/a&gt;安装依赖&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+        
+      
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://yoursite.com/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
+    
+      <category term="redis" scheme="http://yoursite.com/tags/redis/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>linux常用依赖包</title>
+    <link href="http://yoursite.com/2018/07/31/linux%E5%B8%B8%E7%94%A8%E4%BE%9D%E8%B5%96%E5%8C%85/"/>
+    <id>http://yoursite.com/2018/07/31/linux常用依赖包/</id>
+    <published>2018-07-31T07:08:55.000Z</published>
+    <updated>2018-12-11T02:41:09.142Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;linux查看某命令在哪个依赖包中&quot;&gt;&lt;a href=&quot;#linux查看某命令在哪个依赖包中&quot; class=&quot;headerlink&quot; title=&quot;linux查看某命令在哪个依赖包中&quot;&gt;&lt;/a&gt;linux查看某命令在哪个依赖包中&lt;/h4&gt;&lt;figure
+        
+      
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://yoursite.com/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>linux安装nvm管理nodejs版本</title>
+    <link href="http://yoursite.com/2018/07/31/linux%E5%AE%89%E8%A3%85nvm%E7%AE%A1%E7%90%86nodejs%E7%89%88%E6%9C%AC/"/>
+    <id>http://yoursite.com/2018/07/31/linux安装nvm管理nodejs版本/</id>
+    <published>2018-07-31T06:48:05.000Z</published>
+    <updated>2018-08-14T08:09:00.828Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;curl方式&quot;&gt;&lt;a href=&quot;#curl方式&quot; class=&quot;headerlink&quot; title=&quot;curl方式&quot;&gt;&lt;/a&gt;curl方式&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+        
+      
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://yoursite.com/categories/Linux/"/>
+    
+      <category term="Node" scheme="http://yoursite.com/categories/Linux/Node/"/>
+    
+    
+      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
+    
+      <category term="nvm" scheme="http://yoursite.com/tags/nvm/"/>
+    
+  </entry>
+  
+</feed>
