@@ -180,7 +180,7 @@
   <entry>
     <title><![CDATA[pm2使用]]></title>
     <url>%2F2018%2F07%2F31%2Fpm2%E4%BD%BF%E7%94%A8%2F</url>
-    <content type="text"><![CDATA[安装1npm install pm2 -g web查看1npm install pm2-web -g pm2使用1pm2 start [filename].js 运行一个js文件 1pm2 start npm --watch --name [aliasname] -- run start 运行node项目(npm run dev) 1pm2 list 查看已启用项目 123pm2 restart [Name] 重启pm2 restart all 重启所有进程pm2 reload all 0秒停机重载进程 [用于 NETWORKED 进程] 12pm2 stop [Name] 停止pm2 stop all 停止所有进程 12pm2 delete [Name] 杀死项目pm2 delete all 杀死全部进程 1pm2 logs 显示所有进程日志 1pm2 monit 监视每个node进程的CPU和内存的使用情况 pm2 logs日志存放位置（linux-centos）1cd /root/.pm2/logs/ 注意：若pm2启动express程序一直重启，可能是–watch的问题]]></content>
+    <content type="text"><![CDATA[安装1npm install pm2 -g web查看1npm install pm2-web -g pm2使用1pm2 start [filename].js 运行一个js文件 1pm2 start npm --watch --name [aliasname] -- run start 运行node项目(npm run dev) 1pm2 list 查看已启用项目 123pm2 restart [Name] 重启pm2 restart all 重启所有进程pm2 reload all 0秒停机重载进程 [用于 NETWORKED 进程] 12pm2 stop [Name] 停止pm2 stop all 停止所有进程 12pm2 delete [Name] 杀死项目pm2 delete all 杀死全部进程 1pm2 logs 显示所有进程日志 1pm2 monit 监视每个node进程的CPU和内存的使用情况 pm2 logs日志存放位置（linux-centos）1cd /root/.pm2/logs/ 注意：若pm2启动express程序一直重启，可能是–watch的问题 参考https://cnodejs.org/topic/584e5ee74c17b38d354365c2]]></content>
       <categories>
         <category>Node</category>
       </categories>
