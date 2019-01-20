@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[linux修改系统日期]]></title>
+    <url>%2F2019%2F01%2F20%2Flinux%E4%BF%AE%E6%94%B9%E7%B3%BB%E7%BB%9F%E6%97%A5%E6%9C%9F%2F</url>
+    <content type="text"><![CDATA[date命令12345# 查看系统时间$ date# 设置时间伟2008年8月8号 12:00$ date -s "2008-08-08 12:00:00" 修改完后,记得执行clock -w，把系统时间写入CMOS]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[linux设置定时任务之crontab]]></title>
     <url>%2F2018%2F12%2F28%2Flinux%E8%AE%BE%E7%BD%AE%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1%E4%B9%8Bcrontab%2F</url>
     <content type="text"><![CDATA[安装1234# 查看是否安装$ rpm -qa crontab$ yum -y install crontabs 启动12345678$ ps -ef | grep cron$ service crond start # 启动服务 $ service crond stop # 关闭服务 $ service crond restart # 重启服务 $ service crond reload # 重新载入配置$ service crond status # 查看服务状态 查看crontab服务是否已设置为开机启动，执行命令：ntsysv或者执行chkconfig –level 35 crond on 若未找到ntsysv,则安装yum -y install setuptool ntsysv 添加调度任务12345678# 编辑文件$ vim /etc/crontab# 列出当前的所有调度任务 $ crontab -l# 删除所有任务调度工作 $ crontab -r 注：你可以在/var/spool/mail/root中查看相应信息 格式描述：minute hour day month dayofweek command minute：从0到59的整数 hour：从0到23的整数 day：从1到31的整数 (必须是指定月份的有效日期) month：从1到12的整数 (或如Jan或Feb简写的月份) dayofweek：从0到7的整数，0或7用来描述周日 (或用Sun或Mon简写来表示) command：需要执行的命令(可用as ls /proc &gt;&gt; /tmp/proc或 执行自定义脚本的命令) 整数间的连字号(-)表示整数列，例如1-4意思是整数1,2,3,4 指定数值由逗号分开。如：3,4,6,8表示这四个指定整数。 符号/指定步进设置。/&lt;interger&gt;表示步进值。如0-59/2定义每两分钟执行一次。步进值也可用星号表示。如/3用来运行每三个月份运行指定任务 以#开头的为注释行,不会被执行 配置目录 cron.daily：是每天执行一次的job cron.weekly：是每个星期执行一次的job cron.monthly：是每月执行一次的job cron.hourly：是每个小时执行一次的job cron.d：是系统自动定期需要做的任务 crontab：是设定定时任务执行文件 cron.deny：文件就是用于控制不让哪些用户使用Crontab的功能 crontab-ui 可视化界面 安装npm install -g crontab-ui 启动crontab-ui 指定端口启动，远程访问HOST=0.0.0.0 PORT=9000 crontab-ui 参考 参考1：https://www.linuxidc.com/Linux/2018-11/155189.html 参考2：https://blog.csdn.net/qq_39131177/article/details/79051711 参考3：https://zhuanlan.zhihu.com/p/45998227]]></content>
