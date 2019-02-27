@@ -102,7 +102,7 @@
   <entry>
     <title><![CDATA[linux安装svn]]></title>
     <url>%2F2018%2F11%2F02%2Flinux%E5%AE%89%E8%A3%85svn%2F</url>
-    <content type="text"><![CDATA[安装 检查安装 1rpm -qa subversion 安装 1yum install httpd httpd-devel subversion mod_dav_svn mod_auth_mysql 验证安装 1234cd /etc/httpd/modulesls | grep svnmod_authz_svn.somod_dav_svn.so 查看版本 1svnserve --version 代码库创建 待写 启动1svnserve -d -r /opt/svn/repositories 查看进程123ps -ef|grep svn|grep -v grepnetstat -ln |grep 3690 注意：linux重启后，svn需要重启才能用123kill -9 [进程号]svnserve -d -r [安装目录] (到/usr/bin/目录下执行svnserve -d -r /home/svn/进行启动) 出现用户认证失败：可能是配置文件下的authz和svnserve.conf的路径不一致]]></content>
+    <content type="text"><![CDATA[安装 检查安装 1rpm -qa subversion 安装 1yum install httpd httpd-devel subversion mod_dav_svn mod_auth_mysql 验证安装 1234cd /etc/httpd/modulesls | grep svnmod_authz_svn.somod_dav_svn.so 查看版本 1svnserve --version 代码库创建 待写 启动1svnserve -d -r /opt/svn/repositories 查看进程123ps -ef|grep svn|grep -v grepnetstat -ln |grep 3690 注意：linux重启后，svn需要重启才能用123kill -9 [进程号]svnserve -d -r [安装目录] (到/usr/bin/目录下执行svnserve -d -r /home/svn/进行启动) 出现用户认证失败：可能是配置文件下的authz和svnserve.conf的路径不一致 参考链接： https://www.cnblogs.com/zengjiqiang/p/7413910.html]]></content>
       <categories>
         <category>Linux</category>
       </categories>
