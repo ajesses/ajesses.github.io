@@ -102,7 +102,7 @@
   <entry>
     <title><![CDATA[linux安装svn]]></title>
     <url>%2F2018%2F11%2F02%2Flinux%E5%AE%89%E8%A3%85svn%2F</url>
-    <content type="text"><![CDATA[安装 检查安装 1rpm -qa subversion 安装 1yum install httpd httpd-devel subversion mod_dav_svn mod_auth_mysql 验证安装 1234cd /etc/httpd/modulesls | grep svnmod_authz_svn.somod_dav_svn.so 查看版本 1svnserve --version 代码库创建 待写 启动1svnserve -d -r /opt/svn/repositories 查看进程123ps -ef|grep svn|grep -v grepnetstat -ln |grep 3690 注意：linux重启后，svn需要重启才能用123kill -9 [进程号]svnserve -d -r [安装目录] (到/usr/bin/目录下执行svnserve -d -r /home/svn/进行启动)]]></content>
+    <content type="text"><![CDATA[安装 检查安装 1rpm -qa subversion 安装 1yum install httpd httpd-devel subversion mod_dav_svn mod_auth_mysql 验证安装 1234cd /etc/httpd/modulesls | grep svnmod_authz_svn.somod_dav_svn.so 查看版本 1svnserve --version 代码库创建 待写 启动1svnserve -d -r /opt/svn/repositories 查看进程123ps -ef|grep svn|grep -v grepnetstat -ln |grep 3690 注意：linux重启后，svn需要重启才能用123kill -9 [进程号]svnserve -d -r [安装目录] (到/usr/bin/目录下执行svnserve -d -r /home/svn/进行启动) 出现用户认证失败：可能是配置文件下的authz和svnserve.conf的路径不一致]]></content>
       <categories>
         <category>Linux</category>
       </categories>
@@ -215,7 +215,7 @@
   <entry>
     <title><![CDATA[linux常用依赖包]]></title>
     <url>%2F2018%2F07%2F31%2Flinux%E5%B8%B8%E7%94%A8%E4%BE%9D%E8%B5%96%E5%8C%85%2F</url>
-    <content type="text"><![CDATA[linux查看某命令在哪个依赖包中1$ yum search [命令名] 查看端口使用12$ netstat -lunpt 查看$ yum -y install net-tools 安装 上传文件123$ rz -be 本地上传文件到服务器$ sz [filename] 发送文件到本地$ yum -y install lrzsz wget1$ yum -y install wget 解压命令12$ unzip [filename].zip$ yum -y install zip unzip 权限1$ chmod -R 777 [filename] vim编辑器1$ yum -y install vim ab测试工具1$ yum -y install httpd-tools DNS 服务器软件1$ yum -y install bind nslookup是常用来查询本机域名解析情况的命令1$ yum -y install bind-utils]]></content>
+    <content type="text"><![CDATA[linux查看某命令在哪个依赖包中1$ yum search [命令名] 查看端口使用12$ netstat -lunpt 查看$ yum -y install net-tools 安装 上传文件123$ rz -be 本地上传文件到服务器$ sz [filename] 发送文件到本地$ yum -y install lrzsz wget1$ yum -y install wget 解压命令12$ unzip [filename].zip$ yum -y install zip unzip 权限1$ chmod -R 777 [filename] vim编辑器1$ yum -y install vim ab测试工具1$ yum -y install httpd-tools DNS 服务器软件1$ yum -y install bind nslookup是常用来查询本机域名解析情况的命令1$ yum -y install bind-utils telnet1$ yum -y install telnet]]></content>
       <categories>
         <category>Linux</category>
       </categories>
