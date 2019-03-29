@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-03-29T02:54:11.238Z</updated>
+  <updated>2019-03-29T03:19:26.005Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2019/03/29/Javascript%E7%BB%A7%E6%89%BF%E6%96%B9%E5%BC%8F/"/>
     <id>http://yoursite.com/2019/03/29/Javascript继承方式/</id>
     <published>2019-03-29T02:51:12.000Z</published>
-    <updated>2019-03-29T02:54:11.238Z</updated>
+    <updated>2019-03-29T03:19:26.005Z</updated>
     
     <summary type="html">
     
@@ -29,7 +29,7 @@
       
         
         
-          &lt;h4 id=&quot;待&quot;&gt;&lt;a href=&quot;#待&quot; class=&quot;headerlink&quot;
+          &lt;h3 id=&quot;构造函数继承&quot;&gt;&lt;a href=&quot;#构造函数继承&quot; class=&quot;headerlink&quot; title=&quot;构造函数继承&quot;&gt;&lt;/a&gt;构造函数继承&lt;/h3&gt;&lt;h4 id=&quot;构造函数绑定&quot;&gt;&lt;a href=&quot;#构造函数绑定&quot; class=&quot;headerlink&quot;
         
       
     

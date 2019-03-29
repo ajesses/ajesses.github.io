@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[Javascript继承方式]]></title>
     <url>%2F2019%2F03%2F29%2FJavascript%E7%BB%A7%E6%89%BF%E6%96%B9%E5%BC%8F%2F</url>
-    <content type="text"><![CDATA[待]]></content>
+    <content type="text"><![CDATA[构造函数继承构造函数绑定123456789101112131415function Parent() &#123; this.country = 'shanghai';&#125;function Child(name, age) &#123; // call 或者 apply // call([对象名], arg1, arg2, arg3, ...) 第一个是对象，后续参数是传入该函数的值 // apply([对象名], [arg1, arg2, arg3, ...]) 第一个是对象， 第二个是数组，这个数组就是该函数的参数(arguments) Parent.apply(this, arguments) this.name = name; this.age = age;&#125;let parent = new Child('jesse', 26)console.log(child.country) prototype模式12 直接继承prototype12 利用空对象12 拷贝继承12 非构造函数继承]]></content>
       <categories>
         <category>Javascript</category>
       </categories>
