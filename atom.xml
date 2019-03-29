@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-03-29T02:41:37.523Z</updated>
+  <updated>2019-03-29T02:54:11.238Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Javascript继承方式</title>
+    <link href="http://yoursite.com/2019/03/29/Javascript%E7%BB%A7%E6%89%BF%E6%96%B9%E5%BC%8F/"/>
+    <id>http://yoursite.com/2019/03/29/Javascript继承方式/</id>
+    <published>2019-03-29T02:51:12.000Z</published>
+    <updated>2019-03-29T02:54:11.238Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;待&quot;&gt;&lt;a href=&quot;#待&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Javascript" scheme="http://yoursite.com/categories/Javascript/"/>
+    
+    
+      <category term="Javascript" scheme="http://yoursite.com/tags/Javascript/"/>
+    
+      <category term="继承方式" scheme="http://yoursite.com/tags/%E7%BB%A7%E6%89%BF%E6%96%B9%E5%BC%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>linux通过firewall开启端口访问</title>
@@ -461,9 +489,9 @@
       <category term="Linux" scheme="http://yoursite.com/categories/Git/Linux/"/>
     
     
-      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
-    
       <category term="Git" scheme="http://yoursite.com/tags/Git/"/>
+    
+      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
     
   </entry>
   
@@ -522,34 +550,6 @@
       <category term="Node" scheme="http://yoursite.com/tags/Node/"/>
     
       <category term="Pm2" scheme="http://yoursite.com/tags/Pm2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>linux安装redis</title>
-    <link href="http://yoursite.com/2018/07/31/linux%E5%AE%89%E8%A3%85redis/"/>
-    <id>http://yoursite.com/2018/07/31/linux安装redis/</id>
-    <published>2018-07-31T07:33:57.000Z</published>
-    <updated>2019-03-29T02:37:23.218Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h4 id=&quot;安装依赖&quot;&gt;&lt;a href=&quot;#安装依赖&quot; class=&quot;headerlink&quot; title=&quot;安装依赖&quot;&gt;&lt;/a&gt;安装依赖&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
-        
-      
-    
-    </summary>
-    
-      <category term="Linux" scheme="http://yoursite.com/categories/Linux/"/>
-    
-    
-      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
-    
-      <category term="redis" scheme="http://yoursite.com/tags/redis/"/>
     
   </entry>
   

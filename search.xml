@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Javascript继承方式]]></title>
+    <url>%2F2019%2F03%2F29%2FJavascript%E7%BB%A7%E6%89%BF%E6%96%B9%E5%BC%8F%2F</url>
+    <content type="text"><![CDATA[待]]></content>
+      <categories>
+        <category>Javascript</category>
+      </categories>
+      <tags>
+        <tag>Javascript</tag>
+        <tag>继承方式</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[linux通过firewall开启端口访问]]></title>
     <url>%2F2019%2F03%2F28%2Flinux%E9%80%9A%E8%BF%87firewall%E5%BC%80%E5%90%AF%E7%AB%AF%E5%8F%A3%E8%AE%BF%E9%97%AE%2F</url>
     <content type="text"><![CDATA[安装12345678910111213$ yum install firewalld -y# 开启$ systemctl start firewalld.service# 查看$ systemctl status firewalld# 开机自动启动$ systemctl enable firewalld.service# 关闭开机自动启动$ systemctl disable firewalld.service 开启端口123456# 永久$ firewall-cmd --permanent --zone=public --add-port=[port]/tcp# 并加载$ firewall-cmd --reload 查看开启端口和服务12345# 查看端口和服务$ firewall-cmd --permanent --zone=public --list-ports$ firewall-cmd --permanent --zone=public --list-services 查看服务启动状态1234$ firewall-cmd --query$ firewall-cmd --query-service [服务名]]]></content>
@@ -182,8 +194,8 @@
         <category>Linux</category>
       </categories>
       <tags>
-        <tag>Linux</tag>
         <tag>Git</tag>
+        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
