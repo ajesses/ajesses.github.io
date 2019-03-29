@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[linux通过firewall开启端口访问]]></title>
+    <url>%2F2019%2F03%2F28%2Flinux%E9%80%9A%E8%BF%87firewall%E5%BC%80%E5%90%AF%E7%AB%AF%E5%8F%A3%E8%AE%BF%E9%97%AE%2F</url>
+    <content type="text"><![CDATA[安装12345678910111213$ yum install firewalld -y# 开启$ systemctl start firewalld.service# 查看$ systemctl status firewalld# 开机自动启动$ systemctl enable firewalld.service# 关闭开机自动启动$ systemctl disable firewalld.service 开启端口123456# 永久$ firewall-cmd --permanent --zone=public --add-port=[port]/tcp# 并加载$ firewall-cmd --reload 查看开启端口和服务12345# 查看端口和服务$ firewall-cmd --permanent --zone=public --list-ports$ firewall-cmd --permanent --zone=public --list-services 查看服务启动状态1234$ firewall-cmd --query$ firewall-cmd --query-service [服务名]]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[linux修改系统日期]]></title>
     <url>%2F2019%2F01%2F20%2Flinux%E4%BF%AE%E6%94%B9%E7%B3%BB%E7%BB%9F%E6%97%A5%E6%9C%9F%2F</url>
     <content type="text"><![CDATA[date命令12345# 查看系统时间$ date# 设置时间伟2008年8月8号 12:00$ date -s "2008-08-08 12:00:00" 修改完后,记得执行clock -w，把系统时间写入CMOS]]></content>
@@ -171,8 +182,8 @@
         <category>Linux</category>
       </categories>
       <tags>
-        <tag>Git</tag>
         <tag>Linux</tag>
+        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
@@ -203,7 +214,7 @@
   <entry>
     <title><![CDATA[linux安装redis]]></title>
     <url>%2F2018%2F07%2F31%2Flinux%E5%AE%89%E8%A3%85redis%2F</url>
-    <content type="text"><![CDATA[安装依赖12yum -y install gcc gcc-c++yum -y install wget 安装步骤1.1wget http://download.redis.io/releases/redis-3.2.9.tar.gz 2.1tar xzf redis-3.2.9.tar.gz 3.1cd redis-redis-3.2.9 4.1make 远程连接 修改配置(安装目录下) 1vi redis.conf a. 把bind 127.0.0.1 ::1这一行注释掉 b. protected-mode 要设置成no c. 启动的时候，需要指定redis.conf 文件 关闭防火墙firewall 启动redis1src/redis-server redis.conf redis后台启动12345进入redis目录vim redis.conf找到daemonize no改为daemonize yes重启 redis查看版本1./redis-cli -h 127.0.0.1 info | grep &apos;redis_version&apos; 出现问题关闭防火墙12service firewalld stop 关闭firewallsystemctl disable firewalld.service 禁止firewall开机启动]]></content>
+    <content type="text"><![CDATA[安装依赖12yum -y install gcc gcc-c++yum -y install wget 安装步骤1.1wget http://download.redis.io/releases/redis-3.2.9.tar.gz 2.1tar xzf redis-3.2.9.tar.gz 3.1cd redis-redis-3.2.9 4.1make 远程连接 修改配置(安装目录下) 1vi redis.conf a. 把bind 127.0.0.1 ::1这一行注释掉 b. protected-mode 要设置成no c. 启动的时候，需要指定redis.conf 文件 启动redis1src/redis-server redis.conf redis后台启动12345进入redis目录vim redis.conf找到daemonize no改为daemonize yes重启 redis查看版本1./redis-cli -h 127.0.0.1 info | grep &apos;redis_version&apos; 出现问题关闭防火墙1234567# 方法1 禁用firewalld$ service firewalld stop 关闭firewall$ systemctl disable firewalld.service 禁止firewall开机启动# 方法2 开启端口访问权限$ firewall-cmd --zone=public --add-port=6379/tcp --permanent 开机自启动1234567891011121314151617181920212223242526272829# 1. 复制redis目录下的redis_init_script，到/etc/init.d目录下并重命名为redis$ cp [redis目录]/utils/redis_init_script /etc/init.d/redis# 2. 编辑$ cd /etc/init.d &amp;&amp; vim redis# 3. 在开头添加一行# chkconfig: 2345 80 90# 4. 修改路径EXEC=/[redis目录]/src/redis-serverCLIEXEC=/[redis目录]/src/redis-cliCONF="/[redis目录]/redis.conf"# 5. 加权$ chmod +x /etc/init.d/redis# 6. 注册$ chkconfig redis on# 7. 启动$ systemctl start redis# 8. 查看服务启动$ lsof -i:6379# 如果不存在lsof 则安装$ yum install lsof -y]]></content>
       <categories>
         <category>Linux</category>
       </categories>

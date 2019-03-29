@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-01-20T10:01:22.779Z</updated>
+  <updated>2019-03-29T02:41:37.523Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>linux通过firewall开启端口访问</title>
+    <link href="http://yoursite.com/2019/03/28/linux%E9%80%9A%E8%BF%87firewall%E5%BC%80%E5%90%AF%E7%AB%AF%E5%8F%A3%E8%AE%BF%E9%97%AE/"/>
+    <id>http://yoursite.com/2019/03/28/linux通过firewall开启端口访问/</id>
+    <published>2019-03-28T06:46:24.000Z</published>
+    <updated>2019-03-29T02:41:37.523Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h4&gt;&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div
+        
+      
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://yoursite.com/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
+    
+  </entry>
   
   <entry>
     <title>linux修改系统日期</title>
@@ -435,9 +461,9 @@
       <category term="Linux" scheme="http://yoursite.com/categories/Git/Linux/"/>
     
     
-      <category term="Git" scheme="http://yoursite.com/tags/Git/"/>
-    
       <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
+    
+      <category term="Git" scheme="http://yoursite.com/tags/Git/"/>
     
   </entry>
   
@@ -504,7 +530,7 @@
     <link href="http://yoursite.com/2018/07/31/linux%E5%AE%89%E8%A3%85redis/"/>
     <id>http://yoursite.com/2018/07/31/linux安装redis/</id>
     <published>2018-07-31T07:33:57.000Z</published>
-    <updated>2018-08-27T05:18:54.665Z</updated>
+    <updated>2019-03-29T02:37:23.218Z</updated>
     
     <summary type="html">
     
@@ -524,32 +550,6 @@
       <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
     
       <category term="redis" scheme="http://yoursite.com/tags/redis/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>linux常用依赖包</title>
-    <link href="http://yoursite.com/2018/07/31/linux%E5%B8%B8%E7%94%A8%E4%BE%9D%E8%B5%96%E5%8C%85/"/>
-    <id>http://yoursite.com/2018/07/31/linux常用依赖包/</id>
-    <published>2018-07-31T07:08:55.000Z</published>
-    <updated>2019-02-22T06:38:26.694Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h4 id=&quot;linux查看某命令在哪个依赖包中&quot;&gt;&lt;a href=&quot;#linux查看某命令在哪个依赖包中&quot; class=&quot;headerlink&quot; title=&quot;linux查看某命令在哪个依赖包中&quot;&gt;&lt;/a&gt;linux查看某命令在哪个依赖包中&lt;/h4&gt;&lt;figure
-        
-      
-    
-    </summary>
-    
-      <category term="Linux" scheme="http://yoursite.com/categories/Linux/"/>
-    
-    
-      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
     
   </entry>
   
