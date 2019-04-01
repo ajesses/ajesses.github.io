@@ -120,7 +120,7 @@
 <meta property="og:site_name" content="wxqblog">
 <meta property="og:description" content="常用文件命令linux重启 shutdown halt  id：查看登录用户信息改密 passwd  创建目录：mkdir -p：递归创建文件夹  切换目录：cd cd ~与 cd：进入家目录 cd -：进入上次目录 cd ..：进入上一级目录 cd .：进入当前目录  删除文件：rm rmdir：不常用 rm -r：会询问是否删除 rm -rf：强制删除  剪切文件和改名：mv复制命令：cp -">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-16T09:17:32.737Z">
+<meta property="og:updated_time" content="2019-03-29T06:30:56.645Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="linux常用命令">
 <meta name="twitter:description" content="常用文件命令linux重启 shutdown halt  id：查看登录用户信息改密 passwd  创建目录：mkdir -p：递归创建文件夹  切换目录：cd cd ~与 cd：进入家目录 cd -：进入上次目录 cd ..：进入上一级目录 cd .：进入当前目录  删除文件：rm rmdir：不常用 rm -r：会询问是否删除 rm -rf：强制删除  剪切文件和改名：mv复制命令：cp -">
@@ -411,7 +411,7 @@
                   <span class="post-meta-item-text">字数统计: </span>
                 
                 <span title="字数统计">
-                  886 字
+                  948 字
                 </span>
               
 
@@ -427,7 +427,7 @@
                   <span class="post-meta-item-text">阅读时长≈ </span>
                 
                 <span title="阅读时长">
-                  3 分钟
+                  4 分钟
                 </span>
               
             </div>
@@ -531,7 +531,7 @@
 <li><strong>/tmp：</strong>临时目录</li>
 <li><strong>/var：</strong>系统相关文档</li>
 </ul>
-<h3 id="常用系统命令"><a href="#常用系统命令" class="headerlink" title="常用系统命令"></a>常用系统命令</h3><h4 id="查看linux的CPU"><a href="#查看linux的CPU" class="headerlink" title="查看linux的CPU"></a>查看linux的CPU</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> cat /proc/cpuinfo | grep 'model name' |uniq</div></pre></td></tr></table></figure>
+<h3 id="常用系统命令"><a href="#常用系统命令" class="headerlink" title="常用系统命令"></a>常用系统命令</h3><h4 id="查看linux的CPU"><a href="#查看linux的CPU" class="headerlink" title="查看linux的CPU"></a>查看linux的CPU</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="meta">$</span> cat /proc/cpuinfo | grep 'model name' |uniq</div><div class="line"></div><div class="line"><span class="meta">$</span> cat /proc/cpuinfo | grep "cpu cores" | uniq</div><div class="line"></div><div class="line"><span class="meta">$</span> cat /proc/cpuinfo |grep "model name" &amp;&amp; cat /proc/cpuinfo |grep "Processor ID"</div><div class="line"></div><div class="line"><span class="meta">$</span> cat /proc/cpuinfo | grep 'model name' |uniq</div><div class="line"></div><div class="line"><span class="meta">$</span> cat /proc/cpuinfo | grep "physical id" | uniq | wc -l</div><div class="line"></div><div class="line"><span class="meta">$</span> fdisk -l | grep Disk</div><div class="line"></div><div class="line"><span class="meta">$</span> cat /proc/meminfo | grep MemTotal</div><div class="line"></div><div class="line"><span class="meta">$</span> dmidecode |grep -A16 "System Information$"</div><div class="line"></div><div class="line"><span class="meta">$</span> dmidecode -t memory | head -45 | tail -23</div><div class="line"></div><div class="line"><span class="meta">$</span> ps -ef | sort -k7</div></pre></td></tr></table></figure>
 <h4 id="查看CPU使用情况"><a href="#查看CPU使用情况" class="headerlink" title="查看CPU使用情况"></a>查看CPU使用情况</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> top -bn 1 -i -c</div><div class="line"><span class="meta">$</span> top</div></pre></td></tr></table></figure>
 <h4 id="检查安装有没成功"><a href="#检查安装有没成功" class="headerlink" title="检查安装有没成功"></a>检查安装有没成功</h4><ul>
 <li>例子<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> rpm -qa lrzsz</div></pre></td></tr></table></figure>
@@ -555,6 +555,7 @@
 <h4 id="配置静态IP"><a href="#配置静态IP" class="headerlink" title="配置静态IP"></a>配置静态IP</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> cd /etc/sysconfig/network-scripts/</div><div class="line">vim [配置文件名]</div></pre></td></tr></table></figure>
 <h4 id="系统安装时centos默认的发行版本信息"><a href="#系统安装时centos默认的发行版本信息" class="headerlink" title="系统安装时centos默认的发行版本信息"></a>系统安装时centos默认的发行版本信息</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> uname -a</div><div class="line"></div><div class="line"><span class="meta">$</span> cat /proc/version</div><div class="line"></div><div class="line"><span class="meta">$</span> cat /etc/redhat-release</div><div class="line"></div><div class="line">&lt;!-- 查看当前内核版本 --&gt;</div><div class="line"><span class="meta">$</span> uname -r</div><div class="line"></div><div class="line"><span class="meta">$</span> uname -s</div><div class="line"><span class="meta">$</span> uname -m</div></pre></td></tr></table></figure>
 <h4 id="查看包是否安装"><a href="#查看包是否安装" class="headerlink" title="查看包是否安装"></a>查看包是否安装</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> rpm -qa|grep [包名]</div></pre></td></tr></table></figure>
+
       
     </div>
     
