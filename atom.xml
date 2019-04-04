@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
-  <updated>2019-04-01T06:25:54.156Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="https://ajesses.github.io/"/>
+  <updated>2019-04-02T07:22:29.891Z</updated>
+  <id>https://ajesses.github.io/</id>
   
   <author>
     <name>Jesse</name>
@@ -17,9 +17,67 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>javascript sleep函数</title>
+    <link href="https://ajesses.github.io/2019/04/02/javascript-sleep%E5%87%BD%E6%95%B0/"/>
+    <id>https://ajesses.github.io/2019/04/02/javascript-sleep函数/</id>
+    <published>2019-04-02T07:17:57.000Z</published>
+    <updated>2019-04-02T07:22:29.891Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;sleep函数&quot;&gt;&lt;a href=&quot;#sleep函数&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Javascript" scheme="https://ajesses.github.io/categories/Javascript/"/>
+    
+    
+      <category term="Javascript" scheme="https://ajesses.github.io/tags/Javascript/"/>
+    
+      <category term="sleep函数" scheme="https://ajesses.github.io/tags/sleep%E5%87%BD%E6%95%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>javascript浅拷贝与深拷贝</title>
+    <link href="https://ajesses.github.io/2019/04/01/javascript%E6%B5%85%E6%8B%B7%E8%B4%9D%E4%B8%8E%E6%B7%B1%E6%8B%B7%E8%B4%9D/"/>
+    <id>https://ajesses.github.io/2019/04/01/javascript浅拷贝与深拷贝/</id>
+    <published>2019-04-01T06:47:10.000Z</published>
+    <updated>2019-04-01T06:48:33.859Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;待&quot;&gt;&lt;a href=&quot;#待&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Javascript" scheme="https://ajesses.github.io/categories/Javascript/"/>
+    
+    
+      <category term="Javascript" scheme="https://ajesses.github.io/tags/Javascript/"/>
+    
+      <category term="浅拷贝" scheme="https://ajesses.github.io/tags/%E6%B5%85%E6%8B%B7%E8%B4%9D/"/>
+    
+      <category term="深拷贝" scheme="https://ajesses.github.io/tags/%E6%B7%B1%E6%8B%B7%E8%B4%9D/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Javascript继承方式</title>
-    <link href="http://yoursite.com/2019/03/29/Javascript%E7%BB%A7%E6%89%BF%E6%96%B9%E5%BC%8F/"/>
-    <id>http://yoursite.com/2019/03/29/Javascript继承方式/</id>
+    <link href="https://ajesses.github.io/2019/03/29/Javascript%E7%BB%A7%E6%89%BF%E6%96%B9%E5%BC%8F/"/>
+    <id>https://ajesses.github.io/2019/03/29/Javascript继承方式/</id>
     <published>2019-03-29T02:51:12.000Z</published>
     <updated>2019-04-01T06:25:54.156Z</updated>
     
@@ -36,19 +94,19 @@
     
     </summary>
     
-      <category term="Javascript" scheme="http://yoursite.com/categories/Javascript/"/>
+      <category term="Javascript" scheme="https://ajesses.github.io/categories/Javascript/"/>
     
     
-      <category term="Javascript" scheme="http://yoursite.com/tags/Javascript/"/>
+      <category term="Javascript" scheme="https://ajesses.github.io/tags/Javascript/"/>
     
-      <category term="继承方式" scheme="http://yoursite.com/tags/%E7%BB%A7%E6%89%BF%E6%96%B9%E5%BC%8F/"/>
+      <category term="继承方式" scheme="https://ajesses.github.io/tags/%E7%BB%A7%E6%89%BF%E6%96%B9%E5%BC%8F/"/>
     
   </entry>
   
   <entry>
     <title>linux通过firewall开启端口访问</title>
-    <link href="http://yoursite.com/2019/03/28/linux%E9%80%9A%E8%BF%87firewall%E5%BC%80%E5%90%AF%E7%AB%AF%E5%8F%A3%E8%AE%BF%E9%97%AE/"/>
-    <id>http://yoursite.com/2019/03/28/linux通过firewall开启端口访问/</id>
+    <link href="https://ajesses.github.io/2019/03/28/linux%E9%80%9A%E8%BF%87firewall%E5%BC%80%E5%90%AF%E7%AB%AF%E5%8F%A3%E8%AE%BF%E9%97%AE/"/>
+    <id>https://ajesses.github.io/2019/03/28/linux通过firewall开启端口访问/</id>
     <published>2019-03-28T06:46:24.000Z</published>
     <updated>2019-03-29T02:41:37.523Z</updated>
     
@@ -64,17 +122,17 @@
     
     </summary>
     
-      <category term="Linux" scheme="http://yoursite.com/categories/Linux/"/>
+      <category term="Linux" scheme="https://ajesses.github.io/categories/Linux/"/>
     
     
-      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
+      <category term="Linux" scheme="https://ajesses.github.io/tags/Linux/"/>
     
   </entry>
   
   <entry>
     <title>linux修改系统日期</title>
-    <link href="http://yoursite.com/2019/01/20/linux%E4%BF%AE%E6%94%B9%E7%B3%BB%E7%BB%9F%E6%97%A5%E6%9C%9F/"/>
-    <id>http://yoursite.com/2019/01/20/linux修改系统日期/</id>
+    <link href="https://ajesses.github.io/2019/01/20/linux%E4%BF%AE%E6%94%B9%E7%B3%BB%E7%BB%9F%E6%97%A5%E6%9C%9F/"/>
+    <id>https://ajesses.github.io/2019/01/20/linux修改系统日期/</id>
     <published>2019-01-20T09:55:47.000Z</published>
     <updated>2019-01-20T10:01:22.779Z</updated>
     
@@ -90,17 +148,17 @@
     
     </summary>
     
-      <category term="Linux" scheme="http://yoursite.com/categories/Linux/"/>
+      <category term="Linux" scheme="https://ajesses.github.io/categories/Linux/"/>
     
     
-      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
+      <category term="Linux" scheme="https://ajesses.github.io/tags/Linux/"/>
     
   </entry>
   
   <entry>
     <title>linux设置定时任务之crontab</title>
-    <link href="http://yoursite.com/2018/12/28/linux%E8%AE%BE%E7%BD%AE%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1%E4%B9%8Bcrontab/"/>
-    <id>http://yoursite.com/2018/12/28/linux设置定时任务之crontab/</id>
+    <link href="https://ajesses.github.io/2018/12/28/linux%E8%AE%BE%E7%BD%AE%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1%E4%B9%8Bcrontab/"/>
+    <id>https://ajesses.github.io/2018/12/28/linux设置定时任务之crontab/</id>
     <published>2018-12-28T06:10:40.000Z</published>
     <updated>2018-12-28T08:24:35.285Z</updated>
     
@@ -116,17 +174,17 @@
     
     </summary>
     
-      <category term="Linux" scheme="http://yoursite.com/categories/Linux/"/>
+      <category term="Linux" scheme="https://ajesses.github.io/categories/Linux/"/>
     
     
-      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
+      <category term="Linux" scheme="https://ajesses.github.io/tags/Linux/"/>
     
   </entry>
   
   <entry>
     <title>window中让电脑上网但是不影响局域网的连接</title>
-    <link href="http://yoursite.com/2018/12/26/window%E4%B8%AD%E8%AE%A9%E7%94%B5%E8%84%91%E4%B8%8A%E7%BD%91%E4%BD%86%E6%98%AF%E4%B8%8D%E5%BD%B1%E5%93%8D%E5%B1%80%E5%9F%9F%E7%BD%91%E7%9A%84%E8%BF%9E%E6%8E%A5/"/>
-    <id>http://yoursite.com/2018/12/26/window中让电脑上网但是不影响局域网的连接/</id>
+    <link href="https://ajesses.github.io/2018/12/26/window%E4%B8%AD%E8%AE%A9%E7%94%B5%E8%84%91%E4%B8%8A%E7%BD%91%E4%BD%86%E6%98%AF%E4%B8%8D%E5%BD%B1%E5%93%8D%E5%B1%80%E5%9F%9F%E7%BD%91%E7%9A%84%E8%BF%9E%E6%8E%A5/"/>
+    <id>https://ajesses.github.io/2018/12/26/window中让电脑上网但是不影响局域网的连接/</id>
     <published>2018-12-26T03:14:10.000Z</published>
     <updated>2018-12-26T03:20:24.463Z</updated>
     
@@ -142,17 +200,17 @@
     
     </summary>
     
-      <category term="Window" scheme="http://yoursite.com/categories/Window/"/>
+      <category term="Window" scheme="https://ajesses.github.io/categories/Window/"/>
     
     
-      <category term="Window" scheme="http://yoursite.com/tags/Window/"/>
+      <category term="Window" scheme="https://ajesses.github.io/tags/Window/"/>
     
   </entry>
   
   <entry>
     <title>docker常用工具</title>
-    <link href="http://yoursite.com/2018/12/20/docker%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/"/>
-    <id>http://yoursite.com/2018/12/20/docker常用工具/</id>
+    <link href="https://ajesses.github.io/2018/12/20/docker%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/"/>
+    <id>https://ajesses.github.io/2018/12/20/docker常用工具/</id>
     <published>2018-12-20T11:22:45.000Z</published>
     <updated>2018-12-20T11:47:54.509Z</updated>
     
@@ -168,17 +226,17 @@
     
     </summary>
     
-      <category term="Docker" scheme="http://yoursite.com/categories/Docker/"/>
+      <category term="Docker" scheme="https://ajesses.github.io/categories/Docker/"/>
     
     
-      <category term="Docker" scheme="http://yoursite.com/tags/Docker/"/>
+      <category term="Docker" scheme="https://ajesses.github.io/tags/Docker/"/>
     
   </entry>
   
   <entry>
     <title>docker服务</title>
-    <link href="http://yoursite.com/2018/12/20/docker%E6%9C%8D%E5%8A%A1/"/>
-    <id>http://yoursite.com/2018/12/20/docker服务/</id>
+    <link href="https://ajesses.github.io/2018/12/20/docker%E6%9C%8D%E5%8A%A1/"/>
+    <id>https://ajesses.github.io/2018/12/20/docker服务/</id>
     <published>2018-12-20T08:41:12.000Z</published>
     <updated>2018-12-20T11:19:12.019Z</updated>
     
@@ -194,17 +252,17 @@
     
     </summary>
     
-      <category term="Docker" scheme="http://yoursite.com/categories/Docker/"/>
+      <category term="Docker" scheme="https://ajesses.github.io/categories/Docker/"/>
     
     
-      <category term="Docker" scheme="http://yoursite.com/tags/Docker/"/>
+      <category term="Docker" scheme="https://ajesses.github.io/tags/Docker/"/>
     
   </entry>
   
   <entry>
     <title>git连接github使用</title>
-    <link href="http://yoursite.com/2018/12/19/git%E8%BF%9E%E6%8E%A5github%E4%BD%BF%E7%94%A8/"/>
-    <id>http://yoursite.com/2018/12/19/git连接github使用/</id>
+    <link href="https://ajesses.github.io/2018/12/19/git%E8%BF%9E%E6%8E%A5github%E4%BD%BF%E7%94%A8/"/>
+    <id>https://ajesses.github.io/2018/12/19/git连接github使用/</id>
     <published>2018-12-19T03:26:32.000Z</published>
     <updated>2018-12-19T03:31:25.731Z</updated>
     
@@ -220,17 +278,17 @@
     
     </summary>
     
-      <category term="Git" scheme="http://yoursite.com/categories/Git/"/>
+      <category term="Git" scheme="https://ajesses.github.io/categories/Git/"/>
     
     
-      <category term="Git" scheme="http://yoursite.com/tags/Git/"/>
+      <category term="Git" scheme="https://ajesses.github.io/tags/Git/"/>
     
   </entry>
   
   <entry>
     <title>docker使用</title>
-    <link href="http://yoursite.com/2018/12/18/docker%E4%BD%BF%E7%94%A8/"/>
-    <id>http://yoursite.com/2018/12/18/docker使用/</id>
+    <link href="https://ajesses.github.io/2018/12/18/docker%E4%BD%BF%E7%94%A8/"/>
+    <id>https://ajesses.github.io/2018/12/18/docker使用/</id>
     <published>2018-12-18T11:18:58.000Z</published>
     <updated>2018-12-20T12:05:21.469Z</updated>
     
@@ -246,17 +304,17 @@
     
     </summary>
     
-      <category term="Docker" scheme="http://yoursite.com/categories/Docker/"/>
+      <category term="Docker" scheme="https://ajesses.github.io/categories/Docker/"/>
     
     
-      <category term="Docker" scheme="http://yoursite.com/tags/Docker/"/>
+      <category term="Docker" scheme="https://ajesses.github.io/tags/Docker/"/>
     
   </entry>
   
   <entry>
     <title>window安装Telnet工具</title>
-    <link href="http://yoursite.com/2018/11/15/window%E5%AE%89%E8%A3%85Telnet%E5%B7%A5%E5%85%B7/"/>
-    <id>http://yoursite.com/2018/11/15/window安装Telnet工具/</id>
+    <link href="https://ajesses.github.io/2018/11/15/window%E5%AE%89%E8%A3%85Telnet%E5%B7%A5%E5%85%B7/"/>
+    <id>https://ajesses.github.io/2018/11/15/window安装Telnet工具/</id>
     <published>2018-11-15T07:27:36.000Z</published>
     <updated>2018-11-15T07:57:47.351Z</updated>
     
@@ -272,17 +330,17 @@
     
     </summary>
     
-      <category term="Window" scheme="http://yoursite.com/categories/Window/"/>
+      <category term="Window" scheme="https://ajesses.github.io/categories/Window/"/>
     
     
-      <category term="Window" scheme="http://yoursite.com/tags/Window/"/>
+      <category term="Window" scheme="https://ajesses.github.io/tags/Window/"/>
     
   </entry>
   
   <entry>
     <title>linux设置禁用外网，只连局域网</title>
-    <link href="http://yoursite.com/2018/11/02/linux%E8%AE%BE%E7%BD%AE%E7%A6%81%E7%94%A8%E5%A4%96%E7%BD%91%EF%BC%8C%E5%8F%AA%E8%BF%9E%E5%B1%80%E5%9F%9F%E7%BD%91/"/>
-    <id>http://yoursite.com/2018/11/02/linux设置禁用外网，只连局域网/</id>
+    <link href="https://ajesses.github.io/2018/11/02/linux%E8%AE%BE%E7%BD%AE%E7%A6%81%E7%94%A8%E5%A4%96%E7%BD%91%EF%BC%8C%E5%8F%AA%E8%BF%9E%E5%B1%80%E5%9F%9F%E7%BD%91/"/>
+    <id>https://ajesses.github.io/2018/11/02/linux设置禁用外网，只连局域网/</id>
     <published>2018-11-02T06:51:47.000Z</published>
     <updated>2018-12-26T03:16:56.125Z</updated>
     
@@ -298,17 +356,17 @@
     
     </summary>
     
-      <category term="Linux" scheme="http://yoursite.com/categories/Linux/"/>
+      <category term="Linux" scheme="https://ajesses.github.io/categories/Linux/"/>
     
     
-      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
+      <category term="Linux" scheme="https://ajesses.github.io/tags/Linux/"/>
     
   </entry>
   
   <entry>
     <title>linux安装svn</title>
-    <link href="http://yoursite.com/2018/11/02/linux%E5%AE%89%E8%A3%85svn/"/>
-    <id>http://yoursite.com/2018/11/02/linux安装svn/</id>
+    <link href="https://ajesses.github.io/2018/11/02/linux%E5%AE%89%E8%A3%85svn/"/>
+    <id>https://ajesses.github.io/2018/11/02/linux安装svn/</id>
     <published>2018-11-02T06:17:15.000Z</published>
     <updated>2019-02-27T05:51:31.919Z</updated>
     
@@ -326,21 +384,21 @@
     
     </summary>
     
-      <category term="Linux" scheme="http://yoursite.com/categories/Linux/"/>
+      <category term="Linux" scheme="https://ajesses.github.io/categories/Linux/"/>
     
     
-      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
+      <category term="Linux" scheme="https://ajesses.github.io/tags/Linux/"/>
     
-      <category term="svn" scheme="http://yoursite.com/tags/svn/"/>
+      <category term="svn" scheme="https://ajesses.github.io/tags/svn/"/>
     
   </entry>
   
   <entry>
     <title>window cmd常用命令</title>
-    <link href="http://yoursite.com/2018/10/19/window-cmd%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
-    <id>http://yoursite.com/2018/10/19/window-cmd常用命令/</id>
+    <link href="https://ajesses.github.io/2018/10/19/window-cmd%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <id>https://ajesses.github.io/2018/10/19/window-cmd常用命令/</id>
     <published>2018-10-19T03:25:10.000Z</published>
-    <updated>2018-10-19T03:34:59.652Z</updated>
+    <updated>2019-04-04T08:59:13.646Z</updated>
     
     <summary type="html">
     
@@ -354,17 +412,17 @@
     
     </summary>
     
-      <category term="Window" scheme="http://yoursite.com/categories/Window/"/>
+      <category term="Window" scheme="https://ajesses.github.io/categories/Window/"/>
     
     
-      <category term="Window" scheme="http://yoursite.com/tags/Window/"/>
+      <category term="Window" scheme="https://ajesses.github.io/tags/Window/"/>
     
   </entry>
   
   <entry>
     <title>vscode常用插件集合</title>
-    <link href="http://yoursite.com/2018/09/16/vscode%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6%E9%9B%86%E5%90%88/"/>
-    <id>http://yoursite.com/2018/09/16/vscode常用插件集合/</id>
+    <link href="https://ajesses.github.io/2018/09/16/vscode%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6%E9%9B%86%E5%90%88/"/>
+    <id>https://ajesses.github.io/2018/09/16/vscode常用插件集合/</id>
     <published>2018-09-16T07:04:40.000Z</published>
     <updated>2018-09-16T07:22:51.274Z</updated>
     
@@ -380,17 +438,17 @@
     
     </summary>
     
-      <category term="Vscode" scheme="http://yoursite.com/categories/Vscode/"/>
+      <category term="Vscode" scheme="https://ajesses.github.io/categories/Vscode/"/>
     
     
-      <category term="Vscode" scheme="http://yoursite.com/tags/Vscode/"/>
+      <category term="Vscode" scheme="https://ajesses.github.io/tags/Vscode/"/>
     
   </entry>
   
   <entry>
     <title></title>
-    <link href="http://yoursite.com/2018/09/05/centOS7%E4%B8%8B%E5%AE%89%E8%A3%85KVM%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
-    <id>http://yoursite.com/2018/09/05/centOS7下安装KVM虚拟机/</id>
+    <link href="https://ajesses.github.io/2018/09/05/centOS7%E4%B8%8B%E5%AE%89%E8%A3%85KVM%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
+    <id>https://ajesses.github.io/2018/09/05/centOS7下安装KVM虚拟机/</id>
     <published>2018-09-05T06:54:47.674Z</published>
     <updated>2018-09-05T08:06:34.835Z</updated>
     
@@ -412,8 +470,8 @@
   
   <entry>
     <title>一台同时连接github和码云</title>
-    <link href="http://yoursite.com/2018/08/14/%E4%B8%80%E5%8F%B0%E5%90%8C%E6%97%B6%E8%BF%9E%E6%8E%A5github%E5%92%8C%E7%A0%81%E4%BA%91/"/>
-    <id>http://yoursite.com/2018/08/14/一台同时连接github和码云/</id>
+    <link href="https://ajesses.github.io/2018/08/14/%E4%B8%80%E5%8F%B0%E5%90%8C%E6%97%B6%E8%BF%9E%E6%8E%A5github%E5%92%8C%E7%A0%81%E4%BA%91/"/>
+    <id>https://ajesses.github.io/2018/08/14/一台同时连接github和码云/</id>
     <published>2018-08-14T07:54:56.000Z</published>
     <updated>2018-08-23T05:58:43.040Z</updated>
     
@@ -429,21 +487,21 @@
     
     </summary>
     
-      <category term="Git" scheme="http://yoursite.com/categories/Git/"/>
+      <category term="Git" scheme="https://ajesses.github.io/categories/Git/"/>
     
-      <category term="SSH" scheme="http://yoursite.com/categories/Git/SSH/"/>
+      <category term="SSH" scheme="https://ajesses.github.io/categories/Git/SSH/"/>
     
     
-      <category term="Git" scheme="http://yoursite.com/tags/Git/"/>
+      <category term="Git" scheme="https://ajesses.github.io/tags/Git/"/>
     
-      <category term="SSH" scheme="http://yoursite.com/tags/SSH/"/>
+      <category term="SSH" scheme="https://ajesses.github.io/tags/SSH/"/>
     
   </entry>
   
   <entry>
     <title>hexo设置favicon</title>
-    <link href="http://yoursite.com/2018/08/14/hexo%E8%AE%BE%E7%BD%AEfavicon/"/>
-    <id>http://yoursite.com/2018/08/14/hexo设置favicon/</id>
+    <link href="https://ajesses.github.io/2018/08/14/hexo%E8%AE%BE%E7%BD%AEfavicon/"/>
+    <id>https://ajesses.github.io/2018/08/14/hexo设置favicon/</id>
     <published>2018-08-14T03:32:10.000Z</published>
     <updated>2018-08-14T03:43:07.687Z</updated>
     
@@ -459,17 +517,17 @@
     
     </summary>
     
-      <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
+      <category term="Hexo" scheme="https://ajesses.github.io/categories/Hexo/"/>
     
     
-      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+      <category term="Hexo" scheme="https://ajesses.github.io/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>linux搭建git私有仓库</title>
-    <link href="http://yoursite.com/2018/08/13/linux%E6%90%AD%E5%BB%BAgit%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93/"/>
-    <id>http://yoursite.com/2018/08/13/linux搭建git私有仓库/</id>
+    <link href="https://ajesses.github.io/2018/08/13/linux%E6%90%AD%E5%BB%BAgit%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93/"/>
+    <id>https://ajesses.github.io/2018/08/13/linux搭建git私有仓库/</id>
     <published>2018-08-13T03:28:05.000Z</published>
     <updated>2018-08-14T08:08:24.307Z</updated>
     
@@ -485,72 +543,14 @@
     
     </summary>
     
-      <category term="Git" scheme="http://yoursite.com/categories/Git/"/>
+      <category term="Git" scheme="https://ajesses.github.io/categories/Git/"/>
     
-      <category term="Linux" scheme="http://yoursite.com/categories/Git/Linux/"/>
-    
-    
-      <category term="Git" scheme="http://yoursite.com/tags/Git/"/>
-    
-      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>express中使用es6</title>
-    <link href="http://yoursite.com/2018/08/10/express%E4%B8%AD%E4%BD%BF%E7%94%A8es6/"/>
-    <id>http://yoursite.com/2018/08/10/express中使用es6/</id>
-    <published>2018-08-10T08:13:41.000Z</published>
-    <updated>2018-08-14T08:08:20.986Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h4 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div
-        
-      
-    
-    </summary>
-    
-      <category term="Node" scheme="http://yoursite.com/categories/Node/"/>
-    
-      <category term="Express" scheme="http://yoursite.com/categories/Node/Express/"/>
+      <category term="Linux" scheme="https://ajesses.github.io/categories/Git/Linux/"/>
     
     
-      <category term="Node" scheme="http://yoursite.com/tags/Node/"/>
+      <category term="Git" scheme="https://ajesses.github.io/tags/Git/"/>
     
-      <category term="Express" scheme="http://yoursite.com/tags/Express/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>pm2使用</title>
-    <link href="http://yoursite.com/2018/07/31/pm2%E4%BD%BF%E7%94%A8/"/>
-    <id>http://yoursite.com/2018/07/31/pm2使用/</id>
-    <published>2018-07-31T11:11:39.000Z</published>
-    <updated>2019-01-14T02:38:32.869Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h4 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div
-        
-      
-    
-    </summary>
-    
-      <category term="Node" scheme="http://yoursite.com/categories/Node/"/>
-    
-    
-      <category term="Node" scheme="http://yoursite.com/tags/Node/"/>
-    
-      <category term="Pm2" scheme="http://yoursite.com/tags/Pm2/"/>
+      <category term="Linux" scheme="https://ajesses.github.io/tags/Linux/"/>
     
   </entry>
   
