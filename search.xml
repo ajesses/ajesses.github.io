@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[docker-compose安装elasticsearch和activemq]]></title>
+    <url>%2F2019%2F04%2F12%2Fdocker-compose%E5%AE%89%E8%A3%85elasticsearch%E5%92%8Cactivemq%2F</url>
+    <content type="text"><![CDATA[docker-compose.yml123456789101112131415161718192021222324252627282930313233343536373839404142434445version: '3'services: es: hostname: elasticsearch image: elasticsearch:6.6.1 volumes: - /home/Docker/es/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml # - /home/Docker/jvm.options:/usr/share/elasticsearch/config/jvm.options environment: # - bootstrap.memory_lock=true - node.name=node-1 - cluster.name=jw-test - "ES_JAVA_OPTS=-Xms2g -Xmx2g" # - discovery.type=single-node - TAKE_FILE_OWNERSHIP=true command: elasticsearch ports: - "9200:9200" - "9300:9300" activemq: #定义主机名 hostname: activemq #使用的镜像 image: docker.io/webcenter/activemq #容器的映射端口 ports: - 8161:8161 #定义IP网络 # networks: # staticneta: # ipv4_address: 172.20.1.4 #定义挂载点 volumes: - /home/Docker/acmq/data/activemq:/data/activemq - /home/Docker/acmq/var/log/activemq:/var/log/activemq #环境变量 environment: ACTIVEMQ_ADMIN_LOGIN: admin ACTIVEMQ_ADMIN_PASSWORD: admin ACTIVEMQ_CONFIG_MINMEMORY: 512 ACTIVEMQ_CONFIG_MAXMEMORY: 2048 TZ: Asia/Shanghai LANG: en_US.UTF-8 开启服务12345678$ docker-compose up# 后台启动$ docker-compose up -d# 停止$ docker-compose down]]></content>
+      <categories>
+        <category>Docker</category>
+        <category>Docker-compose</category>
+      </categories>
+      <tags>
+        <tag>Docker</tag>
+        <tag>Docker-compose</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[javascript sleep函数]]></title>
     <url>%2F2019%2F04%2F02%2Fjavascript-sleep%E5%87%BD%E6%95%B0%2F</url>
     <content type="text"><![CDATA[sleep函数让线程休眠，到指定时间后再重新唤起]]></content>
@@ -84,7 +97,7 @@
   <entry>
     <title><![CDATA[docker常用工具]]></title>
     <url>%2F2018%2F12%2F20%2Fdocker%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%2F</url>
-    <content type="text"><![CDATA[docker-compose安装https://docs.docker.com/compose/install/#install-compose 安装例如：12345$ sudo curl -L "https://github.com/docker/compose/releases/download/1.23.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose$ sudo chmod +x /usr/local/bin/docker-compose$ docker-compose --version docker machinehttps://docs.docker-cn.com/machine/install-machine/#installing-machine-directly 安装123$ curl -L https://github.com/docker/machine/releases/download/v0.12.1/docker-machine-`uname -s`-`uname -m` &gt;/tmp/docker-machine &amp;&amp;chmod +x /tmp/docker-machine &amp;&amp;sudo cp /tmp/docker-machine /usr/local/bin/docker-machine 查看版本12$ docker-machine versiondocker-machine version 0.12.1, build c8b17e8 创建运行docker-machine,添加驱动--driver virtualbox，如果是第一次创建，则加上参数default，否则添加name123456# 查看$ docker-machine ls# 创建$ docker-machine create --driver virtualbox default$ docker-machine env default]]></content>
+    <content type="text"><![CDATA[docker-compose安装https://docs.docker.com/compose/install/#install-compose 安装例如：12345678$ sudo curl -L "https://github.com/docker/compose/releases/download/1.23.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose$ sudo chmod +x /usr/local/bin/docker-compose$ docker-compose --version# 启动例子$ docker-compose -f docker-compose.yml up -d docker machinehttps://docs.docker-cn.com/machine/install-machine/#installing-machine-directly 安装123$ curl -L https://github.com/docker/machine/releases/download/v0.12.1/docker-machine-`uname -s`-`uname -m` &gt;/tmp/docker-machine &amp;&amp;chmod +x /tmp/docker-machine &amp;&amp;sudo cp /tmp/docker-machine /usr/local/bin/docker-machine 查看版本12$ docker-machine versiondocker-machine version 0.12.1, build c8b17e8 创建运行docker-machine,添加驱动--driver virtualbox，如果是第一次创建，则加上参数default，否则添加name123456# 查看$ docker-machine ls# 创建$ docker-machine create --driver virtualbox default$ docker-machine env default]]></content>
       <categories>
         <category>Docker</category>
       </categories>

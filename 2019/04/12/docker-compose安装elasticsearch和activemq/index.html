@@ -94,7 +94,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="代码小屋, JesseWang" />
+  <meta name="keywords" content="Docker,Docker-compose," />
 
 
 
@@ -112,17 +112,18 @@
 
 
 
-<meta name="description" content="title: centOS7下安装KVM虚拟机date: 2018-09-05 14:54:47categories:  Git Linuxtags: Git Linux  待">
+<meta name="description" content="docker-compose.yml123456789101112131415161718192021222324252627282930313233343536373839404142434445version: &apos;3&apos;services:  es:    hostname: elasticsearch    image: elasticsearch:6.6.1    volumes:">
+<meta name="keywords" content="Docker,Docker-compose">
 <meta property="og:type" content="article">
-<meta property="og:title" content="wxqblog">
-<meta property="og:url" content="https://ajesses.github.io/2018/09/05/centOS7下安装KVM虚拟机/index.html">
+<meta property="og:title" content="docker-compose安装elasticsearch和activemq">
+<meta property="og:url" content="https://ajesses.github.io/2019/04/12/docker-compose安装elasticsearch和activemq/index.html">
 <meta property="og:site_name" content="wxqblog">
-<meta property="og:description" content="title: centOS7下安装KVM虚拟机date: 2018-09-05 14:54:47categories:  Git Linuxtags: Git Linux  待">
+<meta property="og:description" content="docker-compose.yml123456789101112131415161718192021222324252627282930313233343536373839404142434445version: &apos;3&apos;services:  es:    hostname: elasticsearch    image: elasticsearch:6.6.1    volumes:">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-05T08:06:34.835Z">
+<meta property="og:updated_time" content="2019-04-12T06:30:40.236Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="wxqblog">
-<meta name="twitter:description" content="title: centOS7下安装KVM虚拟机date: 2018-09-05 14:54:47categories:  Git Linuxtags: Git Linux  待">
+<meta name="twitter:title" content="docker-compose安装elasticsearch和activemq">
+<meta name="twitter:description" content="docker-compose.yml123456789101112131415161718192021222324252627282930313233343536373839404142434445version: &apos;3&apos;services:  es:    hostname: elasticsearch    image: elasticsearch:6.6.1    volumes:">
 
 
 
@@ -151,13 +152,13 @@
 
 
 
-  <link rel="canonical" href="https://ajesses.github.io/2018/09/05/centOS7下安装KVM虚拟机/"/>
+  <link rel="canonical" href="https://ajesses.github.io/2019/04/12/docker-compose安装elasticsearch和activemq/"/>
 
 
 
 
 
-  <title> | wxqblog</title>
+  <title>docker-compose安装elasticsearch和activemq | wxqblog</title>
   
 
 
@@ -320,7 +321,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ajesses.github.io/2018/09/05/centOS7下安装KVM虚拟机/">
+    <link itemprop="mainEntityOfPage" href="https://ajesses.github.io/2019/04/12/docker-compose安装elasticsearch和activemq/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Jesse">
@@ -337,7 +338,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline"></h1>
+          <h1 class="post-title" itemprop="name headline">docker-compose安装elasticsearch和activemq</h1>
         
 
         <div class="post-meta">
@@ -349,8 +350,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-05T14:54:47+08:00">
-                2018-09-05
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-12T14:27:15+08:00">
+                2019-04-12
               </time>
             
 
@@ -359,6 +360,39 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Docker/" itemprop="url" rel="index">
+                    <span itemprop="name">Docker</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Docker/Docker-compose/" itemprop="url" rel="index">
+                    <span itemprop="name">Docker-compose</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -388,7 +422,7 @@
                   <span class="post-meta-item-text">字数统计: </span>
                 
                 <span title="字数统计">
-                  19 字
+                  166 字
                 </span>
               
 
@@ -425,15 +459,8 @@
       
 
       
-        <hr>
-<p>title: centOS7下安装KVM虚拟机<br>date: 2018-09-05 14:54:47<br>categories:</p>
-<ul>
-<li>Git</li>
-<li>Linux<br>tags:</li>
-<li>Git</li>
-<li>Linux</li>
-</ul>
-<h4 id="待"><a href="#待" class="headerlink" title="待"></a>待</h4>
+        <h4 id="docker-compose-yml"><a href="#docker-compose-yml" class="headerlink" title="docker-compose.yml"></a>docker-compose.yml</h4><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="attr">version:</span> <span class="string">'3'</span></div><div class="line"></div><div class="line"><span class="attr">services:</span></div><div class="line"><span class="attr">  es:</span></div><div class="line"><span class="attr">    hostname:</span> <span class="string">elasticsearch</span></div><div class="line"><span class="attr">    image:</span> <span class="attr">elasticsearch:6.6.1</span></div><div class="line"><span class="attr">    volumes:</span></div><div class="line"><span class="bullet">      -</span> <span class="string">/home/Docker/es/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml</span></div><div class="line">      <span class="comment"># - /home/Docker/jvm.options:/usr/share/elasticsearch/config/jvm.options</span></div><div class="line"><span class="attr">    environment:</span></div><div class="line">      <span class="comment"># - bootstrap.memory_lock=true</span></div><div class="line"><span class="bullet">      -</span> <span class="string">node.name=node-1</span></div><div class="line"><span class="bullet">      -</span> <span class="string">cluster.name=jw-test</span></div><div class="line"><span class="bullet">      -</span> <span class="string">"ES_JAVA_OPTS=-Xms2g -Xmx2g"</span></div><div class="line">      <span class="comment"># - discovery.type=single-node</span></div><div class="line"><span class="bullet">      -</span> <span class="string">TAKE_FILE_OWNERSHIP=true</span></div><div class="line"><span class="attr">    command:</span> <span class="string">elasticsearch</span></div><div class="line"><span class="attr">    ports:</span> </div><div class="line"><span class="bullet">      -</span> <span class="string">"9200:9200"</span></div><div class="line"><span class="bullet">      -</span> <span class="string">"9300:9300"</span></div><div class="line"><span class="attr">  activemq:</span></div><div class="line">    <span class="comment">#定义主机名</span></div><div class="line"><span class="attr">    hostname:</span> <span class="string">activemq</span></div><div class="line">    <span class="comment">#使用的镜像</span></div><div class="line"><span class="attr">    image:</span> <span class="string">docker.io/webcenter/activemq</span></div><div class="line">    <span class="comment">#容器的映射端口</span></div><div class="line"><span class="attr">    ports:</span></div><div class="line"><span class="bullet">      -</span> <span class="number">8161</span><span class="string">:8161</span></div><div class="line">    <span class="comment">#定义IP网络</span></div><div class="line">    <span class="comment"># networks:</span></div><div class="line">    <span class="comment">#   staticneta:</span></div><div class="line">    <span class="comment">#     ipv4_address: 172.20.1.4</span></div><div class="line">    <span class="comment">#定义挂载点</span></div><div class="line"><span class="attr">    volumes:</span></div><div class="line"><span class="bullet">      -</span> <span class="string">/home/Docker/acmq/data/activemq:/data/activemq</span></div><div class="line"><span class="bullet">      -</span> <span class="string">/home/Docker/acmq/var/log/activemq:/var/log/activemq</span></div><div class="line">    <span class="comment">#环境变量</span></div><div class="line"><span class="attr">    environment:</span></div><div class="line"><span class="attr">      ACTIVEMQ_ADMIN_LOGIN:</span> <span class="string">admin</span></div><div class="line"><span class="attr">      ACTIVEMQ_ADMIN_PASSWORD:</span> <span class="string">admin</span></div><div class="line"><span class="attr">      ACTIVEMQ_CONFIG_MINMEMORY:</span> <span class="number">512</span></div><div class="line"><span class="attr">      ACTIVEMQ_CONFIG_MAXMEMORY:</span> <span class="number">2048</span></div><div class="line"><span class="attr">      TZ:</span> <span class="string">Asia/Shanghai</span></div><div class="line"><span class="attr">      LANG:</span> <span class="string">en_US.UTF-8</span></div></pre></td></tr></table></figure>
+<h4 id="开启服务"><a href="#开启服务" class="headerlink" title="开启服务"></a>开启服务</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="meta">$</span> docker-compose up</div><div class="line"></div><div class="line"><span class="meta">#</span> 后台启动</div><div class="line"><span class="meta">$</span> docker-compose up -d</div><div class="line"></div><div class="line"><span class="meta">#</span> 停止</div><div class="line"><span class="meta">$</span> docker-compose down</div></pre></td></tr></table></figure>
       
     </div>
     
@@ -448,6 +475,14 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/Docker/" rel="tag"># Docker</a>
+          
+            <a href="/tags/Docker-compose/" rel="tag"># Docker-compose</a>
+          
+        </div>
+      
 
       
       
@@ -457,8 +492,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/08/14/一台同时连接github和码云/" rel="next" title="一台同时连接github和码云">
-                <i class="fa fa-chevron-left"></i> 一台同时连接github和码云
+              <a href="/2019/04/02/javascript-sleep函数/" rel="next" title="javascript sleep函数">
+                <i class="fa fa-chevron-left"></i> javascript sleep函数
               </a>
             
           </div>
@@ -466,10 +501,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/09/16/vscode常用插件集合/" rel="prev" title="vscode常用插件集合">
-                vscode常用插件集合 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -672,7 +703,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#待"><span class="nav-number">1.</span> <span class="nav-text">待</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#docker-compose-yml"><span class="nav-number">1.</span> <span class="nav-text">docker-compose.yml</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#开启服务"><span class="nav-number">2.</span> <span class="nav-text">开启服务</span></a></li></ol></div>
             
 
           </div>

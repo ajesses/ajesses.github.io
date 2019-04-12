@@ -112,18 +112,18 @@
 
 
 
-<meta name="description" content="docker-compose安装https://docs.docker.com/compose/install/#install-compose 安装例如：12345$ sudo curl -L &quot;https://github.com/docker/compose/releases/download/1.23.1/docker-compose-$(uname -s)-$(uname -m)&quot; -o">
+<meta name="description" content="docker-compose安装https://docs.docker.com/compose/install/#install-compose 安装例如：12345678$ sudo curl -L &quot;https://github.com/docker/compose/releases/download/1.23.1/docker-compose-$(uname -s)-$(uname -m)&quot;">
 <meta name="keywords" content="Docker">
 <meta property="og:type" content="article">
 <meta property="og:title" content="docker常用工具">
 <meta property="og:url" content="https://ajesses.github.io/2018/12/20/docker常用工具/index.html">
 <meta property="og:site_name" content="wxqblog">
-<meta property="og:description" content="docker-compose安装https://docs.docker.com/compose/install/#install-compose 安装例如：12345$ sudo curl -L &quot;https://github.com/docker/compose/releases/download/1.23.1/docker-compose-$(uname -s)-$(uname -m)&quot; -o">
+<meta property="og:description" content="docker-compose安装https://docs.docker.com/compose/install/#install-compose 安装例如：12345678$ sudo curl -L &quot;https://github.com/docker/compose/releases/download/1.23.1/docker-compose-$(uname -s)-$(uname -m)&quot;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-20T11:47:54.509Z">
+<meta property="og:updated_time" content="2019-04-10T06:18:15.688Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="docker常用工具">
-<meta name="twitter:description" content="docker-compose安装https://docs.docker.com/compose/install/#install-compose 安装例如：12345$ sudo curl -L &quot;https://github.com/docker/compose/releases/download/1.23.1/docker-compose-$(uname -s)-$(uname -m)&quot; -o">
+<meta name="twitter:description" content="docker-compose安装https://docs.docker.com/compose/install/#install-compose 安装例如：12345678$ sudo curl -L &quot;https://github.com/docker/compose/releases/download/1.23.1/docker-compose-$(uname -s)-$(uname -m)&quot;">
 
 
 
@@ -411,7 +411,7 @@
                   <span class="post-meta-item-text">字数统计: </span>
                 
                 <span title="字数统计">
-                  171 字
+                  183 字
                 </span>
               
 
@@ -449,7 +449,7 @@
 
       
         <h4 id="docker-compose安装"><a href="#docker-compose安装" class="headerlink" title="docker-compose安装"></a>docker-compose安装</h4><p><a href="https://docs.docker.com/compose/install/#install-compose" target="_blank" rel="external">https://docs.docker.com/compose/install/#install-compose</a></p>
-<h5 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h5><p>例如：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> sudo curl -L "https://github.com/docker/compose/releases/download/1.23.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose</div><div class="line"></div><div class="line"><span class="meta">$</span> sudo chmod +x /usr/local/bin/docker-compose</div><div class="line"></div><div class="line"><span class="meta">$</span> docker-compose --version</div></pre></td></tr></table></figure></p>
+<h5 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h5><p>例如：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> sudo curl -L "https://github.com/docker/compose/releases/download/1.23.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose</div><div class="line"></div><div class="line"><span class="meta">$</span> sudo chmod +x /usr/local/bin/docker-compose</div><div class="line"></div><div class="line"><span class="meta">$</span> docker-compose --version</div><div class="line"></div><div class="line"><span class="meta">#</span> 启动例子</div><div class="line"><span class="meta">$</span> docker-compose -f docker-compose.yml up -d</div></pre></td></tr></table></figure></p>
 <h4 id="docker-machine"><a href="#docker-machine" class="headerlink" title="docker machine"></a>docker machine</h4><p><a href="https://docs.docker-cn.com/machine/install-machine/#installing-machine-directly" target="_blank" rel="external">https://docs.docker-cn.com/machine/install-machine/#installing-machine-directly</a></p>
 <h5 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> curl -L https://github.com/docker/machine/releases/download/v0.12.1/docker-machine-`uname -s`-`uname -m` &gt;/tmp/docker-machine &amp;&amp;</div><div class="line">chmod +x /tmp/docker-machine &amp;&amp;</div><div class="line">sudo cp /tmp/docker-machine /usr/local/bin/docker-machine</div></pre></td></tr></table></figure>
 <p>查看版本<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> docker-machine version</div><div class="line">docker-machine version 0.12.1, build c8b17e8</div></pre></td></tr></table></figure></p>
@@ -575,7 +575,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">28</span>
+                <span class="site-state-item-count">29</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -586,7 +586,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-count">13</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -597,7 +597,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">19</span>
+                <span class="site-state-item-count">20</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

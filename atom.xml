@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ajesses.github.io/"/>
-  <updated>2019-04-02T07:22:29.891Z</updated>
+  <updated>2019-04-12T06:30:40.236Z</updated>
   <id>https://ajesses.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>docker-compose安装elasticsearch和activemq</title>
+    <link href="https://ajesses.github.io/2019/04/12/docker-compose%E5%AE%89%E8%A3%85elasticsearch%E5%92%8Cactivemq/"/>
+    <id>https://ajesses.github.io/2019/04/12/docker-compose安装elasticsearch和activemq/</id>
+    <published>2019-04-12T06:27:15.000Z</published>
+    <updated>2019-04-12T06:30:40.236Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;docker-compose-yml&quot;&gt;&lt;a href=&quot;#docker-compose-yml&quot; class=&quot;headerlink&quot; title=&quot;docker-compose.yml&quot;&gt;&lt;/a&gt;docker-compose.yml&lt;/h4&gt;&lt;figure
+        
+      
+    
+    </summary>
+    
+      <category term="Docker" scheme="https://ajesses.github.io/categories/Docker/"/>
+    
+      <category term="Docker-compose" scheme="https://ajesses.github.io/categories/Docker/Docker-compose/"/>
+    
+    
+      <category term="Docker" scheme="https://ajesses.github.io/tags/Docker/"/>
+    
+      <category term="Docker-compose" scheme="https://ajesses.github.io/tags/Docker-compose/"/>
+    
+  </entry>
   
   <entry>
     <title>javascript sleep函数</title>
@@ -212,7 +242,7 @@
     <link href="https://ajesses.github.io/2018/12/20/docker%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/"/>
     <id>https://ajesses.github.io/2018/12/20/docker常用工具/</id>
     <published>2018-12-20T11:22:45.000Z</published>
-    <updated>2018-12-20T11:47:54.509Z</updated>
+    <updated>2019-04-10T06:18:15.688Z</updated>
     
     <summary type="html">
     
@@ -290,7 +320,7 @@
     <link href="https://ajesses.github.io/2018/12/18/docker%E4%BD%BF%E7%94%A8/"/>
     <id>https://ajesses.github.io/2018/12/18/docker使用/</id>
     <published>2018-12-18T11:18:58.000Z</published>
-    <updated>2018-12-20T12:05:21.469Z</updated>
+    <updated>2019-04-09T01:51:33.736Z</updated>
     
     <summary type="html">
     
@@ -521,36 +551,6 @@
     
     
       <category term="Hexo" scheme="https://ajesses.github.io/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>linux搭建git私有仓库</title>
-    <link href="https://ajesses.github.io/2018/08/13/linux%E6%90%AD%E5%BB%BAgit%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93/"/>
-    <id>https://ajesses.github.io/2018/08/13/linux搭建git私有仓库/</id>
-    <published>2018-08-13T03:28:05.000Z</published>
-    <updated>2018-08-14T08:08:24.307Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h4 id=&quot;查看ssh版本&quot;&gt;&lt;a href=&quot;#查看ssh版本&quot; class=&quot;headerlink&quot; title=&quot;查看ssh版本&quot;&gt;&lt;/a&gt;查看ssh版本&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
-        
-      
-    
-    </summary>
-    
-      <category term="Git" scheme="https://ajesses.github.io/categories/Git/"/>
-    
-      <category term="Linux" scheme="https://ajesses.github.io/categories/Git/Linux/"/>
-    
-    
-      <category term="Git" scheme="https://ajesses.github.io/tags/Git/"/>
-    
-      <category term="Linux" scheme="https://ajesses.github.io/tags/Linux/"/>
     
   </entry>
   
